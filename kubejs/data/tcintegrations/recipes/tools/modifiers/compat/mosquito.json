@@ -1,0 +1,37 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "alexsmobs:mosquito_proboscis"
+    },
+    {
+      "item": "alexsmobs:mosquito_proboscis"
+    },
+    {
+      "item": "alexsmobs:mosquito_proboscis"
+    },
+    {
+      "item": "alexsmobs:mosquito_proboscis"
+    },
+    {
+      "item": "alexsmobs:mosquito_proboscis"
+    }
+  ],
+  "level": {
+    "max": 3
+  },
+  "result": "tcintegrations:mosquito",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/boots"
+  }
+}

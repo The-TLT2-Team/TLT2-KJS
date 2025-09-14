@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:modifier",
+  "conditions": [
+    {
+      "modid": "l2complements",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "tinkersinnovation:shulkerate_reinforcement",
+      "amount_needed": 2
+    },
+    {
+      "item": "tinkersinnovation:sculkium_reinforcement",
+      "amount_needed": 3
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "allow_crystal": true,
+  "result": "tinkersinnovation:transparent",
+  "level": 1
+}

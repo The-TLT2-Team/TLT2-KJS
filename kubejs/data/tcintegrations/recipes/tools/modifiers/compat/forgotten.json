@@ -1,0 +1,40 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "undergarden:forgotten_ingot"
+    },
+    {
+      "item": "undergarden:cloggrum_ingot"
+    },
+    {
+      "item": "undergarden:cloggrum_ingot"
+    },
+    {
+      "item": "undergarden:cloggrum_ingot"
+    },
+    {
+      "item": "undergarden:cloggrum_ingot"
+    }
+  ],
+  "level": 1,
+  "result": "tcintegrations:forgotten",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/melee/primary"
+    },
+    {
+      "tag": "tconstruct:modifiable/harvest/primary"
+    }
+  ]
+}

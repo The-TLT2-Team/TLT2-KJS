@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "item": "tinkersinnovation:teleport_staff",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "input_slots": [
+    {
+      "filter": {
+        "item": "sakuratinker:phantom_core"
+      },
+      "icon": "sakuratinker:phantom_core",
+      "translation_key": "item.sakuratinker.phantom_core",
+      "x": 48,
+      "y": 26
+    },
+    {
+      "filter": {
+        "item": "sakuratinker:swift_blade"
+      },
+      "icon": "sakuratinker:swift_blade",
+      "translation_key": "item.sakuratinker.swift_blade",
+      "x": 30,
+      "y": 44
+    }
+  ],
+  "sortIndex": 4,
+  "translation_key": "item.tinkersinnovation.teleport_staff"
+}

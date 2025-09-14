@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "create:goggles"
+    }
+  ],
+  "result": "tcintegrations:engineers_goggles",
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/helmets"
+  }
+}

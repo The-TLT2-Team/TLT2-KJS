@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/ostrum"
+    },
+    {
+      "type": "forge:or",
+      "values": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "beyond_earth"
+        }
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/ostrum"
+  },
+  "material": "tcintegrations:ostrum",
+  "needed": 9,
+  "value": 1
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "result": {
+    "fluid": "tinkersinnovation:molten_slimton",
+    "amount": 180
+  },
+  "inputs": [
+    {
+      "tag": "tconstruct:molten_amethyst_bronze",
+      "amount": 180
+    },
+    {
+      "tag": "forge:molten_gold",
+      "amount": 180
+    },
+    {
+      "tag": "tconstruct:sky_slime",
+      "amount": 500
+    }
+  ],
+  "temperature": 1200
+}

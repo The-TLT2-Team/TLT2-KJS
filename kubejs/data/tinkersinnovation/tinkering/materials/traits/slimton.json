@@ -1,0 +1,48 @@
+{
+  "perStat": {
+    "tconstruct:melee_harvest": [
+      {
+        "level": 1,
+        "name": "tconstruct:overslime"
+      },
+      {
+        "name": "tinkersinnovation:deal_maker",
+        "level": 1
+      }
+    ],
+    "tconstruct:ranged": [
+      {
+        "level": 1,
+        "name": "tconstruct:overslime"
+      },
+      {
+        "name": "tinkersinnovation:deal_maker",
+        "level": 1
+      },
+      {
+        "name": "tinkersinnovation:big_shot",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "tconstruct:overslime"
+      },
+      {
+        "name": "tinkersinnovation:neo",
+        "level": 1
+      }
+    ],
+    "tinkersinnovation:shield": [
+      {
+        "level": 1,
+        "name": "tconstruct:overslime"
+      },
+      {
+        "name": "tinkersinnovation:neo",
+        "level": 1
+      }
+    ]
+  }
+}

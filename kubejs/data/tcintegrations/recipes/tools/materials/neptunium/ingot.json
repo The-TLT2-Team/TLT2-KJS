@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/neptunium"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/neptunium"
+  },
+  "material": "tcintegrations:neptunium",
+  "needed": 1,
+  "value": 1
+}

@@ -1,0 +1,42 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    },
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    },
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    },
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    },
+    {
+      "item": "mekanism:ingot_refined_glowstone"
+    }
+  ],
+  "level": {
+    "max": 3
+  },
+  "result": "tcintegrations:glowup",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/melee/primary"
+    },
+    {
+      "tag": "tconstruct:modifiable/harvest/primary"
+    }
+  ]
+}

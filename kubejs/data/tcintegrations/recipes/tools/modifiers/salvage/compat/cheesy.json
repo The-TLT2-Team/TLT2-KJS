@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:modifier_salvage",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:food/cheese"
+    }
+  ],
+  "modifier": "tcintegrations:cheesy",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/melee/primary"
+    },
+    {
+      "tag": "tconstruct:modifiable/harvest/primary"
+    }
+  ]
+}

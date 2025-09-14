@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "pattern": [
+    " S ",
+    " J ",
+    "CHC",
+    " H ",
+    " N "
+  ],
+  "key": {
+    "J": {
+      "item": "create:precision_mechanism"
+    },
+    "N": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "create:cogwheel"
+    },
+    "H": {
+      "tag": "forge:ingots/brass"
+    },
+    "S": {
+      "item": "create:brass_hand"
+    }
+  },
+  "result": {
+    "item": "tinkersinnovation:mechanical_multifunctional_cane"
+  },
+  "acceptMirrored": false
+}

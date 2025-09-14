@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "modid": "l2hostility",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "result": {
+    "fluid": "tinkersinnovation:molten_hostilium",
+    "amount": 180
+  },
+  "inputs": [
+    {
+      "tag": "tinkersinnovation:molten_hostility",
+      "amount": 1000
+    },
+    {
+      "tag": "forge:molten_cobalt",
+      "amount": 150
+    },
+    {
+      "tag": "tinkersinnovation:molten_sculkium",
+      "amount": 90
+    }
+  ],
+  "temperature": 1750
+}

@@ -1,0 +1,34 @@
+{
+  "perStat": {
+    "tconstruct:melee_harvest": [
+      {
+        "name": "tinkersinnovation:enchantment",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:shiny",
+        "level": 1
+      }
+    ],
+    "tconstruct:ranged": [
+      {
+        "name": "tinkersinnovation:enchantment",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:shiny",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "tinkersinnovation:enchantment_armor",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:shiny",
+        "level": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_fluid",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/dragonsteel_fire"
+    }
+  ],
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_dragonsteel_fire"
+  },
+  "output": "tcintegrations:dragonsteel_fire",
+  "temperature": 1450
+}

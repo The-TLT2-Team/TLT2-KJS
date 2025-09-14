@@ -1,0 +1,10 @@
+StartupEvents.registry("item", event => {
+    event.create("kubejs:penumatic_reinforced_titanium", "basic")
+    event.create("kubejs:augment_base_densium", "basic")
+    event.create("kubejs:augment_base_pneumatic", "basic")
+    event.create("kubejs:plutonium_dust", "basic")
+    event.create("kubejs:polonium_dust", "basic")
+    event.create("kubejs:restructure_chromatic_steel", "basic")
+    event.create("kubejs:compressed_chromatic_steel", "basic")
+    event.create("kubejs:awaken_chromatic_steel", "basic").rarity("epic")
+})

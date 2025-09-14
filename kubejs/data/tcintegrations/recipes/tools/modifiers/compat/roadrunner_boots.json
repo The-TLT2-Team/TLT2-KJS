@@ -1,0 +1,37 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "minecraft:chiseled_sandstone"
+    },
+    {
+      "item": "alexsmobs:roadrunner_feather"
+    },
+    {
+      "item": "alexsmobs:roadrunner_feather"
+    },
+    {
+      "item": "alexsmobs:roadrunner_feather"
+    },
+    {
+      "item": "alexsmobs:roadrunner_feather"
+    }
+  ],
+  "level": {
+    "max": 3
+  },
+  "result": "tcintegrations:roadrunner",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/boots"
+  }
+}

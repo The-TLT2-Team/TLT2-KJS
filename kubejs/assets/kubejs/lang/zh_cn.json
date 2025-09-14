@@ -1,0 +1,26 @@
+{
+    "item.kubejs.nyn": "nyn锭",
+	"item.kubejs.egg": "鸡蛋锭",
+	"item.kubejs.milk": "牛乳锭",
+	"item.kubejs.money": "匠铸金币",
+	"item.kubejs.nazrin": "娜兹玲锭",
+	"item.kubejs.flour": "小麦粉锭",
+	"item.kubejs.semi_molten_orichalcum": "半熔融奥利哈钢",
+	"item.kubejs.hephaestus_ingot": "神匠锭",
+	"item.kubejs.pi": "π合金",
+	"item.kubejs.roaring_crystal": "呼啸水晶",
+	"item.kubejs.pi_nugget": "π合金粒",
+	"item.kubejs.frozen_thorn": "凛冰荆棘",
+	"item.kubejs.pluto": "冥王星",
+    "item.kubejs.unformed_hephaestus_ingot":"未完成神匠锭",
+	"item.kubejs.penumatic_reinforced_titanium":"气锻复合钛",
+	"item.kubejs.augment_base_densium":"致密组件基板",
+	"item.kubejs.augment_base_pneumatic":"气锻组件基板",
+	"item.kubejs.restructure_chromatic_steel":"重组彩钢锭",
+	"item.kubejs.plutonium_dust":"钚粉",
+	"item.kubejs.polonium_dust":"钋粉",
+	"item.kubejs.awaken_chromatic_steel":"觉醒彩钢锭",
+	"item.kubejs.compressed_chromatic_steel":"高压彩钢锭",
+
+	"block.mekanism.indium_casing":"铟质机壳"
+}

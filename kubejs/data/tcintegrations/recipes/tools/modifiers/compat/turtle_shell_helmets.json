@@ -1,0 +1,35 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "alexsmobs"
+    }
+  ],
+  "inputs": [
+    {
+      "item": "alexsmobs:spiked_scute"
+    },
+    {
+      "item": "alexsmobs:spiked_scute"
+    },
+    {
+      "item": "alexsmobs:spiked_scute"
+    },
+    {
+      "item": "alexsmobs:spiked_scute"
+    },
+    {
+      "item": "alexsmobs:spiked_scute"
+    }
+  ],
+  "level": 1,
+  "result": "tcintegrations:turtle_shell",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/helmets"
+  }
+}

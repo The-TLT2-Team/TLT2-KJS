@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_melting",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/dragonsteel_ice"
+    }
+  ],
+  "input": "tcintegrations:dragonsteel_ice",
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_dragonsteel_ice"
+  },
+  "temperature": 1450
+}

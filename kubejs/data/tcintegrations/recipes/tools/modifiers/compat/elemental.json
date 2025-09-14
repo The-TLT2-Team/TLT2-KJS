@@ -1,0 +1,35 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "botania:elementium_ingots"
+    },
+    {
+      "tag": "botania:elementium_ingots"
+    },
+    {
+      "tag": "botania:mystical_flowers"
+    },
+    {
+      "tag": "botania:double_mystical_flowers"
+    },
+    {
+      "tag": "botania:glimmering_livingwood_logs"
+    }
+  ],
+  "level": 1,
+  "result": "tcintegrations:elemental",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/melee/primary"
+  }
+}

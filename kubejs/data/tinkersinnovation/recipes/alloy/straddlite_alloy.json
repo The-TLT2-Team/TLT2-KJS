@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "modid": "alexsmobs",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "result": {
+    "fluid": "tinkersinnovation:molten_straddlite_alloy",
+    "amount": 30
+  },
+  "inputs": [
+    {
+      "tag": "forge:molten_netherite",
+      "amount": 30
+    },
+    {
+      "tag": "tinkersinnovation:molten_straddlite",
+      "amount": 40
+    },
+    {
+      "tag": "forge:molten_hepatizon",
+      "amount": 10
+    }
+  ],
+  "temperature": 1500
+}

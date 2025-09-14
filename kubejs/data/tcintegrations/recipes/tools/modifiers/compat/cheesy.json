@@ -1,0 +1,42 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:food/cheese"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "forge:food/cheese"
+    },
+    {
+      "tag": "forge:food/cheese"
+    },
+    {
+      "tag": "forge:food/cheese"
+    },
+    {
+      "tag": "forge:food/cheese"
+    },
+    {
+      "tag": "forge:food/cheese"
+    }
+  ],
+  "level": {
+    "max": 3
+  },
+  "result": "tcintegrations:cheesy",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable/melee/primary"
+    },
+    {
+      "tag": "tconstruct:modifiable/harvest/primary"
+    }
+  ]
+}

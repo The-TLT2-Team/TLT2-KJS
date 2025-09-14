@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "botania:livingwood_log",
+      "required": false
+    },
+    {
+      "id": "botania:stripped_livingwood_log",
+      "required": false
+    },
+    {
+      "id": "botania:livingwood",
+      "required": false
+    },
+    {
+      "id": "botania:stripped_livingwood",
+      "required": false
+    }
+  ]
+}

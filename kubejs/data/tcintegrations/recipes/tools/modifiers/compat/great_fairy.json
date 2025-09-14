@@ -1,0 +1,35 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "inputs": [
+    {
+      "tag": "botania:elementium_ingots"
+    },
+    {
+      "tag": "botania:elementium_ingots"
+    },
+    {
+      "tag": "botania:elementium_ingots"
+    },
+    {
+      "item": "botania:livingwood_twig"
+    },
+    {
+      "tag": "botania:glimmering_livingwood_logs"
+    }
+  ],
+  "level": 1,
+  "result": "tcintegrations:great_fairy",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/armor/worn"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_fluid",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/desh"
+    }
+  ],
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_desh"
+  },
+  "output": "tcintegrations:desh",
+  "temperature": 500
+}

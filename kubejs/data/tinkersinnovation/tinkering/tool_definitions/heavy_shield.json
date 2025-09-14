@@ -1,0 +1,97 @@
+{
+  "modules": [
+    {
+      "type": "tconstruct:part_stats",
+      "parts": [
+        {"item": "tinkersinnovation:heavy_shield_plate", "scale": 0.5 },
+        {"item": "tinkersinnovation:heavy_shield_plate", "scale": 0.5 },
+        "tconstruct:shield_core",
+        "tconstruct:large_plate",
+        "tconstruct:tough_handle"
+      ],
+      "primary_part": 3
+    },
+    {
+      "type": "tconstruct:default_materials",
+      "materials": [
+        {
+          "type": "tconstruct:random",
+          "tier": {
+            "max": 2,
+            "min": 1
+          }
+        },
+        {
+          "type": "tconstruct:random",
+          "tier": {
+            "max": 2,
+            "min": 1
+          }
+        },
+        {
+          "type": "tconstruct:random",
+          "tier": {
+            "max": 2,
+            "min": 1
+          }
+        },
+        {
+          "type": "tconstruct:random",
+          "tier": 1
+        },
+        {
+          "type": "tconstruct:random",
+          "tier": 1
+        }
+      ]
+    },
+    {
+      "type": "tconstruct:base_stats",
+      "stats": {
+        "tconstruct:attack_damage": 5,
+        "tconstruct:attack_speed": 0.6,
+        "tconstruct:block_amount": 100.0,
+        "tconstruct:block_angle": 180.0,
+        "tinkersinnovation:shield_amount": 20
+      }
+    },
+    {
+      "type": "tconstruct:multiply_stats",
+      "multipliers": {
+        "tconstruct:attack_damage": 1.5,
+        "tconstruct:durability": 4,
+        "tconstruct:mining_speed": 0.3,
+        "tinkersinnovation:shield_amount": 3
+      }
+    },
+    {
+      "type": "tconstruct:modifier_slots",
+      "slots": {
+        "defense": 3,
+        "abilities": 1,
+        "upgrades": 2
+      }
+    },
+    {
+      "type": "tconstruct:traits",
+      "traits": [
+        {
+          "level": 1,
+          "name": "tconstruct:blocking"
+        },
+        {
+          "level": 1,
+          "name": "tinkersinnovation:shield_amount"
+        }
+      ]
+    },
+    {
+      "type": "tconstruct:preference_set_interaction",
+      "preferred_modifiers": {
+        "type": "tconstruct:single",
+        "modifier": "tconstruct:blocking"
+      },
+      "preferred_source": "right_click"
+    }
+  ]
+}

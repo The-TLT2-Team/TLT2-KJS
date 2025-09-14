@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:material",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:nuggets/brass"
+    },
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/brass"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:nuggets/brass"
+  },
+  "material": "tcintegrations:brass",
+  "needed": 9,
+  "value": 1
+}
