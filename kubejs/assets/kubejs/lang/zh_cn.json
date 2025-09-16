@@ -22,5 +22,72 @@
 	"item.kubejs.awaken_chromatic_steel":"觉醒彩钢锭",
 	"item.kubejs.compressed_chromatic_steel":"高压彩钢锭",
 
-	"block.mekanism.indium_casing":"铟质机壳"
+	"block.mekanism.indium_casing":"铟质机壳",
+
+
+
+	"material.tlt_tech.pneumatic_reinforced_titanium":"气锻复合钛",
+	"material.tlt_tech.pneumatic_reinforced_titanium.flavor":"高强度材料！",
+
+	"material.tlt_tech.restructure_chromatic_steel":"重组彩钢",
+	"material.tlt_tech.restructure_chromatic_steel.flavor":"高能彩钢与放射性材料融合形成的能量密度极高的材料。",
+
+	"material.tlt_tech.awaken_chromatic_steel":"觉醒彩钢",
+	"material.tlt_tech.awaken_chromatic_steel.flavor":"彩钢的终极形态，汇聚了世间的元素能量。",
+
+	"material.tlt_tech.compressed_chromatic_steel":"高压彩钢",
+	"material.tlt_tech.compressed_chromatic_steel.flavor":"能量和物质的双重压缩！",
+
+
+
+	"modifier.tlt_tech.elemental_sword":"元素圣剑",
+	"modifier.tlt_tech.elemental_sword.flavor":"元素之力，尽在手中！",
+	"modifier.tlt_tech.elemental_sword.description":"挥舞武器，发射追踪的元素剑气。不同颜色的剑气会具有不同的效果。",
+
+	"modifier.tlt_tech.automatic_tool":"自动工具",
+	"modifier.tlt_tech.automatic_tool.flavor":"我的工具会自动打人！",
+	"modifier.tlt_tech.automatic_tool.description":"按住鼠标就能自动攻击（近战/远程均适用）。",
+
+	"modifier.tlt_tech.pneumatic_tool":"气动工具",
+	"modifier.tlt_tech.pneumatic_tool.flavor":"气体膨胀做功。",
+	"modifier.tlt_tech.pneumatic_tool.description":"按住鼠标就能自动攻击，每次自动攻击消耗50mL压缩空气（近战/远程均适用）。",
+
+	"modifier.tlt_tech.edge_discharge":"尖端放电",
+	"modifier.tlt_tech.edge_discharge.flavor":"电荷溜走了！",
+	"modifier.tlt_tech.edge_discharge.description":"激活模式下：攻击时释放一到弧向附近敌人的脉冲，造成25%*词条等级伤害\n注能模式下：你的工具会自动攻击距离你6格以内的生物，词条等级越高频率越高。",
+
+	"modifier.tlt_tech.flying":"飞行模式",
+	"modifier.tlt_tech.flying.flavor":"开了",
+	"modifier.tlt_tech.flying.description":"穿戴时能创造模式飞行。",
+
+	"modifier.tlt_tech.over_pressure":"超压",
+	"modifier.tlt_tech.over_pressure.flavor":"电气学",
+	"modifier.tlt_tech.over_pressure.description":"穿着时能创造模式飞行，但是会以250FE/t的速度耗能。免疫摔落和爆炸伤害。\n受到伤害时，消耗压缩空气格挡5点伤害，消耗能量独立减免20%伤害。",
+
+	"modifier.tlt_tech.industrial_born":"工业之才",
+	"modifier.tlt_tech.industrial_born.flavor":"科技改变生活！",
+	"modifier.tlt_tech.industrial_born.description":"每级增加升级、防御和能力各一个槽位、100%修复效率、2的时运/抢夺等级和25%大部分属性加成。\n于护甲时提供最大80%，每级5%，基于全身等级计算的伤害减免。",
+
+	"modifier.tlt_tech.elemental_slash":"元素斩击",
+	"modifier.tlt_tech.elemental_slash.flavor":"元素能量，装载！",
+	"modifier.tlt_tech.elemental_slash.description":"挥舞武器，释放旋转的元素剑气，造成大范围近战伤害、辐射伤害和激光伤害。",
+
+	"modifier.tlt_tech.hyper_flux_loaded":"高级通量装载",
+	"modifier.tlt_tech.hyper_flux_loaded.flavor":"电动工具！",
+	"modifier.tlt_tech.hyper_flux_loaded.description":"消耗工具存储的能量增伤，每250FE增加1伤害，最多增加每级50%的伤害。",
+
+	"modifier.tlt_tech.hyper_energy_shielding":"高级能量护盾",
+	"modifier.tlt_tech.hyper_energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
+	"modifier.tlt_tech.hyper_energy_shielding.description":"免疫爆炸、火、窒息、摔落、魔法和闪电伤害。消耗能量抵消伤害，每500FE抵消1伤害。若能量不足则以一半的效率消耗全身能量减伤。\n给予穿戴者正面效果并以40/s的速率增加玩家的伤害吸收，最大获得最大生命5倍的伤害吸收。",
+
+	"modifier.tlt_tech.energy_shielding":"能量护盾",
+	"modifier.tlt_tech.energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
+	"modifier.tlt_tech.energy_shielding.description":"免疫爆炸、火、窒息、摔落和闪电伤害。消耗能量抵消伤害，每2000FE抵消1伤害。若能量不足则以一半的效率消耗全身能量减伤。",
+
+
+
+	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
+	"tooltip.kubejs.found_in_nether":"发现于下界",
+	"tooltip.kubejs.found_in_end":"发现于末地",
+	"tooltip.kubejs.contributor":"- %s 贡献者材料 -"
 }

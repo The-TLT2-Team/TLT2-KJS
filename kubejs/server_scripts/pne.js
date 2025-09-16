@@ -1,36 +1,4 @@
 ServerEvents.recipes(e => {
-    e.custom({
-        "type": "pneumaticcraft:pressure_chamber",
-        "inputs": [
-            {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 2,
-                "item": "kubejs:awaken_chromatic_steel"
-            },
-            {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 2,
-                "item": "tinkers_advanced:osgloglas_ingot"
-            },
-            {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 1,
-                "item": "mekanism_extras:cosmic_control_circuit"
-            },
-            {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 5,
-                "item": "create:precision_mechanism"
-            }
-        ],
-        "pressure": 6.0,
-        "results": [
-            {
-                "item": "kubejs:unformed_hephaestus_ingot"
-            }
-        ]
-    }
-    )
 
     e.custom({
   "type": "pneumaticcraft:heat_properties",

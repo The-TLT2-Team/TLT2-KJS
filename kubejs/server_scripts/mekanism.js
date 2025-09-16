@@ -38,5 +38,5 @@ ServerEvents.recipes(event=>{
         }
     )
     event.replaceInput({id:'mekanismgenerators:reactor/glass'},'#forge:ingots/lead','thermal:lead_block')
-    event.recipes.mekanism.nucleosynthesizing('kubejs:restructure_chromatic_steel',{amount:1000,gas:'mekanism:antimatter'},'kubejs:awaken_chromatic_steel').duration(10)
+    event.recipes.mekanism.nucleosynthesizing('minecraft:gold_ore',{amount:1,gas:'mekanism:antimatter'},'tinkers_advanced:iridium_lean_ore').duration(10)
 })
