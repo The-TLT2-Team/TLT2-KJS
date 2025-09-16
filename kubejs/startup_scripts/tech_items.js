@@ -1,5 +1,5 @@
 StartupEvents.registry("item", event => {
-    event.create("kubejs:penumatic_reinforced_titanium", "basic")
+    event.create("kubejs:pneumatic_reinforced_titanium", "basic")
     event.create("kubejs:augment_base_densium", "basic")
     event.create("kubejs:augment_base_pneumatic", "basic")
     event.create("kubejs:plutonium_dust", "basic")

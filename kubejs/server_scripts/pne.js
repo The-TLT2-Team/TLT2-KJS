@@ -5,31 +5,22 @@ ServerEvents.recipes(e => {
             {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 2,
-                "item": "tinkers_advanced:activated_chromatic_steel"
+                "item": "kubejs:awaken_chromatic_steel"
             },
-                        {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 3,
-                "item": "tinkers_advanced:hot_reinforced_steel"
-            },
-                        {
+            {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 2,
                 "item": "tinkers_advanced:osgloglas_ingot"
             },
-                        {
+            {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 1,
                 "item": "mekanism_extras:cosmic_control_circuit"
             },
-                        {
+            {
                 "type": "pneumaticcraft:stacked_item",
                 "count": 5,
                 "item": "create:precision_mechanism"
-            },     {
-                "type": "pneumaticcraft:stacked_item",
-                "count": 2,
-                "item": "tinkers_advanced:protocite_pellet"
             }
         ],
         "pressure": 6.0,
@@ -130,7 +121,7 @@ e.custom({
     "fluid": "tinkers_advanced:molten_iridium"
   },
   "item_output": {
-    "item": "kubejs:penumatic_reinforced_titanium"
+    "item": "kubejs:pneumatic_reinforced_titanium"
   },
   "pressure": 1,
   "time": 20
@@ -341,17 +332,19 @@ e.custom({
     {
       "type": "pneumaticcraft:stacked_item",
       "count": 1,
-      "item": "mekanism:dust_coal"
+      "item": "minecraft:coal"
     },
     {
       "type": "pneumaticcraft:stacked_item",
-      "count": 1,
+      "count": 2,
       "item": "pneumaticcraft:ingot_iron_compressed"
     }
   ],
   "pressure": 2.5,
   "results": [
     {
+      "type": "pneumaticcraft:stacked_item",
+      "count": 2,
       "item": "thermal:steel_dust"
     }
   ]
