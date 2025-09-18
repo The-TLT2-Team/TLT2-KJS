@@ -365,5 +365,112 @@ e.custom({
   "temperature": 2200,
   "thermalResistance": 1
 })
+// function pneumaticArmorCraft(itemHelemet,itemChest,itemLegging,itemBoot,materialId,materialItem){
+// e.custom(
+//   {
+//     "type": "pneumaticcraft:pressure_chamber",
+//     "inputs": [
+//       {
+//         "item": itemHelemet
+//       },
+//       {
+//         "type": "pneumaticcraft:stacked_item",
+//         "count": 2,
+//         "item": materialItem
+//       }
+//     ],
+//     "pressure": 2.0,
+//     "results": [
+//       {
+//         "item": "tconstruct:helmet_plating",
+//         "count": 1,
+//         "nbt": "{Material:\""+materialId+"\"}"
+//       }
+//     ]
+//   }
+// )
+// e.custom(
+//   {
+//     "type": "pneumaticcraft:pressure_chamber",
+//     "inputs": [
+//       {
+//         "item": itemChest
+//       },
+//       {
+//         "type": "pneumaticcraft:stacked_item",
+//         "count": 6,
+//         "item": materialItem
+//       }
+//     ],
+//     "pressure": 2.0,
+//     "results": [
+//       {
+//         "item": "tconstruct:chestplate_plating",
+//         "count": 1,
+//         "nbt": "{Material:\""+materialId+"\"}"
+//       }
+//     ]
+//   }
+// )
+// e.custom(
+//   {
+//     "type": "pneumaticcraft:pressure_chamber",
+//     "inputs": [
+//       {
+//         "item": itemLegging
+//       },
+//       {
+//         "type": "pneumaticcraft:stacked_item",
+//         "count": 5,
+//         "item": materialItem
+//       }
+//     ],
+//     "pressure": 2.0,
+//     "results": [
+//       {
+//         "item": "tconstruct:leggings_plating",
+//         "count": 1,
+//         "nbt": "{Material:\""+materialId+"\"}"
+//       }
+//     ]
+//   }
+// )
+// e.custom(
+//   {
+//     "type": "pneumaticcraft:pressure_chamber",
+//     "inputs": [
+//       {
+//         "item": itemBoot
+//       },
+//       {
+//         "type": "pneumaticcraft:stacked_item",
+//         "count": 2,
+//         "item": materialItem
+//       }
+//     ],
+//     "pressure": 2.0,
+//     "results": [
+//       {
+//         "item": "tconstruct:boots_plating",
+//         "count": 1,
+//         "nbt": "{Material:\""+materialId+"\"}"
+//       }
+//     ]
+//   }
+// )
+// }
+
+// pneumaticArmorCraft("pneumaticcraft:compressed_iron_helmet",
+//   "pneumaticcraft:compressed_iron_chestplate",
+//   "pneumaticcraft:compressed_iron_leggings",
+//   "pneumaticcraft:compressed_iron_boots",
+//   "tlt_tech:pneumatic_reinforced_titanium",
+//   "kubejs:pneumatic_reinforced_titanium")
+// pneumaticArmorCraft("pneumaticcraft:compressed_iron_helmet",
+//   "pneumaticcraft:compressed_iron_chestplate",
+//   "pneumaticcraft:compressed_iron_leggings",
+//   "pneumaticcraft:compressed_iron_boots",
+//   "tlt_tech:compressed_chromatic_steel",
+//   "kubejs:compressed_chromatic_steel")
 
 })

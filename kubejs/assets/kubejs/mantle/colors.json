@@ -16,6 +16,7 @@
     "elemental_slash":"#FF77E9",
     "hyper_flux_loaded":"#FF4D4D",
     "hyper_energy_shielding":"#FF0000",
-    "energy_shielding":"#FF4D4D"
+    "energy_shielding":"#FF4D4D",
+    "reverse_polarity":"#7671FF"
   }
 }

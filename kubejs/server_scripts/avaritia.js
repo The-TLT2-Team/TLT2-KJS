@@ -53,4 +53,83 @@ ServerEvents.recipes(e => {
   "tier": 3
   }
   )
+
+  e.custom({
+  "type": "avaritia:shaped_table",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "mekanism_extras:supreme_control_circuit"
+    },
+    "b": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "c": {
+      "item": "tlt_tech:machine_speed_upgrade_2"
+    },
+    "d": {
+      "item": "avaritia:neutron"
+    },
+    "e": {
+      "item": "kubejs:hephaestus_ingot"
+    },
+    "f": {
+      "item": "tlt_tech:machine_catalyst_upgrade_2"
+    }
+  },
+  "pattern": [
+    "cabbbaf",
+    "accbffa",
+    "bcdddfb",
+    "bbdedbb",
+    "bfdddcb",
+    "affbcca",
+    "fabbbac"
+  ],
+  "result": {
+    "item": "tlt_tech:machine_speed_upgrade_inf",
+    "count":8
+  },
+  "show_notification": true,
+  "tier": 3
+  }
+  )
+
+e.custom({
+  "type": "avaritia:shaped_table",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "mekanism_extras:supreme_control_circuit"
+    },
+    "b": {
+      "item": "avaritia:crystal_matrix_ingot"
+    },
+    "c": {
+      "item": "tlt_tech:dynamo_upgrade_2"
+    },
+    "d": {
+      "item": "avaritia:neutron"
+    },
+    "e": {
+      "item": "kubejs:hephaestus_ingot"
+    }
+  },
+  "pattern": [
+    "cabbbac",
+    "accbcca",
+    "bcdddcb",
+    "bbdedbb",
+    "bcdddcb",
+    "accbcca",
+    "cabbbac"
+  ],
+  "result": {
+    "item": "tlt_tech:dynamo_upgrade_inf",
+    "count":16
+  },
+  "show_notification": true,
+  "tier": 3
+  }
+  )
 })

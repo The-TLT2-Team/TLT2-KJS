@@ -21,4 +21,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "tinkerscalibration:tools/materials/melting/carminite/carminite" });
     event.remove({ id: "tinkerscalibration:tools/materials/casting/carminite/gem_gold_cast" });
     event.remove({ id: "tinkerscalibration:tools/materials/casting/carminite/gem_sand_cast" });
+    event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_boots'})
+    event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_helmet'})
+    event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_chest'})
+    event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_leggins'})
 });

@@ -74,7 +74,7 @@
 
 	"modifier.tlt_tech.hyper_flux_loaded":"高级通量装载",
 	"modifier.tlt_tech.hyper_flux_loaded.flavor":"电动工具！",
-	"modifier.tlt_tech.hyper_flux_loaded.description":"消耗工具存储的能量增伤，每250FE增加1伤害，最多增加每级50%的伤害。",
+	"modifier.tlt_tech.hyper_flux_loaded.description":"消耗工具存储的能量增伤，每250FE增加1伤害，最多增加每级75%的基础伤害。",
 
 	"modifier.tlt_tech.hyper_energy_shielding":"高级能量护盾",
 	"modifier.tlt_tech.hyper_energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
@@ -84,7 +84,17 @@
 	"modifier.tlt_tech.energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
 	"modifier.tlt_tech.energy_shielding.description":"免疫爆炸、火、窒息、摔落和闪电伤害。消耗能量抵消伤害，每2000FE抵消1伤害。若能量不足则以一半的效率消耗全身能量减伤。",
 
+	"modifier.tlt_tech.supreme_flux_loaded":"极限能量装载",
+	"modifier.tlt_tech.supreme_flux_loaded.flavor":"电能涌动！",
+	"modifier.tlt_tech.supreme_flux_loaded.description":"消耗工具存储的能量增伤，每25FE增加1伤害，最多增加每级200%的独立乘算伤害。",
 
+
+
+	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
+	"fluid.kubejs.molten_awaken_chromatic_steel": "熔融觉醒彩钢",
+
+	"item.kubejs.molten_restructure_chromatic_steel_bucket":"熔融重组彩钢桶",
+	"fluid.kubejs.molten_restructure_chromatic_steel": "熔融重组彩钢",
 
 	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
 	"tooltip.kubejs.found_in_nether":"发现于下界",
