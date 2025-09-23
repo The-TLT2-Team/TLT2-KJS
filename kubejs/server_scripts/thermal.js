@@ -141,4 +141,9 @@ event.shaped('8x tlt_tech:range_upgrade_2',[
       B:'tlt_tech:range_upgrade_1',
       D:'aether_tinker:valkyrie'
     })
+
+  event.recipes.thermal.crystallizer(Item.of('mekanism:alloy_infused',16).withChance(1),[Fluid.of('thermal:redstone',400),'16x iron_ingot']).energy(1600)
+  event.recipes.thermal.crystallizer(Item.of('mekanism:alloy_reinforced',16).withChance(1),[Fluid.of('tconstruct:molten_diamond',400),'16x mekanism:alloy_infused']).energy(1600)
+  event.recipes.thermal.crystallizer(Item.of('mekanism:alloy_atomic',16).withChance(1),[Fluid.of('tconstruct:molten_refined_obsidian',360),'16x mekanism:alloy_reinforced']).energy(1600)
+  event.recipes.thermal.compression_fuel(Fluid.of('mekanism:ethene',1000),3000000)
 })

@@ -3,7 +3,8 @@
     "pneumatic_reinforced_titanium":"#C9B64F",
     "restructure_chromatic_steel":"#BB9DC9",
     "awaken_chromatic_steel":"#6967C9",
-    "compressed_chromatic_steel":"#302F5C"
+    "compressed_chromatic_steel":"#302F5C",
+    "hephaestus":"#180224"
   },
 
   "modifier.tlt_tech": {

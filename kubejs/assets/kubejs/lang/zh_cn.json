@@ -38,6 +38,10 @@
 	"material.tlt_tech.compressed_chromatic_steel":"高压彩钢",
 	"material.tlt_tech.compressed_chromatic_steel.flavor":"能量和物质的双重压缩！",
 
+	"material.kubejs.hephaestus":"神匠",
+	"material.kubejs.hephaestus.flavor":"无尽99%力量的来源。",
+	"material.kubejs.hephaestus.encyclopedia":"你旅途的物理顶点，拥有令混沌龙分崩离析的力量。",
+
 
 
 	"modifier.tlt_tech.elemental_sword":"元素圣剑",
@@ -78,7 +82,7 @@
 
 	"modifier.tlt_tech.hyper_energy_shielding":"高级能量护盾",
 	"modifier.tlt_tech.hyper_energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
-	"modifier.tlt_tech.hyper_energy_shielding.description":"免疫爆炸、火、窒息、摔落、魔法和闪电伤害。消耗能量抵消伤害，每500FE抵消1伤害。若能量不足则以一半的效率消耗全身能量减伤。\n给予穿戴者正面效果并以40/s的速率增加玩家的伤害吸收，最大获得最大生命5倍的伤害吸收。",
+	"modifier.tlt_tech.hyper_energy_shielding.description":"免疫爆炸、火、窒息、摔落、魔法和闪电伤害。消耗能量抵消伤害，每200FE抵消1伤害。若能量不足则以75%的效率消耗全身能量减伤。\n给予穿戴者正面效果并以40/s的速率增加玩家的伤害吸收，最大获得最大生命5倍的伤害吸收。",
 
 	"modifier.tlt_tech.energy_shielding":"能量护盾",
 	"modifier.tlt_tech.energy_shielding.flavor":"谁会不喜欢一个能量场形成的大盾呢？",
@@ -86,7 +90,19 @@
 
 	"modifier.tlt_tech.supreme_flux_loaded":"极限能量装载",
 	"modifier.tlt_tech.supreme_flux_loaded.flavor":"电能涌动！",
-	"modifier.tlt_tech.supreme_flux_loaded.description":"消耗工具存储的能量增伤，每25FE增加1伤害，最多增加每级200%的独立乘算伤害。",
+	"modifier.tlt_tech.supreme_flux_loaded.description":"消耗工具存储的能量增伤，每5FE增加1伤害，最多增加每级200%的独立乘算伤害。",
+
+	"modifier.tlt_tech.reverse_polarity":"磁极反转",
+	"modifier.tlt_tech.reverse_polarity.flavor":"昔日之盾，今日之矛",
+	"modifier.tlt_tech.reverse_polarity.description":"取消等离子射线炮的音爆伤害转换，并将伤害转换为穿魔伤害。",
+
+	"modifier.tltmod.ever_flaming_core":"炉心永燃",
+	"modifier.tltmod.ever_flaming_core.flavor":"//冶炼炉的火光从不熄灭，直至永恒//",
+	"modifier.tltmod.ever_flaming_core.description":"给予持有者多种正面效果，工具正常使用时不消耗耐久，每级增加能力、防御、升级槽位各两个和50%大部分属性加成及10级时运和抢夺等级，用作工具时附加多种额外伤害、施加目标5%最大生命的真实伤害，并削减目标的血量上限。\n作用于近战武器时，攻击时会释放无限穿透的近程斩击。\n作用于护甲时，提供75%独立递减乘算的伤害减免，死亡时消耗10%耐久重生（冷却60秒）。",
+
+	"modifier.tltmod.stop":"致昏",
+	"modifier.tltmod.stop.flavor":"你的视野开始模糊...你感到晕头转向",
+	"modifier.tltmod.stop.description":"攻击时每级使目标停止行动5秒。",
 
 
 

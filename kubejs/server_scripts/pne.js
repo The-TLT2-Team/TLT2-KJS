@@ -104,7 +104,7 @@ e.custom({
       "item": "tinkers_advanced:penumatic_reinforced_steel"
     },
     {
-      "item": "kubejs:penumatic_reinforced_titanium"
+      "item": "kubejs:pneumatic_reinforced_titanium"
     },
     {
       "item": "tinkers_advanced:activated_chromatic_steel"
@@ -365,6 +365,90 @@ e.custom({
   "temperature": 2200,
   "thermalResistance": 1
 })
+
+e.custom(
+            {
+                "type": "pneumaticcraft:thermo_plant",
+                "exothermic": false,
+                "fluid_input": {
+                    "type": "pneumaticcraft:fluid",
+                    "amount": 100,
+                    "fluid": "thermal:redstone"
+                },
+                "item_input": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 4,
+                    "item": "minecraft:iron_ingot"
+                },
+                "item_output": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 8,
+                    "item": "mekanism:alloy_infused"
+                },
+                "temperature": {
+                    "min_temp": 473
+                },
+                "pressure": 2.0,
+                "speed": 5
+            }
+        )
+e.custom(
+            {
+                "type": "pneumaticcraft:thermo_plant",
+                "exothermic": false,
+                "fluid_input": {
+                    "type": "pneumaticcraft:fluid",
+                    "amount": 200,
+                    "fluid": "tconstruct:molten_diamond"
+                },
+                "item_input": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 4,
+                    "item": "mekanism:alloy_infused"
+                },
+                "item_output": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 8,
+                    "item": "mekanism:alloy_reinforced"
+                },
+                "temperature": {
+                    "min_temp": 473
+                },
+                "pressure": 2.0,
+                "speed": 5
+            }
+        )
+e.custom(
+            {
+                "type": "pneumaticcraft:thermo_plant",
+                "exothermic": false,
+                "fluid_input": {
+                    "type": "pneumaticcraft:fluid",
+                    "amount": 360,
+                    "fluid": "tconstruct:molten_refined_obsidian"
+                },
+                "item_input": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 4,
+                    "item": "mekanism:alloy_reinforced"
+                },
+                "item_output": {
+                    "type": "pneumaticcraft:stacked_item",
+                    "count": 8,
+                    "item": "mekanism:alloy_atomic"
+                },
+                "temperature": {
+                    "min_temp": 473
+                },
+                "pressure": 2.0,
+                "speed": 5
+            }
+        )
+
+
+
+
+
 // function pneumaticArmorCraft(itemHelemet,itemChest,itemLegging,itemBoot,materialId,materialItem){
 // e.custom(
 //   {

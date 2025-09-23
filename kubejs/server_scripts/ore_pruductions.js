@@ -135,33 +135,33 @@ ServerEvents.recipes(event => {
     event.recipes.thermal.bottler('minecraft:tuff',['minecraft:sand',Fluid.of('minecraft:lava',100)])
     event.recipes.thermal.crystallizer('minecraft:diorite',
         ['minecraft:gravel',Fluid.of('tconstruct:molten_glass',10)]).energy(100)
-    event.recipes.thermal.crystallizer(Item.of('minecraft:quartz').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('minecraft:quartz',4).withChance(1),
         ['minecraft:quartz',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('minecraft:glowstone_dust').withChance(2),
-        ['minecraft:glowstone',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('mekanism:fluorite_gem').withChance(8),
+    event.recipes.thermal.crystallizer(Item.of('minecraft:glowstone',2).withChance(1),
+        ['minecraft:glowstone_dust',Fluid.of('mekanism:brine',100)]).energy(10000)
+    event.recipes.thermal.crystallizer(Item.of('mekanism:fluorite_gem',8).withChance(1),
         ['mekanism:fluorite_gem',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('minecraft:amethyst_cluster').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('minecraft:amethyst_cluster',4).withChance(1),
         ['minecraft:amethyst_cluster',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('minecraft:diamond').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('minecraft:diamond',4).withChance(1),
         ['minecraft:diamond',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('minecraft:emerald').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('minecraft:emerald',4).withChance(1),
         ['minecraft:emerald',Fluid.of('mekanism:brine',100)]).energy(10000)
 
-    event.recipes.thermal.crystallizer(Item.of('thermal:niter').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('thermal:niter',4).withChance(1),
         ['thermal:niter',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('thermal:cinnabar').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('thermal:cinnabar',4).withChance(1),
         ['thermal:cinnabar',Fluid.of('mekanism:brine',100)]).energy(10000)
-    event.recipes.thermal.crystallizer(Item.of('thermal:sulfur').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('thermal:sulfur',4).withChance(1),
         ['thermal:sulfur',Fluid.of('mekanism:brine',100)]).energy(10000)
 
-    event.recipes.thermal.crystallizer(Item.of('tconstruct:sky_slime_crystal_cluster').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('tconstruct:sky_slime_crystal_cluster',4).withChance(1),
         ['tconstruct:sky_slime_crystal_cluster',Fluid.of('mekanism:brine',100)]).energy(1600)
-    event.recipes.thermal.crystallizer(Item.of('tconstruct:earth_slime_crystal_cluster').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('tconstruct:earth_slime_crystal_cluster',4).withChance(1),
         ['tconstruct:earth_slime_crystal_cluster',Fluid.of('mekanism:brine',100)]).energy(1600)
-    event.recipes.thermal.crystallizer(Item.of('tconstruct:ichor_slime_crystal_cluster').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('tconstruct:ichor_slime_crystal_cluster',4).withChance(1),
         ['tconstruct:ichor_slime_crystal_cluster',Fluid.of('mekanism:brine',100)]).energy(1600)
-    event.recipes.thermal.crystallizer(Item.of('tconstruct:ender_slime_crystal_cluster').withChance(4),
+    event.recipes.thermal.crystallizer(Item.of('tconstruct:ender_slime_crystal_cluster',4).withChance(1),
         ['tconstruct:ender_slime_crystal_cluster',Fluid.of('mekanism:brine',100)]).energy(1600)
 
     event.recipes.tconstruct.melting(Fluid.of('tconstruct:molten_diamond',400),'createoreexcavation:raw_diamond').temperature(1400).time(10)

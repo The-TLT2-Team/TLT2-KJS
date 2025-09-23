@@ -13,7 +13,7 @@
     "type": "forge:or"
   },
   "craftable": false,
-  "tier": 7,
+  "tier": 9,
   "sortOrder": 2,
   "hidden": false
 }
