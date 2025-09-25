@@ -124,6 +124,14 @@
 	"trait.l2hostility.evil_karma": "恶报",
 	"trait.l2hostility.evil_karma.desc": "怪物被玩家击杀时，将增加击杀者50+当前难度等级%s%的难度等级",
 	"trait.l2hostility.bloody_battle": "血战",
-	"trait.l2hostility.bloody_battle.desc": "怪物第一次死亡时免疫此次死亡并将生命恢复至满，之后25秒内持续损失生命，同时使造成伤害加至400%并使受到伤害减至25%"
+	"trait.l2hostility.bloody_battle.desc": "怪物第一次死亡时免疫此次死亡并将生命恢复至满，之后25秒内持续损失生命，同时使造成伤害加至400%并使受到伤害减至25%",
+	"trait.l2hostility.transfer": "转移",
+	"trait.l2hostility.transfer.desc": "怪物受到伤害时有%s%的概率将攻击者向其周围地点随机传送",
+	"trait.l2hostility.thud": "震击",
+	"trait.l2hostility.thud.desc": "每隔一段时间的攻击将产生极大的击退，并使目标获得%s秒%s级的[震荡]药水效果",
+	"trait.l2hostility.contaminated_blood": "污血",
+	"trait.l2hostility.contaminated_blood.desc": "怪物将只受到50%的伤害，另外的50%中的%s%将以流血的方式减少其生命",
+	"trait.l2hostility.blood_debt": "血债",
+	"trait.l2hostility.blood_debt.desc": "怪物的攻击将只造成50%的伤害，另外的50%将以流血的方式造成伤害，其将无视护甲和魔法防御并格外增加%s%"
 
 }
