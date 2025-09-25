@@ -89,7 +89,7 @@
 	lightning_output = 32000000
 	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
 	#Range: > 0
-	dieselGen_output = 65536
+	dieselGen_output = 131072
 	#The Flux per tick the Blast Furnace Preheater will consume to speed up the Blast Furnace
 	#Range: > 1
 	preheater_consumption = 32
@@ -318,7 +318,7 @@
 		consumption = 2048
 		#The speed of the Excavator. Basically translates to how many degrees per tick it will turn.
 		#Range: 0.001 ~ 1000.0
-		speed = 2.0
+		speed = 4.0
 		#Set this to false to disable the ridiculous amounts of particles the Excavator spawns
 		particles = true
 		#The threshold the perlin noise has to cross for a mineral vein to be generated. Higher means less likely.

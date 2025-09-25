@@ -134,7 +134,7 @@
 	[Devices.Fisher]
 		#This sets the base time constant (in ticks) for the Aquatic Entangler.
 		#Range: 400 ~ 72000
-		"Time Constant" = 4800
+		"Time Constant" = 1200
 		#This sets the time constant reduction (in ticks) per nearby Water source block for the Aquatic Entangler.
 		#Range: 1 ~ 1000
 		"Water Source Time Constant Reduction" = 20
@@ -187,7 +187,7 @@
 	[Recipes.Crucible]
 		#This sets the recipe energy multiplier for the Magma Crucible. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
-		"Energy Multiplier" = 1.0
+		"Energy Multiplier" = 0.5
 
 	[Recipes.Chiller]
 		#This sets the recipe energy multiplier for the Blast Chiller. This scales all recipe energy requirements.
@@ -237,32 +237,32 @@
 	[Dynamos.Compression]
 		#This sets the base power generation (RF/t) for the Compression Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60
+		"Base Power" = 80
 
 	[Dynamos.Magmatic]
 		#This sets the base power generation (RF/t) for the Magmatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 30
+		"Base Power" = 10
 
 	[Dynamos.Numismatic]
 		#This sets the base power generation (RF/t) for the Numismatic Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 40
+		"Base Power" = 80
 
 	[Dynamos.Lapidary]
 		#This sets the base power generation (RF/t) for the Lapidary Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60
+		"Base Power" = 80
 
 	[Dynamos.Disenchantment]
 		#This sets the base power generation (RF/t) for the Disenchantment Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 80
+		"Base Power" = 100
 
 	[Dynamos.Gourmand]
 		#This sets the base power generation (RF/t) for the Gourmand Dynamo.
 		#Range: 10 ~ 32000
-		"Base Power" = 60
+		"Base Power" = 80
 
 [Machines]
 
@@ -319,7 +319,7 @@
 	[Machines.Pyrolyzer]
 		#This sets the base power consumption (RF/t) for the Pyrolyzer.
 		#Range: 1 ~ 32000
-		"Base Power" = 5
+		"Base Power" = 10
 
 	[Machines.Bottler]
 		#This sets the base power consumption (RF/t) for the Fluid Encapsulator.
@@ -329,7 +329,7 @@
 	[Machines.Brewer]
 		#This sets the base power consumption (RF/t) for the Crystallizer.
 		#Range: 1 ~ 32000
-		"Base Power" = 5
+		"Base Power" = 10
 
 	[Machines.Crafter]
 		#This sets the base power consumption (RF/t) for the Sequential Fabricator.
