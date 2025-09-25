@@ -115,5 +115,15 @@
 	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
 	"tooltip.kubejs.found_in_nether":"发现于下界",
 	"tooltip.kubejs.found_in_end":"发现于末地",
-	"tooltip.kubejs.contributor":"- %s 贡献者材料 -"
+	"tooltip.kubejs.contributor":"- %s 贡献者材料 -",
+
+	"trait.l2hostility.defense": "格挡",
+	"trait.l2hostility.defense.desc": "怪物将免疫小于自身最大生命值3%乘%s的伤害",
+	"trait.l2hostility.furious": "狂暴",
+	"trait.l2hostility.furious.desc": "怪物受到的伤害增加%2$s%，造成的伤害增加%1$s%",
+	"trait.l2hostility.evil_karma": "恶报",
+	"trait.l2hostility.evil_karma.desc": "怪物被玩家击杀时，将增加击杀者50+当前难度等级%s%的难度等级",
+	"trait.l2hostility.bloody_battle": "血战",
+	"trait.l2hostility.bloody_battle.desc": "怪物第一次死亡时免疫此次死亡并将生命恢复至满，之后25秒内持续损失生命，同时使造成伤害加至400%并使受到伤害减至25%"
+
 }
