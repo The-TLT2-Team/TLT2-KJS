@@ -110,6 +110,17 @@
 	"modifier.tltmod.in_the_name_of_love_and_hate.description":"长按右键进行蓄力，根据蓄力时间发射充能激光。按Shift查看工具提示栏中的切换按键。",
 
 
+	"modifier.tltmod.blessing_from_fox_god":"狐神赐福",
+	"modifier.tltmod.blessing_from_fox_god.flavor":"狐神的低语化作屏障，替你吞噬一切灾厄。",
+	"modifier.tltmod.blessing_from_fox_god.description":"每级提供能力，防御，升级，术石槽各一个。免疫大多数环境伤害以及穿甲伤害。每100点魔力抵挡1点伤害，每tick每级恢复20点魔力。",
+
+
+	"modifier.tltmod.power_of_prayer":"祈愿之力",
+	"modifier.tltmod.power_of_prayer.flavor":"虔诚的祈愿化作现实的力量。",
+	"modifier.tltmod.power_of_prayer.description":"每级提高10%的全属性。",
+
+
+
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
 	"fluid.kubejs.molten_awaken_chromatic_steel": "熔融觉醒彩钢",
