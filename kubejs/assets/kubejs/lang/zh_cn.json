@@ -150,7 +150,7 @@
 	"trait.l2hostility.critical_hit.desc": "每次攻击都有%2$s%的概率使该次攻击的伤害增加%1$s%",
 	"trait.l2hostility.vector_stance": "向量立场",
 	"trait.l2hostility.vector_stance.desc": "位置位于自身正面的生物对自身造成的伤害将减少%s%",
-	"trait.l2hostility.blood_debt.desc": "怪物的攻击将只造成50%的伤害，另外的50%将以流血的方式造成伤害，其将无视护甲和魔法防御并格外增加%s%",
+
 
 	"key.categories.tlt": "TLT Core",
 	"key.tltmod.switch": "切换模式"
