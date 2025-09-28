@@ -25,7 +25,8 @@
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
-
+	"entity.tltmod.wave_slash": "波动斩",
+	"entity.tltmod.laser_a": "聚能激光",
 
 	"material.tlt_tech.pneumatic_reinforced_titanium":"气锻复合钛",
 	"material.tlt_tech.pneumatic_reinforced_titanium.flavor":"高强度材料！",
@@ -116,10 +117,25 @@
 	"modifier.tlt_tech.ore_capture":"矿物凝聚",
 	"modifier.tlt_tech.ore_capture.flavor":"无！中！生！有！",
 	"modifier.tlt_tech.ore_capture.description":"偶尔消耗魔力向战利品表内塞入几个矿石，每次生成消耗100mana。等级越高生成量和概率越大。",
-	
+
 	"modifier.tlt_tech.ore_resonance":"矿物共鸣",
 	"modifier.tlt_tech.ore_resonance.flavor":"是稀土，我加了稀土！",
 	"modifier.tlt_tech.ore_resonance.description":"背包中每有一种矿石，增加2的护甲值、护甲韧性、最大生命、运气和2%伤害减免（最大35%）。粗矿只能得到一半的收益。",
+
+	"modifier.tltmod.in_the_name_of_love_and_hate":"聚能激光",
+	"modifier.tltmod.in_the_name_of_love_and_hate.flavor":"以爱与憎恨之名",
+	"modifier.tltmod.in_the_name_of_love_and_hate.description":"长按右键进行蓄力，根据蓄力时间发射充能激光。按Shift查看工具提示栏中的切换按键。",
+
+
+	"modifier.tltmod.blessing_from_fox_god":"狐神赐福",
+	"modifier.tltmod.blessing_from_fox_god.flavor":"狐神的低语化作屏障，替你吞噬一切灾厄。",
+	"modifier.tltmod.blessing_from_fox_god.description":"每级提供能力，防御，升级，术石槽各一个。免疫大多数环境伤害以及穿甲伤害。每100点魔力抵挡1点伤害，每tick每级恢复20点魔力。",
+
+
+	"modifier.tltmod.power_of_prayer":"祈愿之力",
+	"modifier.tltmod.power_of_prayer.flavor":"虔诚的祈愿化作现实的力量。",
+	"modifier.tltmod.power_of_prayer.description":"每级提高10%的全属性。",
+
 
 
 
@@ -132,5 +148,41 @@
 	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
 	"tooltip.kubejs.found_in_nether":"发现于下界",
 	"tooltip.kubejs.found_in_end":"发现于末地",
-	"tooltip.kubejs.contributor":"- %s 贡献者材料 -"
+	"tooltip.kubejs.contributor":"- %s 贡献者材料 -",
+
+	"trait.l2hostility.defense": "格挡",
+	"trait.l2hostility.defense.desc": "免疫小于自身最大生命值3%乘%s的伤害",
+	"trait.l2hostility.furious": "狂暴",
+	"trait.l2hostility.furious.desc": "受到的伤害增加%2$s%，造成的伤害增加%1$s%",
+	"trait.l2hostility.evil_karma": "恶报",
+	"trait.l2hostility.evil_karma.desc": "被玩家击杀时，将增加击杀者50+当前难度等级%s%的难度等级",
+	"trait.l2hostility.bloody_battle": "血战",
+	"trait.l2hostility.bloody_battle.desc": "第一次死亡时免疫此次死亡并将生命恢复至满，之后25秒内持续损失生命，同时使造成伤害加至400%并使受到伤害减至25%",
+	"trait.l2hostility.transfer": "转移",
+	"trait.l2hostility.transfer.desc": "受到伤害时有%s%的概率将攻击者向其周围地点随机传送",
+	"trait.l2hostility.thud": "震击",
+	"trait.l2hostility.thud.desc": "每隔一段时间的攻击将产生极大的击退，并使目标获得%s秒%s级的[震荡]药水效果",
+	"trait.l2hostility.contaminated_blood": "污血",
+	"trait.l2hostility.contaminated_blood.desc": "只受到50%的伤害，另外的50%中的%s%将以流血的方式减少其生命",
+	"trait.l2hostility.blood_debt": "血债",
+	"trait.l2hostility.blood_debt.desc": "攻击将只造成50%的伤害，另外的50%将以流血的方式造成伤害，其将无视护甲和魔法防御并格外增加%s%",
+	"trait.l2hostility.titan_bloodline": "泰坦血脉",
+	"trait.l2hostility.titan_bloodline.desc": "造成的伤害格外增加自身最大生命的5%，受到伤害时将会增长当前%s%的最大生命，最多增加10次",
+	"trait.l2hostility.show_sword": "亮剑",
+	"trait.l2hostility.show_sword.desc": "造成的伤害增加%2$s%，免疫相距大于%1$s格的生物的伤害，但也无法对其造成伤害",
+	"trait.l2hostility.devouring_life": "噬生",
+	"trait.l2hostility.devouring_life.desc": "造成的伤害将按其%s%的数值治愈自己",
+	"trait.l2hostility.harvest_sharing": "同甘",
+	"trait.l2hostility.harvest_sharing.desc": "周围20格以内的任何生物若恢复生命，自己则恢复相当于其恢复量%s%的生命",
+	"trait.l2hostility.critical_hit": "暴击",
+	"trait.l2hostility.critical_hit.desc": "每次攻击都有%2$s%的概率使该次攻击的伤害增加%1$s%",
+	"trait.l2hostility.vector_stance": "向量立场",
+	"trait.l2hostility.vector_stance.desc": "位置位于自身正面的生物对自身造成的伤害将减少%s%",
+
+	"trait.l2hostility.magala_erode": "狂蚀",
+	"trait.l2hostility.magala_erode.desc": "自身克服了狂龙症并在攻击和受伤时对目标施加狂龙症",
+
+	"key.categories.tlt": "TLT Core",
+	"key.tltmod.switch": "切换模式"
+
 }
