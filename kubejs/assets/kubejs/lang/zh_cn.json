@@ -181,6 +181,8 @@
 
 	"trait.l2hostility.magala_erode": "狂蚀",
 	"trait.l2hostility.magala_erode.desc": "自身克服了狂龙症并在攻击和受伤时对目标施加狂龙症",
+	"trait.l2hostility.broken_armor": "碎甲",
+	"trait.l2hostility.broken_armor.desc": "攻击时会施加%s秒的碎甲效果减少你的护甲值，重复施加会提高等级并延长时效",
 
 	"key.categories.tlt": "TLT Core",
 	"key.tltmod.switch": "切换模式"
