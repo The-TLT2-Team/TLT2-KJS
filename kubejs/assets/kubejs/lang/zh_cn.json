@@ -21,6 +21,7 @@
 	"item.kubejs.polonium_dust":"钋粉",
 	"item.kubejs.awaken_chromatic_steel":"觉醒彩钢锭",
 	"item.kubejs.compressed_chromatic_steel":"高压彩钢锭",
+	"item.kubejs.orechidysprosium":"凝矿镧",
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
@@ -41,6 +42,10 @@
 	"material.kubejs.hephaestus":"神匠",
 	"material.kubejs.hephaestus.flavor":"无尽99%力量的来源。",
 	"material.kubejs.hephaestus.encyclopedia":"你旅途的物理顶点，拥有令混沌龙分崩离析的力量。",
+
+	"material.kubejs.orechidysprosium":"凝矿镧",
+	"material.kubejs.orechidysprosium.flavor":"种矿得矿！",
+	"material.kubejs.orechidysprosium.encyclopedia":"很遗憾，它依然无法给你带来更多稀土金属。",
 
 
 
@@ -103,6 +108,18 @@
 	"modifier.tltmod.stop":"致昏",
 	"modifier.tltmod.stop.flavor":"你的视野开始模糊...你感到晕头转向",
 	"modifier.tltmod.stop.description":"攻击时每级使目标停止行动5秒。",
+
+	"modifier.tlt_tech.magical_ores":"魔法矿石",
+	"modifier.tlt_tech.magical_ores.flavor":"我的矿物有魔力！",
+	"modifier.tlt_tech.magical_ores.description":"背包中每有一种矿石，增加独立乘算的8%的伤害。粗矿只能得到一半的收益。",
+
+	"modifier.tlt_tech.ore_capture":"矿物凝聚",
+	"modifier.tlt_tech.ore_capture.flavor":"无！中！生！有！",
+	"modifier.tlt_tech.ore_capture.description":"偶尔消耗魔力向战利品表内塞入几个矿石，每次生成消耗100mana。等级越高生成量和概率越大。",
+	
+	"modifier.tlt_tech.ore_resonance":"矿物共鸣",
+	"modifier.tlt_tech.ore_resonance.flavor":"是稀土，我加了稀土！",
+	"modifier.tlt_tech.ore_resonance.description":"背包中每有一种矿石，增加2的护甲值、护甲韧性、最大生命、运气和2%伤害减免（最大35%）。粗矿只能得到一半的收益。",
 
 
 

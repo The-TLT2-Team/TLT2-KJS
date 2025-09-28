@@ -239,6 +239,7 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["tlt_tech:compressed_chromatic_steel","kubejs:compressed_chromatic_steel"])
     craftableMaterial(["tlt_tech:pneumatic_reinforced_titanium","kubejs:pneumatic_reinforced_titanium"])
     metalMaterial(["kubejs:hephaestus","kubejs:molten_hephaestus","kubejs:hephaestus_ingot",7995])
+    craftableMaterial(["kubejs:orechidysprosium","kubejs:orechidysprosium"])
 })
 
 
@@ -276,11 +277,12 @@ function gripStat(accuracy,durability,melee_damage){
         "melee_damage": melee_damage
     }
 }
-function platingStat(armor,durability,knockback_resistance){
+function platingStat(armor,durability,knockback_resistance,toughness){
     return {
         "armor": armor,
         "durability": durability,
-        "knockback_resistance": knockback_resistance
+        "knockback_resistance": knockback_resistance,
+        "toughness": toughness
     }
 }
 function platingShieldStat(durability,knockback_resistance){
@@ -465,14 +467,28 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.HEAD,headStat(10000,16,16,MiningTiers.INFINITY))
     .addStat(MaterialStatIds.HANDLE,handleStat(1.5,1.5,1.5,1.5))
     .addStat(MaterialStatIds.GRIP,gripStat(1,1.5,16))
-    .addStat(MaterialStatIds.LIMB,limbStat(1.5,1.5,1.5,1))
-    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(16,10000,1))
-    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(24,15000,1))
-    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(30,20000,1))
-    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(12,12000,1))
+    .addStat(MaterialStatIds.LIMB,limbStat(10000,1.5,1.5,1))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(16,10000,1,16))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(24,15000,1,16))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(30,20000,1,16))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(12,12000,1,16))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
     .addDefault("tltmod:ever_flaming_core",1)
     .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:ever_flaming_core",1).addModifier("tltmod:stop",1).build()
+    .build()
+
+    buildMaterial('kubejs','orechidysprosium').setTier(5).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(790,6,12,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.9,0.25,0.5,0.3))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.9,6))
+    .addStat(MaterialStatIds.LIMB,limbStat(690,0.3,0.3,0.05))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,675,0,2))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5,795,0,2))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7,875,0,2))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(4,722,0,2))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tlt_tech:magical_ores",1).addDefault("tlt_tech:ore_capture",1).addDefault("etstlib:mana_repair",1)
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("tlt_tech:ore_resonance",1).addModifier("etstlib:mana_repair",2).build()
     .build()
 
 
