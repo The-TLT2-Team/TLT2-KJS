@@ -204,8 +204,14 @@
 	"trait.l2hostility.critical_hit.desc": "每次攻击都有%2$s%的概率使该次攻击的伤害增加%1$s%",
 	"trait.l2hostility.vector_stance": "向量立场",
 	"trait.l2hostility.vector_stance.desc": "位置位于自身正面的生物对自身造成的伤害将减少%s%",
+	"trait.l2hostility.absorb_mana": "汲魔",
+	"trait.l2hostility.absorb_mana.desc": "以%3$s+该物品魔力总上限%2$s%每秒的速度持续吸收减少周围%1$s格玩家背包中存储魔力的物品的魔力",
 	"trait.l2hostility.magala_erode": "狂蚀",
 	"trait.l2hostility.magala_erode.desc": "自身克服了狂龙症并在攻击和受伤时对目标施加狂龙症",
+	"trait.l2hostility.broken_armor": "碎甲",
+	"trait.l2hostility.broken_armor.desc": "攻击时会施加%s秒的碎甲效果减少你的护甲值，重复施加会提高等级并延长时效",
+	"trait.l2hostility.devouring_electricity": "噬电",
+	"trait.l2hostility.devouring_electricity.desc": "以%3$s+该物品能量FE总上限%2$s%每秒的速度持续吸收减少周围%1$s格玩家背包中存储能量FE的物品的能量FE",
 
 	"key.categories.tlt": "TLT Core",
 	"key.tltmod.switch": "切换模式"
