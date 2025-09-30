@@ -186,4 +186,9 @@ ClientEvents.highPriorityAssets(event=>{
     .addPalette(addColor(178,"FFC2A58D"))
     .addPalette(addColor(216,"FFDBC0C2"))
     .addPalette(addColor(255,"FFF0E8FF")).build()
+    
+    buildMaterial('kubejs','reinforced_plate')
+    .addStat(ArmorStatIds.ARMOR_MAILLE).addStat(ArmorStatIds.SHIELD_CORE).addStat(ArmorStatIds.MAILLE).addStat(ArmorStatIds.PLATING_SHIELD)
+    .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33").build()
+
 })

@@ -240,6 +240,7 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["tlt_tech:pneumatic_reinforced_titanium","kubejs:pneumatic_reinforced_titanium"])
     metalMaterial(["kubejs:hephaestus","kubejs:molten_hephaestus","kubejs:hephaestus_ingot",7995])
     craftableMaterial(["kubejs:orechidysprosium","kubejs:orechidysprosium"])
+    craftableMaterial(["kubejs:reinforced_plate","create:sturdy_sheet"])
 })
 
 
@@ -490,6 +491,10 @@ ServerEvents.highPriorityData(event=>{
     .addDefault("tlt_tech:magical_ores",1).addDefault("tlt_tech:ore_capture",1).addDefault("etstlib:mana_repair",1)
     .buildPerstat(MaterialTypes.ARMOR).addModifier("tlt_tech:ore_resonance",1).addModifier("etstlib:mana_repair",2).build()
     .build()
+    
+    buildMaterial('kubejs','reinforced_plate').setTier(4).setCraftable().build()
+    .addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tltmod:heat_tendency",1).addDefault("tltmod:reinforced",1).build()
 
 
 })

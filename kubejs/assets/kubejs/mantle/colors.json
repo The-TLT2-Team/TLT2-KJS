@@ -31,6 +31,8 @@
     "excalibur_burst":"#FFFF20",
     "far_sights":"#5E5CFF",
     "never_ends_startup":"#024F43",
+    "heat_tendency":"#F79100",
+    "reinforced":"#16111C",
     "piglin_defense":"#E5BC4E"
   }
 }

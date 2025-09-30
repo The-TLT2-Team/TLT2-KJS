@@ -2,14 +2,14 @@
   "stats": {
     "tconstruct:binding": {},
     "tconstruct:handle": {
-      "durability": 0.15,
-      "mining_speed": 0.075,
-      "melee_speed": 0.075,
-      "melee_damage": 0.075
+      "durability": 0.3,
+      "mining_speed": 0.2,
+      "melee_speed": 0.1,
+      "melee_damage": 0.0
     },
     "tconstruct:head": {
       "durability": 705,
-      "mining_speed": 5,
+      "mining_speed": 6,
       "mining_tier": "minecraft:diamond",
       "melee_attack": 2
     },

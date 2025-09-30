@@ -4,5 +4,17 @@
       "name": "tinkersinnovation:sturdy",
       "level": 1
     }
-  ]
+  ],
+  "perStat": {
+    "tconstruct:melee_harvest": [
+      {
+      "name": "tinkersinnovation:sturdy",
+      "level": 1
+      },
+      {
+        "name": "tltmod:prime_of_garbage_stones",
+        "level": 1
+      }
+    ]
+  }
 }

@@ -48,6 +48,9 @@
 	"material.kubejs.orechidysprosium.flavor":"种矿得矿！",
 	"material.kubejs.orechidysprosium.encyclopedia":"很遗憾，它依然无法给你带来更多稀土金属。",
 
+	"material.kubejs.reinforced_plate":"坚固板",
+	"material.kubejs.reinforced_plate.flavor":"黑曜石强化！",
+
 
 
 	"modifier.tlt_tech.elemental_sword":"元素圣剑",
@@ -158,7 +161,17 @@
 	"modifier.tltmod.far_sights.flavor":"让我的意志随着这个魔力束而去！",
 	"modifier.tltmod.far_sights.description":"放弃你的全部触及半径，让魔力脉冲给予你答复。\n+100射线携带魔力，+50射线命中方块消耗；工具释放的魔力射线在攻击/挖掘时触发工具词条。",
 
+	"modifier.tltmod.heat_tendency":"热相容",
+	"modifier.tltmod.heat_tendency.flavor":"火焰只会让我更坚固",
+	"modifier.tltmod.heat_tendency.description":"给予穿戴者抗火效果，穿戴者着火时缓慢修补自身。",
 
+	"modifier.tltmod.prime_of_garbage_stones":"废石之律者",
+	"modifier.tltmod.prime_of_garbage_stones.flavor":"任何废石终将绳之以法！",
+	"modifier.tltmod.prime_of_garbage_stones.description":"吞噬一切是岩石但不是石头或深板岩的掉落物，有概率留下些许安山合金。",
+
+	"modifier.tltmod.reinforced":"稳固化",
+	"modifier.tltmod.reinforced.flavor":"耐用性更上一层楼！",
+	"modifier.tltmod.reinforced.description":"工具不再因某些操作而损失双倍或者更多耐久了。",
 
 
 
@@ -205,13 +218,13 @@
 	"trait.l2hostility.vector_stance": "向量立场",
 	"trait.l2hostility.vector_stance.desc": "位置位于自身正面的生物对自身造成的伤害将减少%s%",
 	"trait.l2hostility.absorb_mana": "汲魔",
-	"trait.l2hostility.absorb_mana.desc": "以%3$s+该物品魔力总上限%2$s%每秒的速度持续吸收减少周围%1$s格玩家背包中存储魔力的物品的魔力",
+	"trait.l2hostility.absorb_mana.desc": "每10tick从5格半径内玩家身上吸取%smana的魔力",
 	"trait.l2hostility.magala_erode": "狂蚀",
 	"trait.l2hostility.magala_erode.desc": "自身克服了狂龙症并在攻击和受伤时对目标施加狂龙症",
 	"trait.l2hostility.broken_armor": "碎甲",
 	"trait.l2hostility.broken_armor.desc": "攻击时会施加%s秒的碎甲效果减少你的护甲值，重复施加会提高等级并延长时效",
 	"trait.l2hostility.devouring_electricity": "噬电",
-	"trait.l2hostility.devouring_electricity.desc": "以%3$s+该物品能量FE总上限%2$s%每秒的速度持续吸收减少周围%1$s格玩家背包中存储能量FE的物品的能量FE",
+	"trait.l2hostility.devouring_electricity.desc": "每5tick从6格半径内玩家快捷栏和装备栏的每件装备中吸取%skFE的能量",
 
 	"key.categories.tlt": "TLT Core",
 	"key.tltmod.switch": "切换模式"
