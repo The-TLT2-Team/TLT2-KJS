@@ -137,6 +137,10 @@
 	"modifier.tltmod.power_of_prayer.flavor":"虔诚的祈愿化作现实的力量。",
 	"modifier.tltmod.power_of_prayer.description":"每级提高10%的全属性。",
 
+	"modifier.tltmod.mana_refactor":"魔力重构",
+	"modifier.tltmod.mana_refactor.flavor":"该想办法填满它了。",
+	"modifier.tltmod.mana_refactor.description":"每级提供2kw的Mana存储。",
+
 	"modifier.tltmod.never_ends_startup":"永不结束之开端",
 	"modifier.tltmod.never_ends_startup.flavor":"终末之地远远不是终点。",
 	"modifier.tltmod.never_ends_startup.description":"施加于护甲时令末影人与你强制中立并阻止对你带有敌意生物的传送。施加于工具时对末影人造成双倍伤害。\n-仅七咒模式下生效-",
