@@ -119,6 +119,10 @@
 	"modifier.tltmod.power_of_prayer.flavor":"虔诚的祈愿化作现实的力量。",
 	"modifier.tltmod.power_of_prayer.description":"每级提高10%的全属性。",
 
+	"modifier.tltmod.mana_refactor":"魔力重构",
+	"modifier.tltmod.mana_refactor.flavor":"该想办法填满它了。",
+	"modifier.tltmod.mana_refactor.description":"每级提供2kw的Mana存储。",
+
 
 
 
