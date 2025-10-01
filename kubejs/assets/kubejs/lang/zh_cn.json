@@ -173,6 +173,10 @@
 	"modifier.tltmod.reinforced.flavor":"耐用性更上一层楼！",
 	"modifier.tltmod.reinforced.description":"工具不再因某些操作而损失双倍或者更多耐久了。",
 
+	"modifier.tltmod.the_cursed_one":"被诅咒者",
+	"modifier.tltmod.the_cursed_one.flavor":"拥抱诅咒，接受祝福。",
+	"modifier.tltmod.the_cursed_one.description":"你的工具会随使用而不断变强。\n-仅七咒模式-",
+
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
@@ -188,6 +192,15 @@
 	"tooltip.tltmod.mana_per_burst":"魔力脉冲能量：",
 	"tooltip.tltmod.mana_per_entity": "实体魔力消耗：",
 	"tooltip.tltmod.mana_per_block": "方块魔力消耗：",
+	"tooltip.tltmod.upgrade_on_damage":"磨损工具以使其变强：",
+	"tooltip.tltmod.upgrade_on_hit": "用工具攻击以使其变强：",
+	"tooltip.tltmod.upgrade_on_kill": "击杀敌人以使其变强：",
+	"tooltip.tltmod.upgrade_progress": "进度",
+	"tooltip.tltmod.end_of_upgrade": "极点",
+	"tooltip.tltmod.orbs_left": "你的剩余使用次数：",
+	"tooltip.tltmod.no_orbs_left": "你已不再能使用此物品",
+	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
+	"tooltip.tltmod.cursed_ring_replacement2": "§5- 你合成出的匠魂工具将会附带 §6一个特殊词条",
 
 	"trait.l2hostility.defense": "格挡",
 	"trait.l2hostility.defense.desc": "免疫小于自身最大生命值3%乘%s的伤害",
@@ -227,6 +240,11 @@
 	"trait.l2hostility.devouring_electricity.desc": "每5tick从6格半径内玩家快捷栏和装备栏的每件装备中吸取%skFE的能量",
 
 	"key.categories.tlt": "TLT Core",
-	"key.tltmod.switch": "切换模式"
+	"key.tltmod.switch": "切换模式",
+
+	"message.tltmod.upgraded_cursed_tool_1": "你的工具在诅咒的力量下变得更加坚固了，+1能力槽和工具大部分属性。",
+	"message.tltmod.upgraded_cursed_tool_2": "你逐渐开始适应诅咒，你的工具也在跟随你的脚步逐渐变强，+1能力槽和5%大部分属性。",
+	"message.tltmod.upgraded_cursed_tool_3": "戒指的诅咒只会让你和你的工具意念合一，你的工具变得更愿意为你效力，+1能力槽和5%大部分属性。",
+	"message.tltmod.upgraded_cursed_tool_4": "诅咒就像你和工具间的润滑剂，随着你对工具的不断调教，被诅咒的它最终彻底成为了你的所有物，愿意为你献上自己的全部，+1能力槽和5%大部分属性。"
 
 }
