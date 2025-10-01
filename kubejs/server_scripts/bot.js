@@ -1,0 +1,11 @@
+ServerEvents.recipes(event=>{
+    event.recipes.botania.petal_apothecary('2x kubejs:orechidysprosium',['botania:orechid','botania:terrasteel_ingot','#forge:ores/copper','#forge:ores/iron','#forge:ores/gold','#botania:petals/yellow','#botania:petals/cyan','#botania:petals/red'])
+    event.recipes.botania.orechid('thermal:deepslate_lead_ore','deepslate',75)
+    event.recipes.botania.orechid('thermal:deepslate_cinnabar_ore','deepslate',75)
+    event.recipes.botania.orechid('mekanism:deepslate_uranium_ore','deepslate',75)
+    event.recipes.botania.orechid('thermal:tin_ore','stone',10000)
+    event.recipes.botania.orechid('thermal:nickel_ore','stone',10000)
+    event.recipes.botania.orechid('create:zinc_ore','stone',10000)
+    event.recipes.botania.orechid('mekanism:osmium_ore','stone',10000)
+    event.recipes.botania.orechid('thermal:deepslate_silver_ore','deepslate',75)
+})

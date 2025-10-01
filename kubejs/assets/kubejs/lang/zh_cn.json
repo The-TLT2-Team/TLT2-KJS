@@ -21,10 +21,11 @@
 	"item.kubejs.polonium_dust":"钋粉",
 	"item.kubejs.awaken_chromatic_steel":"觉醒彩钢锭",
 	"item.kubejs.compressed_chromatic_steel":"高压彩钢锭",
+	"item.kubejs.orechidysprosium":"凝矿镧",
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
-	"entity.tltmod.wave_slash": "entity.tltmod.wave_slash（需要翻译）",
+	"entity.tltmod.wave_slash": "波动斩",
 	"entity.tltmod.laser_a": "聚能激光",
 
 	"material.tlt_tech.pneumatic_reinforced_titanium":"气锻复合钛",
@@ -42,6 +43,13 @@
 	"material.kubejs.hephaestus":"神匠",
 	"material.kubejs.hephaestus.flavor":"无尽99%力量的来源。",
 	"material.kubejs.hephaestus.encyclopedia":"你旅途的物理顶点，拥有令混沌龙分崩离析的力量。",
+
+	"material.kubejs.orechidysprosium":"凝矿镧",
+	"material.kubejs.orechidysprosium.flavor":"种矿得矿！",
+	"material.kubejs.orechidysprosium.encyclopedia":"很遗憾，它依然无法给你带来更多稀土金属。",
+
+	"material.kubejs.reinforced_plate":"坚固板",
+	"material.kubejs.reinforced_plate.flavor":"黑曜石强化！",
 
 
 
@@ -105,15 +113,25 @@
 	"modifier.tltmod.stop.flavor":"你的视野开始模糊...你感到晕头转向",
 	"modifier.tltmod.stop.description":"攻击时每级使目标停止行动5秒。",
 
+	"modifier.tlt_tech.magical_ores":"魔法矿石",
+	"modifier.tlt_tech.magical_ores.flavor":"我的矿物有魔力！",
+	"modifier.tlt_tech.magical_ores.description":"背包中每有一种矿石，增加独立乘算的8%的伤害。粗矿只能得到一半的收益。",
+
+	"modifier.tlt_tech.ore_capture":"矿物凝聚",
+	"modifier.tlt_tech.ore_capture.flavor":"无！中！生！有！",
+	"modifier.tlt_tech.ore_capture.description":"偶尔消耗魔力向战利品表内塞入几个矿石，每次生成消耗100mana。等级越高生成量和概率越大。",
+
+	"modifier.tlt_tech.ore_resonance":"矿物共鸣",
+	"modifier.tlt_tech.ore_resonance.flavor":"是稀土，我加了稀土！",
+	"modifier.tlt_tech.ore_resonance.description":"背包中每有一种矿石，增加2的护甲值、护甲韧性、最大生命、运气和2%伤害减免（最大35%）。粗矿只能得到一半的收益。",
+
 	"modifier.tltmod.in_the_name_of_love_and_hate":"聚能激光",
 	"modifier.tltmod.in_the_name_of_love_and_hate.flavor":"以爱与憎恨之名",
 	"modifier.tltmod.in_the_name_of_love_and_hate.description":"长按右键进行蓄力，根据蓄力时间发射充能激光。按Shift查看工具提示栏中的切换按键。",
 
-
 	"modifier.tltmod.blessing_from_fox_god":"狐神赐福",
 	"modifier.tltmod.blessing_from_fox_god.flavor":"狐神的低语化作屏障，替你吞噬一切灾厄。",
 	"modifier.tltmod.blessing_from_fox_god.description":"每级提供能力，防御，升级，术石槽各一个。免疫大多数环境伤害以及穿甲伤害。每100点魔力抵挡1点伤害，每tick每级恢复20点魔力。",
-
 
 	"modifier.tltmod.power_of_prayer":"祈愿之力",
 	"modifier.tltmod.power_of_prayer.flavor":"虔诚的祈愿化作现实的力量。",
@@ -123,6 +141,41 @@
 	"modifier.tltmod.mana_refactor.flavor":"该想办法填满它了。",
 	"modifier.tltmod.mana_refactor.description":"每级提供2kw的Mana存储。",
 
+	"modifier.tltmod.never_ends_startup":"永不结束之开端",
+	"modifier.tltmod.never_ends_startup.flavor":"终末之地远远不是终点。",
+	"modifier.tltmod.never_ends_startup.description":"施加于护甲时令末影人与你强制中立并阻止对你带有敌意生物的传送。施加于工具时对末影人造成双倍伤害。\n-仅七咒模式下生效-",
+
+	"modifier.tltmod.piglin_defense":"猪灵防御",
+	"modifier.tltmod.piglin_defense.flavor":"猪猪那么可爱，为什么要杀猪猪。",
+	"modifier.tltmod.piglin_defense.description":"装备时使猪灵、僵尸猪灵强制中立。\n-仅七咒模式下生效-",
+
+	"modifier.tltmod.terra_burst":"泰拉射线",
+	"modifier.tltmod.terra_burst.flavor":"一切一切的开始",
+	"modifier.tltmod.terra_burst.description":"挥舞武器，消耗魔力释放泰拉射线。\n+50射线携带魔力，+7射线伤害。",
+
+	"modifier.tltmod.alf_burst":"精灵射线",
+	"modifier.tltmod.alf_burst.flavor":"强化剑气！",
+	"modifier.tltmod.alf_burst.description":"挥舞武器，消耗魔力释放精灵射线。\n+100射线携带魔力，+8射线伤害。",
+
+	"modifier.tltmod.excalibur_burst":"王者圣剑",
+	"modifier.tltmod.excalibur_burst.flavor":"吾王剑锋所指，吾心之所向。",
+	"modifier.tltmod.excalibur_burst.description":"令工具发射的魔力射线能追踪敌人。\n+50射线携带魔力，+50射线命中实体消耗，+9射线伤害。",
+
+	"modifier.tltmod.far_sights":"目光远大",
+	"modifier.tltmod.far_sights.flavor":"让我的意志随着这个魔力束而去！",
+	"modifier.tltmod.far_sights.description":"放弃你的全部触及半径，让魔力脉冲给予你答复。\n+100射线携带魔力，+50射线命中方块消耗；工具释放的魔力射线在攻击/挖掘时触发工具词条。",
+
+	"modifier.tltmod.heat_tendency":"热相容",
+	"modifier.tltmod.heat_tendency.flavor":"火焰只会让我更坚固",
+	"modifier.tltmod.heat_tendency.description":"给予穿戴者抗火效果，穿戴者着火时缓慢修补自身。",
+
+	"modifier.tltmod.prime_of_garbage_stones":"废石之律者",
+	"modifier.tltmod.prime_of_garbage_stones.flavor":"任何废石终将绳之以法！",
+	"modifier.tltmod.prime_of_garbage_stones.description":"吞噬一切是岩石但不是石头或深板岩的掉落物，有概率留下些许安山合金。",
+
+	"modifier.tltmod.reinforced":"稳固化",
+	"modifier.tltmod.reinforced.flavor":"耐用性更上一层楼！",
+	"modifier.tltmod.reinforced.description":"工具不再因某些操作而损失双倍或者更多耐久了。",
 
 
 
@@ -136,6 +189,9 @@
 	"tooltip.kubejs.found_in_nether":"发现于下界",
 	"tooltip.kubejs.found_in_end":"发现于末地",
 	"tooltip.kubejs.contributor":"- %s 贡献者材料 -",
+	"tooltip.tltmod.mana_per_burst":"魔力脉冲能量：",
+	"tooltip.tltmod.mana_per_entity": "实体魔力消耗：",
+	"tooltip.tltmod.mana_per_block": "方块魔力消耗：",
 
 	"trait.l2hostility.defense": "格挡",
 	"trait.l2hostility.defense.desc": "免疫小于自身最大生命值3%乘%s的伤害",
@@ -165,9 +221,14 @@
 	"trait.l2hostility.critical_hit.desc": "每次攻击都有%2$s%的概率使该次攻击的伤害增加%1$s%",
 	"trait.l2hostility.vector_stance": "向量立场",
 	"trait.l2hostility.vector_stance.desc": "位置位于自身正面的生物对自身造成的伤害将减少%s%",
-
+	"trait.l2hostility.absorb_mana": "汲魔",
+	"trait.l2hostility.absorb_mana.desc": "每10tick从5格半径内玩家身上吸取%smana的魔力",
 	"trait.l2hostility.magala_erode": "狂蚀",
 	"trait.l2hostility.magala_erode.desc": "自身克服了狂龙症并在攻击和受伤时对目标施加狂龙症",
+	"trait.l2hostility.broken_armor": "碎甲",
+	"trait.l2hostility.broken_armor.desc": "攻击时会施加%s秒的碎甲效果减少你的护甲值，重复施加会提高等级并延长时效",
+	"trait.l2hostility.devouring_electricity": "噬电",
+	"trait.l2hostility.devouring_electricity.desc": "每5tick从6格半径内玩家快捷栏和装备栏的每件装备中吸取%skFE的能量",
 
 	"key.categories.tlt": "TLT Core",
 	"key.tltmod.switch": "切换模式"

@@ -177,4 +177,18 @@ ClientEvents.highPriorityAssets(event=>{
     .addPalette(addPath(178,"kubejs:materials/hephaestus_extra_light"))
     .addPalette(addPath(216,"kubejs:materials/hephaestus_light"))
     .addPalette(addPath(255,"kubejs:materials/hephaestus_medium")).build()
+
+    buildMaterial('kubejs','orechidysprosium').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setColor("FFE3E091").buildTransformer()
+    .buildResprite().addPalette(addColor(0,"FF000000"))
+    .addPalette(addColor(63,"FF4A4025"))
+    .addPalette(addColor(102,"FF857137"))
+    .addPalette(addColor(140,"FFA1925E"))
+    .addPalette(addColor(178,"FFC2A58D"))
+    .addPalette(addColor(216,"FFDBC0C2"))
+    .addPalette(addColor(255,"FFF0E8FF")).build()
+    
+    buildMaterial('kubejs','reinforced_plate')
+    .addStat(ArmorStatIds.ARMOR_MAILLE).addStat(ArmorStatIds.SHIELD_CORE).addStat(ArmorStatIds.MAILLE).addStat(ArmorStatIds.PLATING_SHIELD)
+    .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33").build()
+
 })

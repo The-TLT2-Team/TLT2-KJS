@@ -132,4 +132,62 @@ e.custom({
   "tier": 3
   }
   )
+e.custom({
+  "type": "avaritia:shaped_table",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "immersiveengineering:plate_duroplast"
+    },
+    "b": {
+      "item": "pneumaticcraft:plastic"
+    },
+    "c": {
+      "item": "mekanism:hdpe_sheet"
+    },
+    "d": {
+      "item": "ad_astra:desh_block"
+    },
+    "e": {
+      "item": "pneumaticcraft:printed_circuit_board"
+    },
+    "f": {
+      "item": "immersiveengineering:heavy_engineering"
+    },
+    "g": {
+      "item": "thermal:machine_frame"
+    },
+    "h": {
+      "item": "alexscaves:tesla_bulb"
+    },
+    "i": {
+      "item": "alexscaves:block_of_scarlet_neodymium"
+    },
+    "j": {
+      "item": "mekanism:steel_casing"
+    },
+    "k": {
+      "item": "alexscaves:block_of_azure_neodymium"
+    },
+    "l": {
+      "item": "alexscaves:quarry_smasher"
+    }
+  },
+  "pattern": [
+    "aabcbaa",
+    "adefeda",
+    "beghgeb",
+    "cfijkfc",
+    "beglgeb",
+    "adefeda",
+    "aabcbaa"
+  ],
+  "result": {
+    "item": "mekanism:indium_casing",
+  },
+  "show_notification": true,
+  "tier": 3
+  }
+  )
+
 })

@@ -18,6 +18,21 @@
     "hyper_flux_loaded":"#FF4D4D",
     "hyper_energy_shielding":"#FF0000",
     "energy_shielding":"#FF4D4D",
-    "reverse_polarity":"#7671FF"
+    "reverse_polarity":"#7671FF",
+    "magical_ores":"#75BEE5",
+    "ore_capture":"#E5D568",
+    
+    "ore_resonance":"#75BEE5"
+  },
+
+  "modifier.tltmod": {
+    "terra_burst":"#82FF7B",
+    "alf_burst":"#F79100",
+    "excalibur_burst":"#FFFF20",
+    "far_sights":"#5E5CFF",
+    "never_ends_startup":"#024F43",
+    "heat_tendency":"#F79100",
+    "reinforced":"#16111C",
+    "piglin_defense":"#E5BC4E"
   }
 }
