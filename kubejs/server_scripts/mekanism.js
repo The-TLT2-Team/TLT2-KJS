@@ -14,15 +14,18 @@ ServerEvents.recipes(event=>{
     event.remove({id:'mekanismgenerators:fission_reactor/casing'})
     event.remove({id:'mekanismgenerators:fission_reactor/fuel_assembly'})
 
-    event.shaped('mekanismgenerators:fission_reactor_casing',
+    event.shaped('4x mekanismgenerators:fission_reactor_casing',
         [
-            ' A ',
-            'ABA',
-            ' A '
+            ' C ',
+            'DBF',
+            ' E '
         ],
         {
-            A:'thermal:lead_ingot',
-            B:'mekanism:steel_casing'
+            B:'mekanism:steel_casing',
+            C:'#forge:storage_blocks/lead',
+            D:'#forge:storage_blocks/signalum',
+            E:'#forge:storage_blocks/invar',
+            F:'#forge:storage_blocks/electrum',
         }
     )
     event.shaped('mekanismgenerators:fission_fuel_assembly',
@@ -37,6 +40,6 @@ ServerEvents.recipes(event=>{
             C:'mekanism:basic_chemical_tank'
         }
     )
-    event.replaceInput({id:'mekanismgenerators:reactor/glass'},'#forge:ingots/lead','thermal:lead_block')
+    event.replaceInput({id:'mekanismgenerators:reactor/glass'},'#forge:ingots/lead','mekanismgenerators:fission_reactor_casing')
     event.recipes.mekanism.nucleosynthesizing('minecraft:gold_ore',{amount:1,gas:'mekanism:antimatter'},'tinkers_advanced:iridium_lean_ore').duration(10)
 })

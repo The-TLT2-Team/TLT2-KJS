@@ -4,4 +4,5 @@ ItemEvents.tooltip(event=>{
     event.add('tinkers_advanced:stibnite_ore',Component.translatable('tooltip.kubejs.found_in_nether'))
     event.add('tinkers_advanced:bismuthinite_ore',Component.translatable('tooltip.kubejs.found_in_overword_deep'))
     event.add('kubejs:awaken_chromatic_steel',Component.translatable('tooltip.kubejs.contributor',"EtSH_C2H6S").color(0xFF695A))
+    event.add('tltmod:seven_curse_removal',Component.translatable("tooltip.kubejs.remove_cursed_ring").withStyle(Color.RED))
 })

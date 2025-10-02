@@ -25,6 +25,8 @@
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
+	"item.tltmod.seven_curse_removal":"移除七咒之戒",
+
 	"entity.tltmod.wave_slash": "波动斩",
 	"entity.tltmod.laser_a": "聚能激光",
 
@@ -205,6 +207,7 @@
 	"tooltip.tltmod.no_orbs_left": "你已不再能使用此物品",
 	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
 	"tooltip.tltmod.cursed_ring_replacement2": "§5- 你合成出的匠魂工具将会附带 §6一个特殊词条",
+	"tooltip.kubejs.remove_cursed_ring":"使用以永久移除七咒之戒，不可逆！",
 
 	"trait.l2hostility.defense": "格挡",
 	"trait.l2hostility.defense.desc": "免疫小于自身最大生命值3%乘%s的伤害",
