@@ -200,7 +200,7 @@
 	"tooltip.tltmod.upgrade_on_hit": "用工具攻击以使其变强：",
 	"tooltip.tltmod.upgrade_on_kill": "击杀敌人以使其变强：",
 	"tooltip.tltmod.upgrade_progress": "进度",
-	"tooltip.tltmod.end_of_upgrade": "极点",
+	"tooltip.tltmod.end_of_upgrade": "进度 极点",
 	"tooltip.tltmod.orbs_left": "你的剩余使用次数：",
 	"tooltip.tltmod.no_orbs_left": "你已不再能使用此物品",
 	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
