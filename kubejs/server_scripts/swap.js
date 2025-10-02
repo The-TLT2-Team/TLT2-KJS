@@ -5,3 +5,4 @@
 //event.replaceInput({mod:'extendedcrafting',output:'extendedcrafting:frame'}, 'extendedcrafting:black_iron_slate' , 'mekanism:steel_casing') 
 //这是另一个例子，替换所有满足（模组为热力系列，合成方式为有序合成，不输出铁锭）的配方中的铁为植物魔法的魔力钢锭
 //  event.replaceInput({mod:'thermal',type:'crafting_shaped',not:{output:'thermal:iron_gear'}}, '#forge:ingots/iron', 'botania:manasteel_ingot')
+//test
