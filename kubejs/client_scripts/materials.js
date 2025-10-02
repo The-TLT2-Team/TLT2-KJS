@@ -1,3 +1,5 @@
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+//部件类型ID，决定了这个材料会生成哪些类型的部件的贴图
 /**
 * @enum {String}
 */
@@ -35,6 +37,9 @@ const MiscStatIds = {
     CHARM_CHAIN:"sakuratinker:charm_chain",
     FLAG:"sakuratinker:flag",
 }
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+//fallback类型，决定了材料的纹理方案
+
 /**
 * @enum {String}
 */
@@ -45,6 +50,8 @@ const FallBacks = {
     STICK:"stick",
     BONE:"bone"
 }
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+//材料上色部分，addColor用于颜色上色，addPath用于底图上色（path填底图路径）
 function addColor(grey,color){
     return {
         "color": color,
@@ -57,25 +64,38 @@ function addPath(grey,path) {
         "path": path
     }
 }
+
+//代码部分
 ClientEvents.highPriorityAssets(event=>{
+    //————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+    //创建材料的函数，namespace为modid，id为材料名。会返回一个renderInfoBuilder便于进行链式调用。
     function buildMaterial(nameSpace,id){
         const renderInfoBuilder = {
             color:"000000",
             fallbacks:[],
             luminosity:0,
             supportedStats:[],
+
+            // 设置材料的光度，最大15
+            // 高光度材料在暗处看起来会更明亮
             setLuminosity:(luminosity)=>{
                 renderInfoBuilder.luminosity = luminosity;
                 return renderInfoBuilder
             },
+
+            // 设置颜色
+            // 没生成材料贴图时的默认颜色，会按匠魂默认的梯度渲染材料
             setColor:(color)=>{
                 renderInfoBuilder.color = color;
                 return renderInfoBuilder
             },
+
+            // 添加部件类型ID
             addStat:(stat) =>{
                 renderInfoBuilder.supportedStats.push(stat);
                 return renderInfoBuilder;
             },
+            // 添加全部近战部件类型
             addMelee:()=>{
                 renderInfoBuilder.supportedStats.push(
                     MeleeStatIds.BINDING,
@@ -84,6 +104,7 @@ ClientEvents.highPriorityAssets(event=>{
                 )
                 return renderInfoBuilder;
             },
+            // 添加全部远程类型
             addRanged:()=>{
                 renderInfoBuilder.supportedStats.push(
                     RangedStatIds.BOW_STRING,
@@ -92,6 +113,7 @@ ClientEvents.highPriorityAssets(event=>{
                 )
                 return renderInfoBuilder;
             },
+            //添加全部护甲类型
             addArmor:()=>{
                 renderInfoBuilder.supportedStats.push(
                     ArmorStatIds.ARMOR_MAILLE,
@@ -105,13 +127,19 @@ ClientEvents.highPriorityAssets(event=>{
                 )
                 return renderInfoBuilder;
             },
+            //添加fallback类型
             addFallBack:(fallback)=>{
                 renderInfoBuilder.fallbacks.push(fallback);
                 return renderInfoBuilder;
             },
+
+            //开始构建部件贴图生成器
+            //需要梯度上色的材料才使用此函数，返回一个transformerBuilder
             buildTransformer(){
                 return transformerBuilder;
             },
+            //直接构建渲染信息
+            //对于不需要梯度上色的材料，用这个函数就行了
             build:()=>{
                 event.add(nameSpace+':tinkering/materials/'+id,{
                     "color":renderInfoBuilder.color,
@@ -120,33 +148,19 @@ ClientEvents.highPriorityAssets(event=>{
                 })
             }
         }
+        // 材料贴图生成器部分
         const transformerBuilder = {
                     palette:[],
                     transformer:{},
-                    buildRecolor:()=>{
-                        const recolorSpriteBuilder = {
-                            addPalette:(palette)=> {
-                                transformerBuilder.palette.push(palette)
-                                return recolorSpriteBuilder;
-                            },
-                            build:()=>{
-                                transformerBuilder.transformer = {
-                                    "type": "tconstruct:recolor_sprite",
-                                    "color_mapping": {
-                                        "type": "tconstruct:grey_to_color",
-                                        "palette":transformerBuilder.palette
-                                    }
-                                }
-                                renderInfoBuilder.build();
-                            }
-                        }
-                    },
+                    // 创建一个灰度上色生成器
                     buildResprite:()=>{
                         const respriteBuilder = {
+                            //添加上色灰度，用addColor（颜色）或addPath（贴图）方法填充参数（参考神匠/凝矿兰）
                             addPalette:(palette)=> {
                                 transformerBuilder.palette.push(palette)
                                 return respriteBuilder;
                             },
+                            //彻底完成材料贴图生成器
                             build:()=>{
                                 transformerBuilder.transformer = {
                                     "type": "tconstruct:grey_to_sprite",
@@ -168,27 +182,37 @@ ClientEvents.highPriorityAssets(event=>{
                 }
         return renderInfoBuilder;
     }
+    //————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+    //实际的材料添加
 
+    //神匠
     buildMaterial('kubejs','hephaestus').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setColor("FF555555").buildTransformer()
-    .buildResprite().addPalette(addColor(0,"FF000000"))
+    .buildResprite()
+    .addPalette(addColor(0,"FF000000"))
     .addPalette(addPath(63,"kubejs:materials/hephaestus_dark"))
     .addPalette(addPath(102,"kubejs:materials/hephaestus_dark"))
     .addPalette(addPath(140,"kubejs:materials/hephaestus_lightest"))
     .addPalette(addPath(178,"kubejs:materials/hephaestus_extra_light"))
     .addPalette(addPath(216,"kubejs:materials/hephaestus_light"))
-    .addPalette(addPath(255,"kubejs:materials/hephaestus_medium")).build()
+    .addPalette(addPath(255,"kubejs:materials/hephaestus_medium"))
+    .build()
 
+    //凝矿镧
     buildMaterial('kubejs','orechidysprosium').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setColor("FFE3E091").buildTransformer()
-    .buildResprite().addPalette(addColor(0,"FF000000"))
+    .buildResprite()
+    .addPalette(addColor(0,"FF000000"))
     .addPalette(addColor(63,"FF4A4025"))
     .addPalette(addColor(102,"FF857137"))
     .addPalette(addColor(140,"FFA1925E"))
     .addPalette(addColor(178,"FFC2A58D"))
     .addPalette(addColor(216,"FFDBC0C2"))
-    .addPalette(addColor(255,"FFF0E8FF")).build()
-    
+    .addPalette(addColor(255,"FFF0E8FF"))
+    .build()
+
+    //坚固板
     buildMaterial('kubejs','reinforced_plate')
     .addStat(ArmorStatIds.ARMOR_MAILLE).addStat(ArmorStatIds.SHIELD_CORE).addStat(ArmorStatIds.MAILLE).addStat(ArmorStatIds.PLATING_SHIELD)
-    .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33").build()
+    .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33")
+    .build()
 
 })
