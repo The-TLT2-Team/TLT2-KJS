@@ -274,11 +274,6 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:reinforced_plate","create:sturdy_sheet"])
     //红石琥珀金
     craftableMaterial(["kubejs:fluxed_electrum","redstone_arsenal:flux_plating"])
-    //活化彩钢修改
-    event.remove({id:'tinkers_advanced:materials/activated_chromatic_steel/activated_chromatic_steel_casting_plate_single'})
-    event.remove({id:'tinkers_advanced:materials/activated_chromatic_steel/activated_chromatic_steel_casting_plate_multi'})
-    craftableMaterial(["tinkers_advanced:activated_chromatic_steel","tinkers_advanced:activated_chromatic_steel"])
-    event.recipes.tconstruct.casting_table(Item.of('tinkers_advanced:activated_chromatic_steel')).cast_consumed(true).cast('redstone_arsenal:flux_plating').fluid(Fluid.of('tinkers_advanced:molten_activated_chromatic_steel',90)).cooling_time(5)
     //精灵钢
     craftableMaterial(["kubejs:alfsteel","mythicbotany:alfsteel_ingot"])
     //热力三锭
@@ -613,7 +608,7 @@ ServerEvents.highPriorityData(event=>{
     .build()
 
     //活化彩钢调整
-    buildMaterial('tinkers_advanced','activated_chromatic_steel').setTier(5).setCraftable().build()
+    buildMaterial('tinkers_advanced','activated_chromatic_steel').setTier(5).build()
     .addStat(MaterialStatIds.HEAD,headStat(1920,6.25,9,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.3,0.5,0.3,0.25))
     .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(22.4,23.9))
