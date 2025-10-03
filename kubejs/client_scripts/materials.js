@@ -186,7 +186,7 @@ ClientEvents.highPriorityAssets(event=>{
     //实际的材料添加
 
     //神匠
-    buildMaterial('kubejs','hephaestus').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setColor("FF555555").buildTransformer()
+    buildMaterial('kubejs','hephaestus').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setLuminosity(15).setColor("FF555555").buildTransformer()
     .buildResprite()
     .addPalette(addColor(0,"FF000000"))
     .addPalette(addPath(63,"kubejs:materials/hephaestus_dark"))
@@ -213,6 +213,47 @@ ClientEvents.highPriorityAssets(event=>{
     buildMaterial('kubejs','reinforced_plate')
     .addStat(ArmorStatIds.ARMOR_MAILLE).addStat(ArmorStatIds.SHIELD_CORE).addStat(ArmorStatIds.MAILLE).addStat(ArmorStatIds.PLATING_SHIELD)
     .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33")
+    .build()
+
+    //红石琥珀金
+    buildMaterial('kubejs','fluxed_electrum').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setLuminosity(7).setColor("FFF4DE6A").buildTransformer()
+    .buildResprite()
+    .addPalette(addColor(0,"FF000000"))
+    .addPalette(addColor(63,"FFBA0713"))
+    .addPalette(addColor(102,"FFE42319"))
+    .addPalette(addColor(140,"FFCD752A"))
+    .addPalette(addColor(178,"FFE9A93D"))
+    .addPalette(addColor(216,"FFF4DE6A"))
+    .addPalette(addColor(255,"FFFCF8D1"))
+    .build()
+
+    //精灵钢
+    buildMaterial('kubejs','alfsteel')
+    .addArmor().addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FFF79100").setLuminosity(7)
+    .build()
+
+    //热力三锭
+
+    buildMaterial('kubejs','signalum')
+    .addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFFF2011")
+    .build()
+
+    buildMaterial('kubejs','lumium')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFFCFA7F").setLuminosity(15)
+    .build()
+
+    buildMaterial('kubejs','enderium')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FF29FFC1")
+    .build()
+
+    //高定向热解石墨
+    buildMaterial('kubejs','hop_graphite')
+    .addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FF454545")
     .build()
 
 })

@@ -34,7 +34,7 @@
 	"material.tlt_tech.pneumatic_reinforced_titanium.flavor":"高强度材料！",
 
 	"material.tlt_tech.restructure_chromatic_steel":"重组彩钢",
-	"material.tlt_tech.restructure_chromatic_steel.flavor":"高能彩钢与放射性材料融合形成的能量密度极高的材料。",
+	"material.tlt_tech.restructure_chromatic_steel.flavor":"放射性物质的加持下，彩钢绽放出了全新的光芒。",
 
 	"material.tlt_tech.awaken_chromatic_steel":"觉醒彩钢",
 	"material.tlt_tech.awaken_chromatic_steel.flavor":"彩钢的终极形态，汇聚了世间的元素能量。",
@@ -52,6 +52,15 @@
 
 	"material.kubejs.reinforced_plate":"坚固板",
 	"material.kubejs.reinforced_plate.flavor":"黑曜石强化！",
+
+	"material.kubejs.fluxed_electrum":"红石琥珀金",
+	"material.kubejs.fluxed_electrum.flavor":"红石能量！",
+
+	"material.kubejs.alfsteel":"精灵钢",
+	"material.kubejs.signalum":"信素",
+	"material.kubejs.lumium":"流明",
+	"material.kubejs.enderium":"末影",
+	"material.kubejs.hop_graphite":"高定向热解石墨",
 
 
 
@@ -160,7 +169,7 @@
 	"modifier.tltmod.alf_burst.description":"挥舞武器，消耗魔力释放精灵射线。\n+100射线携带魔力，+8射线伤害。",
 
 	"modifier.tltmod.excalibur_burst":"王者圣剑",
-	"modifier.tltmod.excalibur_burst.flavor":"吾王剑锋所指，吾心之所向。",
+	"modifier.tltmod.excalibur_burst.flavor":"吾王剑锋所指，吾等心之所向。",
 	"modifier.tltmod.excalibur_burst.description":"令工具发射的魔力射线能追踪敌人。\n+50射线携带魔力，+50射线命中实体消耗，+9射线伤害。",
 
 	"modifier.tltmod.far_sights":"目光远大",
@@ -182,6 +191,26 @@
 	"modifier.tltmod.the_cursed_one":"被诅咒者",
 	"modifier.tltmod.the_cursed_one.flavor":"拥抱诅咒，接受祝福。",
 	"modifier.tltmod.the_cursed_one.description":"你的工具会随使用而不断变强。\n-仅七咒模式-",
+
+	"modifier.tlt_tech.flux_blocking":"通量格挡",
+	"modifier.tlt_tech.flux_blocking.flavor":"能量盾！",
+	"modifier.tlt_tech.flux_blocking.description":"消耗能量充能一面能格挡一次伤害的护盾，每240kFE充能一次，每级提供1kFE/t充能速率，最高抵挡500伤害。",
+
+	"modifier.tlt_tech.flux_slash":"通量斩击",
+	"modifier.tlt_tech.flux_slash.flavor":"能量剑！",
+	"modifier.tlt_tech.flux_slash.description":"挥舞武器，发射通量斩击！斩击伤害随锋利词条等级增加而升高。",
+
+	"modifier.tlt_tech.flux_infinity":"通量无限",
+	"modifier.tlt_tech.flux_infinity.flavor":"能量箭！",
+	"modifier.tlt_tech.flux_infinity.description":"工具能消耗能量凭空制造箭矢。",
+
+	"modifier.tlt_tech.alf_bless":"精灵赐福",
+	"modifier.tlt_tech.alf_bless.flavor":"人类忠诚的好朋友",
+	"modifier.tlt_tech.alf_bless.description":"攻击时召唤小精灵辅助进攻，受击时召唤小精灵抵抗伤害。小精灵会携带20%的伤害和一种负面效果。\n全身词条等级>=4时获得精灵盔甲的大部分特性。",
+
+	"modifier.tltmod.rage_of_sparta":"斯巴达之怒",
+	"modifier.tltmod.rage_of_sparta.flavor":"这就是斯巴达！",
+	"modifier.tltmod.rage_of_sparta.description":"生命垂危时造成更高伤害。",
 
 
 

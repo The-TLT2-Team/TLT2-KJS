@@ -3,8 +3,19 @@
     "pneumatic_reinforced_titanium":"#C9B64F",
     "restructure_chromatic_steel":"#BB9DC9",
     "awaken_chromatic_steel":"#6967C9",
-    "compressed_chromatic_steel":"#302F5C",
-    "hephaestus":"#180224"
+    "compressed_chromatic_steel":"#302F5C"
+  },
+
+  "material.kubejs": {
+    "reinforced_plate":"#241E33",
+    "orechidysprosium":"#E3E091",
+    "hephaestus":"#180224",
+    "alfsteel":"#F79100",
+    "signalum":"#FF2011",
+    "lumium":"#FCFA7F",
+    "enderium":"#29FFC1",
+    "hop_graphite":"#454545",
+    "fluxed_electrum":"#F4DE6A"
   },
 
   "modifier.tlt_tech": {
@@ -21,6 +32,10 @@
     "reverse_polarity":"#7671FF",
     "magical_ores":"#75BEE5",
     "ore_capture":"#E5D568",
+    "flux_blocking":"#FF4D00",
+    "flux_slash":"#FF4D00",
+    "flux_infinity":"#FF4D00",
+    "alf_bless":"#F79100",
     
     "ore_resonance":"#75BEE5"
   },
@@ -34,6 +49,7 @@
     "heat_tendency":"#F79100",
     "reinforced":"#16111C",
     "piglin_defense":"#E5BC4E",
-    "the_cursed_one":"#540087"
+    "the_cursed_one":"#540087",
+    "rage_of_sparta":"#F52F45"
   }
 }
