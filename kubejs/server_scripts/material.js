@@ -635,7 +635,7 @@ ServerEvents.highPriorityData(event=>{
     //热力三锭
     buildMaterial('kubejs','signalum').setTier(3).build()
     .addStat(MaterialStatIds.HEAD,headStat(755,3,7.5,MiningTiers.DIAMOND))
-    .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.15,-0.2,0.1))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.15,0.1,-0.2))
     .addStat(MaterialStatIds.LIMB,limbStat(755,-0.2,0.1,0.1))
     .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.15,3))
     .addStatlessStat(StatlessStatIds.BINDING).build()
@@ -643,7 +643,7 @@ ServerEvents.highPriorityData(event=>{
     .build()
     buildMaterial('kubejs','lumium').setTier(4).build()
     .addStat(MaterialStatIds.HEAD,headStat(470,2.5,2.5,MiningTiers.DIAMOND))
-    .addStat(MaterialStatIds.HANDLE,handleStat(-0.15,-0.15,0.3,-0.1))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.15,-0.15,-0.1,0.3))
     .addStat(MaterialStatIds.LIMB,limbStat(470,0.3,-0.1,-0.05))
     .addStat(MaterialStatIds.GRIP,gripStat(0.05,-0.1,2.5))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(1.25,300,0,2))
@@ -670,7 +670,7 @@ ServerEvents.highPriorityData(event=>{
     //高定向热解石墨
     buildMaterial('kubejs','hop_graphite').setTier(5).build()
     .addStat(MaterialStatIds.HEAD,headStat(590,5.25,2.5,MiningTiers.WOOD))
-    .addStat(MaterialStatIds.HANDLE,handleStat(-0.25,-0.25,0.75,0.15))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.25,0.15,-0.25,0.75))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
     .addDefault("etstlib:short_circuit",1).addDefault("tconstruct:lightweight",1).addDefault("mushroom_concept:bloody_mary")
     .build()
