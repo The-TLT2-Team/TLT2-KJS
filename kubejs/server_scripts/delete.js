@@ -27,5 +27,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_chest'})
     event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_leggins'})
     event.remove({id:'cataclysm:smithing/cursium_chestplate'})
+    event.remove({id:'iceandfire:gold_pile'})
+    event.remove({id:'iceandfire:silver_pile'})
+    event.remove({id:'iceandfire:copper_pile'})
 
 });

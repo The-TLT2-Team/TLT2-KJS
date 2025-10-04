@@ -42,4 +42,8 @@ ServerEvents.recipes(event=>{
     )
     event.replaceInput({id:'mekanismgenerators:reactor/glass'},'#forge:ingots/lead','mekanismgenerators:fission_reactor_casing')
     event.recipes.mekanism.nucleosynthesizing('minecraft:gold_ore',{amount:1,gas:'mekanism:antimatter'},'tinkers_advanced:iridium_lean_ore').duration(10)
+
+    event.recipes.mekanism.oxidizing('kubejs:compressed_polonium',{amount:10000,gas:'mekanism:polonium'})
+    event.recipes.mekanism.oxidizing('kubejs:compressed_plutonium',{amount:10000,gas:'mekanism:plutonium'})
+    event.recipes.mekanism.rotary().fluidInput(Fluid.of('tinkers_advanced:molten_antimatter',1)).fluidOutput(Fluid.of('tinkers_advanced:molten_antimatter',1)).gasInput({amount:4,gas:'mekanism:antimatter'}).gasOutput({amount:4,gas:'mekanism:antimatter'})
 })

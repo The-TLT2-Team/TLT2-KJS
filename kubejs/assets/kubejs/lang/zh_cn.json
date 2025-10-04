@@ -22,6 +22,8 @@
 	"item.kubejs.awaken_chromatic_steel":"觉醒彩钢锭",
 	"item.kubejs.compressed_chromatic_steel":"高压彩钢锭",
 	"item.kubejs.orechidysprosium":"凝矿镧",
+	"item.kubejs.compressed_polonium":"压缩钋粉",
+	"item.kubejs.compressed_plutonium":"压缩钚粉",
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
@@ -157,11 +159,11 @@
 
 	"modifier.tltmod.never_ends_startup":"永不结束之开端",
 	"modifier.tltmod.never_ends_startup.flavor":"终末之地远远不是终点。",
-	"modifier.tltmod.never_ends_startup.description":"施加于护甲时令末影人与你强制中立并阻止对你带有敌意生物的传送。施加于工具时对末影人造成双倍伤害。\n-仅七咒模式下生效-",
+	"modifier.tltmod.never_ends_startup.description":"施加于护甲时阻止你身边8半径内生物的传送。施加于工具时对末影人造成5倍伤害。\n-仅七咒模式下生效-",
 
 	"modifier.tltmod.piglin_defense":"猪灵防御",
 	"modifier.tltmod.piglin_defense.flavor":"猪猪那么可爱，为什么要杀猪猪。",
-	"modifier.tltmod.piglin_defense.description":"装备时使猪灵、僵尸猪灵强制中立。\n-仅七咒模式下生效-",
+	"modifier.tltmod.piglin_defense.description":"装备时使猪灵、僵尸猪灵强制友好。\n-仅七咒模式下生效-",
 
 	"modifier.tltmod.terra_burst":"泰拉射线",
 	"modifier.tltmod.terra_burst.flavor":"一切一切的开始",

@@ -156,4 +156,6 @@ event.shaped('8x tlt_tech:range_upgrade_2',[
   event.remove({id:'redstone_arsenal:materials/flux_plating'})
   event.recipes.thermal.bottler(Item.of('redstone_arsenal:flux_dust'),[Fluid.of('thermal:redstone',500),Item.of('thermal:electrum_dust')])
   event.recipes.thermal.press(Item.of('redstone_arsenal:flux_plating'),[Item.of('redstone_arsenal:flux_ingot',2),Item.of('redstone_arsenal:flux_gem')])
+  event.recipes.thermal.press('kubejs:compressed_polonium',Item.of('kubejs:polonium_dust',10))
+  event.recipes.thermal.press('kubejs:compressed_plutonium',Item.of('kubejs:plutonium_dust',10))
 })
