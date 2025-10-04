@@ -282,6 +282,12 @@ ServerEvents.recipes(event=>{
     metalMaterialExistingMolten(["kubejs:enderium","tconstruct:molten_enderium","thermal:enderium_ingot",1350])
     //HOP石墨
     craftableMaterial(["kubejs:hop_graphite","immersiveengineering:ingot_hop_graphite"])
+    //工程塑胶板
+    craftableMaterial(["kubejs:duroplast","immersiveengineering:plate_duroplast"])
+    //热核合金
+    craftableMaterial(["kubejs:alloy_thermalnuclear","mekanism_extras:alloy_thermonuclear"])
+    //辐光合金
+    craftableMaterial(["kubejs:alloy_radiance","mekanism_extras:alloy_radiance"])
 })
 
 //————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -633,6 +639,7 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.15,0.1,-0.2))
     .addStat(MaterialStatIds.LIMB,limbStat(755,-0.2,0.1,0.1))
     .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.15,3))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(5.2,3.8))
     .addStatlessStat(StatlessStatIds.BINDING).build()
     .addDefault("etstlib:short_circuit",1)
     .build()
@@ -645,6 +652,7 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(4.75,467,0,2))
     .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(5.75,490,0,2))
     .addStat(MaterialStatIds.PLATING_HELMET,platingStat(1.75,368,0,2))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(3.9,6.1))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
     .addDefault("etstlib:glowing",1).addDefault("tconstruct:enhanced",1)
     .build()
@@ -657,17 +665,52 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5,1159,0.05,5))
     .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7,1270,0.05,5))
     .addStat(MaterialStatIds.PLATING_HELMET,platingStat(3,925,0.05,5))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(5.5,5.5))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
     .addDefault("tconstruct:enderference",1)
     .buildPerstat(MaterialTypes.ARMOR).addModifier("tinkerscalibration:enderference_armor",1).build()
     .build()
 
     //高定向热解石墨
-    buildMaterial('kubejs','hop_graphite').setTier(5).build()
+    buildMaterial('kubejs','hop_graphite').setCraftable().setTier(5).build()
     .addStat(MaterialStatIds.HEAD,headStat(590,5.25,2.5,MiningTiers.WOOD))
     .addStat(MaterialStatIds.HANDLE,handleStat(-0.25,0.15,-0.25,0.75))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(15.5,15.5))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
-    .addDefault("etstlib:short_circuit",1).addDefault("tconstruct:lightweight",1).addDefault("mushroom_concept:bloody_mary")
+    .addDefault("etstlib:short_circuit",1).addDefault("tconstruct:lightweight",2).addDefault("mushroom_concept:bloody_mary",1)
+    .build()
+
+    //辐光合金
+    buildMaterial('kubejs','alloy_radiance').setTier(4).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(995,6,7,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.3,0.5,0.3,0.3))
+    .addStat(MaterialStatIds.LIMB,limbStat(995,0.3,0.5,0.05))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.3,6))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(4,880,0.1,6))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(6,1059,0.1,6))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(8,1170,0.1,6))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(4,825,0.1,6))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("etstlib:radiation_inflict",1)
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("etstlib:radiation_shielding",2).build()
+    .build()
+
+    //热核合金
+    buildMaterial('kubejs','alloy_thermalnuclear').setCraftable().setTier(6).build()
+    .addStat(MaterialStatIds.HEAD,headStat(2049,7.25,16384,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(1,1,20.48,0))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(69.5,69.5))
+    .addStatlessStat(StatlessStatIds.BINDING).build()
+    .addDefault("tlt_tech:molten_core",1)
+    .build()
+
+    //工程塑胶板
+    buildMaterial('kubejs','duroplast').setCraftable().setTier(5).build()
+    .addStat(MaterialStatIds.HEAD,headStat(590,7.25,2.5,MiningTiers.WOOD))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.1,0.75,-0.1,0.75))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(99.5,25.5))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
+    .addDefault("tconstruct:lightweight",2).addDefault("tinkers_advanced:metamorphium",1).addDefault("tlt_tech:industrial_born",1)
     .build()
 
 })

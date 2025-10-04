@@ -234,7 +234,6 @@ ClientEvents.highPriorityAssets(event=>{
     .build()
 
     //热力三锭
-
     buildMaterial('kubejs','signalum')
     .addMelee().addRanged()
     .addFallBack(FallBacks.METAL).setColor("FFFF2011")
@@ -254,6 +253,30 @@ ClientEvents.highPriorityAssets(event=>{
     buildMaterial('kubejs','hop_graphite')
     .addMelee()
     .addFallBack(FallBacks.METAL).setColor("FF454545")
+    .build()
+
+    //辐光合金
+    buildMaterial('kubejs','alloy_radiance')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFE2FB43").setLuminosity(15)
+    .build()
+
+    //热核合金
+    buildMaterial('kubejs','alloy_thermalnuclear')
+    .addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FFEF4345").setLuminosity(15)
+    .build()
+
+    //工程塑胶
+    buildMaterial('kubejs','duroplast').addMelee().addStat(RangedStatIds.BOW_STRING).addFallBack(FallBacks.CRYSTAL).setLuminosity(4).setColor("CCBA8D5A").buildTransformer()
+    .buildResprite()
+    .addPalette(addColor(0,"00000000"))
+    .addPalette(addColor(63,"FF8C5020"))
+    .addPalette(addColor(102,"FF9C6030"))
+    .addPalette(addColor(140,"90B1855A"))
+    .addPalette(addColor(178,"B0B1855A"))
+    .addPalette(addColor(216,"D0B1855A"))
+    .addPalette(addColor(255,"D0CF9B69"))
     .build()
 
 })

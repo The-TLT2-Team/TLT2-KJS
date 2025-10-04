@@ -15,6 +15,9 @@
     "lumium":"#FCFA7F",
     "enderium":"#29FFC1",
     "hop_graphite":"#454545",
+    "alloy_radiance":"#E2FB43",
+    "alloy_thermalnuclear":"#EF4345",
+    "duroplast":"#8C5020",
     "fluxed_electrum":"#F4DE6A"
   },
 
@@ -36,6 +39,7 @@
     "flux_slash":"#FF4D00",
     "flux_infinity":"#FF4D00",
     "alf_bless":"#F79100",
+    "molten_core":"#EF4345",
     
     "ore_resonance":"#75BEE5"
   },

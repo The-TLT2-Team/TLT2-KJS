@@ -61,6 +61,9 @@
 	"material.kubejs.lumium":"流明",
 	"material.kubejs.enderium":"末影",
 	"material.kubejs.hop_graphite":"高定向热解石墨",
+	"material.kubejs.alloy_radiance":"辐光合金",
+	"material.kubejs.alloy_thermalnuclear":"热核合金",
+	"material.kubejs.duroplast":"工程塑胶",
 
 
 
@@ -211,6 +214,10 @@
 	"modifier.tltmod.rage_of_sparta":"斯巴达之怒",
 	"modifier.tltmod.rage_of_sparta.flavor":"这就是斯巴达！",
 	"modifier.tltmod.rage_of_sparta.description":"生命垂危时造成更高伤害。",
+
+	"modifier.tlt_tech.molten_core":"堆芯熔毁",
+	"modifier.tlt_tech.molten_core.flavor":"感觉空气暖暖的...",
+	"modifier.tlt_tech.molten_core.description":"攻击时灼烧敌人，挖掘时获得极致的挖掘速度。",
 
 
 

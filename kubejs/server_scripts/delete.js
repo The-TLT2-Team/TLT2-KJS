@@ -26,5 +26,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_helmet'})
     event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_chest'})
     event.remove({id:'tinkers_advanced:compat/pnc/pressure_chamber/pneumatic_steel_leggins'})
+    event.remove({id:'cataclysm:smithing/cursium_chestplate'})
 
 });
