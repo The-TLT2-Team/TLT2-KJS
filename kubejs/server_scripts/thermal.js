@@ -158,4 +158,8 @@ event.shaped('8x tlt_tech:range_upgrade_2',[
   event.recipes.thermal.press(Item.of('redstone_arsenal:flux_plating'),[Item.of('redstone_arsenal:flux_ingot',2),Item.of('redstone_arsenal:flux_gem')])
   event.recipes.thermal.press('kubejs:compressed_polonium',Item.of('kubejs:polonium_dust',10))
   event.recipes.thermal.press('kubejs:compressed_plutonium',Item.of('kubejs:plutonium_dust',10))
+  event.recipes.thermal.press(Item.of('create:brass_sheet'),Item.of('create:brass_ingot'))
+  event.recipes.thermal.smelter_catalyst('tinkers_advanced:blaze_netherite').useChance(0.1).minChance(0).energyMod(0.75).primaryMod(5).secondaryMod(5)
+  event.recipes.thermal.pulverizer_catalyst('tinkers_advanced:basalz_signalum').useChance(0.1).minChance(0).energyMod(0.75).primaryMod(5).secondaryMod(5)
+  event.recipes.thermal.smelter(Item.of('tinkers_advanced:blaze_netherite',2),['2x netherite_ingot','blaze_powder'])
 })

@@ -30,5 +30,5 @@ ServerEvents.recipes(event => {
     event.remove({id:'iceandfire:gold_pile'})
     event.remove({id:'iceandfire:silver_pile'})
     event.remove({id:'iceandfire:copper_pile'})
-
+    event.remove({id:'mushroom_concept:alloy/steel'})
 });

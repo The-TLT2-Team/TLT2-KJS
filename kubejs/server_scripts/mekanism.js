@@ -1,7 +1,7 @@
 ServerEvents.recipes(event=>{
     event.recipes.mekanism.oxidizing('kubejs:plutonium_dust',{amount:1000,gas:'mekanism:plutonium'})
     event.recipes.mekanism.oxidizing('kubejs:polonium_dust',{amount:1000,gas:'mekanism:polonium'})
-    event.recipes.mekanism.oxidizing('tlt_tech:reactive_nuclear_waste',{amount:500,gas:'mekanism:nuclear_waste'})
+    event.recipes.mekanism.oxidizing('tlt_tech:reactive_nuclear_waste',{amount:2000,gas:'mekanism:nuclear_waste'})
     event.remove({id:'mekanism:processing/uranium/reprocessing/to_fuel'})
 
     event.recipes.thermal.smelter('mekanism:pellet_polonium',['kubejs:polonium_dust','mekanism:dust_fluorite'])
