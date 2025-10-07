@@ -183,7 +183,9 @@
 	"modifier.tltmod.the_cursed_one.flavor":"拥抱诅咒，接受祝福。",
 	"modifier.tltmod.the_cursed_one.description":"你的工具会随使用而不断变强。\n-仅七咒模式-",
 
-
+	"modifier.tltmod.caster_tool":"魔艺巧具",
+	"modifier.tltmod.caster_tool.flavor":" ",
+	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
 	"fluid.kubejs.molten_awaken_chromatic_steel": "熔融觉醒彩钢",
