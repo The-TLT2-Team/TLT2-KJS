@@ -86,6 +86,75 @@ ServerEvents.recipes(event=>{
     }
 
     /*
+        有现存熔融物的金属材料配方
+        materialId - 材料ID
+        fluid - 流体ID
+        ingot - 材料物品ID
+        temp - 熔化温度
+    */
+    function metalMaterialExistingMolten([materialId,fluid,ingot,temp]){
+        event.custom(
+            {
+                "type":"tconstruct:casting_table",
+                "cast": { "tag": "tconstruct:casts/multi_use/ingot" },
+                "cast_consumed": false,
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 90
+                },
+                "result": ingot,
+                "cooling_time": 20
+            }
+        )
+        event.custom(
+            {
+                "type":"tconstruct:casting_table",
+                "cast": { "tag": "tconstruct:casts/single_use/ingot" },
+                "cast_consumed": true,
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 90
+                },
+                "result": ingot,
+                "cooling_time": 20
+            }
+        )
+        event.custom(
+            {
+                "type": "tconstruct:material_fluid",
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 90
+                },
+                "temperature": temp,
+                "output": materialId
+            }
+        )
+        event.custom(
+            {
+                "type": "tconstruct:material_melting",
+                "temperature": temp,
+                "input": materialId,
+                "result": {
+                    "fluid": fluid,
+                    "amount": 90
+                }
+            }
+        )
+        event.custom(
+            {
+                "type": "tconstruct:material",
+                "ingredient": {
+                    "item": ingot
+                },
+                "value": 1,
+                "needed": 1,
+                "material": materialId
+            }
+        )
+    }
+
+    /*
         自定义材料配方
         materialId - 材料ID
         fluid - 流体ID
@@ -203,168 +272,24 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:orechidysprosium","kubejs:orechidysprosium"])
     //坚固板
     craftableMaterial(["kubejs:reinforced_plate","create:sturdy_sheet"])
+    //红石琥珀金
+    craftableMaterial(["kubejs:fluxed_electrum","redstone_arsenal:flux_plating"])
+    //精灵钢
+    craftableMaterial(["kubejs:alfsteel","mythicbotany:alfsteel_ingot"])
+    //热力三锭
+    metalMaterialExistingMolten(["kubejs:signalum","tconstruct:molten_signalum","thermal:signalum_ingot",999])
+    metalMaterialExistingMolten(["kubejs:lumium","tconstruct:molten_lumium","thermal:lumium_ingot",1050])
+    metalMaterialExistingMolten(["kubejs:enderium","tconstruct:molten_enderium","thermal:enderium_ingot",1350])
+    //HOP石墨
+    craftableMaterial(["kubejs:hop_graphite","immersiveengineering:ingot_hop_graphite"])
+    //工程塑胶板
+    craftableMaterial(["kubejs:duroplast","immersiveengineering:plate_duroplast"])
+    //热核合金
+    craftableMaterial(["kubejs:alloy_thermalnuclear","mekanism_extras:alloy_thermonuclear"])
+    //辐光合金
+    craftableMaterial(["kubejs:alloy_radiance","mekanism_extras:alloy_radiance"])
 })
 
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//材料注册部分
-
-//材料属性构建
-//顶端属性
-function headStat(durability, melee_attack, mining_speed, mining_tier){
-    var headStat = {};
-    headStat["durability"] = durability;
-    headStat["melee_attack"] = melee_attack;
-    headStat["mining_speed"] = mining_speed;
-    headStat["mining_tier"] = mining_tier;
-    return headStat;
-}
-//手柄属性
-function handleStat(durability, melee_damage, mining_speed, melee_speed){
-    return {
-        "durability": durability,
-        "mining_speed": mining_speed,
-        "melee_speed": melee_speed,
-        "melee_damage": melee_damage
-    }
-}
-//无属性部件属性
-function statlessStat(){
-    return {}
-}
-//弓臂属性
-function limbStat(durability,draw_speed,velocity,accuracy){
-    return {
-        "durability": durability,
-        "draw_speed": draw_speed,
-        "velocity": velocity,
-        "accuracy": accuracy
-    }
-}
-//弓把属性
-function gripStat(accuracy,durability,melee_damage){
-    return {
-        "accuracy": accuracy,
-        "durability": durability,
-        "melee_damage": melee_damage
-    }
-}
-//镶板属性
-function platingStat(armor,durability,knockback_resistance,toughness){
-    return {
-        "armor": armor,
-        "durability": durability,
-        "knockback_resistance": knockback_resistance,
-        "toughness": toughness
-    }
-}
-//镶板盾牌属性
-function platingShieldStat(durability,knockback_resistance){
-    return {
-        "durability": durability,
-        "knockback_resistance": knockback_resistance
-    }
-}
-//护符项链属性
-function charmChainStat(movement_speed,health,armor,toughness,damage,arrow_damage){
-    return {
-        "movement_speed": movement_speed,
-        "health": health,
-        "armor": armor,
-        "toughness": toughness,
-        "damage": damage,
-        "arrow_damage": arrow_damage
-    }
-}
-//能量单元属性
-function energyUnitStat(energy_storage,durability){
-    return {
-        "energy_storage": energy_storage,
-        "durability": durability
-    }
-}
-//激光传导器属性
-function laserMediumStat(range,cooldown){
-    return {
-        "range": range,
-        "cooldown": cooldown
-    }
-}
-//战旗属性
-function flagStat(range,attack_buff_time,defence_buff_time,charge_time){
-    return {
-        "range": range,
-        "attack_buff_time": attack_buff_time,
-        "defence_buff_time": defence_buff_time,
-        "charge_time": charge_time
-    }
-}
-//通量核心属性
-function fluxCoreStat(capacity,generate){
-    return {
-        "capacity": capacity,
-        "generate": generate
-    }
-}
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//部件类型ID
-
-//常规部件
-/**
-* @enum {String}
-*/
-const MaterialStatIds = {
-    HEAD:"tconstruct:head",
-    HANDLE:"tconstruct:handle",
-    LIMB:"tconstruct:limb",
-    GRIP:"tconstruct:grip",
-    PLATING_HELMET:"tconstruct:plating_helmet",
-    PLATING_CHESTPLATE:"tconstruct:plating_chestplate",
-    PLATING_LEGGINS:"tconstruct:plating_leggings",
-    PLATING_BOOTS:"tconstruct:plating_boots",
-    PLATING_SHIELD:"tconstruct:plating_shield",
-    CHARM_CHAIN:"sakuratinker:charm_chain",
-    ENERGY_UNIT:"sakuratinker:energy_unit",
-    LASER_MEDIUM:"sakuratinker:laser_medium",
-    FLAG:"sakuratinker:flag",
-    FLUXCORE:"tinkers_advanced:flux_core"
-}
-//无属性部件
-/**
-* @enum {String}
-*/
-const StatlessStatIds = {
-    MAILLE:"tconstruct:maille",
-    BOW_STRING:"tconstruct:bowstring",
-    SHIELD_CORE:"tconstruct:shield_core",
-    BINDING:"tconstruct:binding",
-    CHARM_CORE:"sakuratinker:charm_core",
-}
-//广泛材料类型
-/**
-* @enum {String}
-*/
-const MaterialTypes = {
-    MELEE:"tconstruct:melee_harvest",
-    RANGED:"tconstruct:ranged",
-    ARMOR:"tconstruct:armor",
-    LASER_GUN:"sakuratinker:laser_gun",
-    CHARM:"sakuratinker:charm",
-    POWERBANK:"sakuratinker:power_bank",
-    BATTLE_FLAG:"sakuratinker:battle_flag"
-}
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//挖掘等级
-/**
-* @enum {String}
-*/
-const MiningTiers = {
-    WOOD:"minecraft:wood",
-    STONE:"minecraft:stone",
-    IRON:"minecraft:iron",
-    DIAMOND:"minecraft:diamond",
-    NETHERITE:"minecraft:netherite",
-    INFINITY:"sakuratinker:infinity"
-}
 ServerEvents.highPriorityData(event=>{
     //————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
     //代码部分
@@ -497,8 +422,8 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.9,6))
     .addStat(MaterialStatIds.LIMB,limbStat(690,0.3,0.3,0.05))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,675,0,2))
-    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5,795,0,2))
-    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7,875,0,2))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(6,795,0,2))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(8,875,0,2))
     .addStat(MaterialStatIds.PLATING_HELMET,platingStat(4,722,0,2))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
     .addDefault("tlt_tech:magical_ores",1).addDefault("tlt_tech:ore_capture",1).addDefault("etstlib:mana_repair",1)
@@ -511,5 +436,121 @@ ServerEvents.highPriorityData(event=>{
     .addDefault("tltmod:heat_tendency",1).addDefault("tltmod:reinforced",1)
     .build()
 
+    //红石琥珀金
+    buildMaterial('kubejs','fluxed_electrum').setTier(5).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(1020,5.75,7.5,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.2,0.25,0.2,0.25))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.0,0.2,5.75))
+    .addStat(MaterialStatIds.LIMB,limbStat(1020,0.25,0.25,0.0))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(2.75,775,0.05,2))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5,809,0.05,2))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7,900,0.05,2))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(3.75,735,0.05,2))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(9.2,9.8))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .buildPerstat(MaterialTypes.MELEE).addModifier("etstlib:energy_loaded",1).addModifier("tlt_tech:flux_slash",1).build()
+    .buildPerstat(MaterialTypes.RANGED).addModifier("etstlib:energy_loaded",1).addModifier("tlt_tech:flux_infinity",1).build()
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("etstlib:energy_loaded",2).addModifier("tlt_tech:flux_blocking",1).build()
+    .build()
+
+    //活化彩钢调整
+    buildMaterial('tinkers_advanced','activated_chromatic_steel').setTier(5).build()
+    .addStat(MaterialStatIds.HEAD,headStat(1920,6.25,9,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.3,0.5,0.3,0.25))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(22.4,23.9))
+    .addStat(MaterialStatIds.LIMB,limbStat(1920,0.25,0.5,0.1)).build()
+
+    //精灵钢
+    buildMaterial('kubejs','alfsteel').setTier(5).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(670,5.75,6,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.2,0.45,0.1,0.2))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,644,0,3))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5.5,768,0,3))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7.5,845,1,3))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(3,700,0,3))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tlt_tech:alf_bless",1).addDefault("etstlib:mana_repair",1)
+    .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:alf_burst",1).addModifier("tlt_tech:alf_bless",1).addModifier("etstlib:mana_repair",1).build()
+    .build()
+
+    //热力三锭
+    buildMaterial('kubejs','signalum').setTier(3).build()
+    .addStat(MaterialStatIds.HEAD,headStat(755,3,7.5,MiningTiers.DIAMOND))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.15,0.1,-0.2))
+    .addStat(MaterialStatIds.LIMB,limbStat(755,-0.2,0.1,0.1))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.15,3))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(5.2,3.8))
+    .addStatlessStat(StatlessStatIds.BINDING).build()
+    .addDefault("etstlib:short_circuit",1)
+    .build()
+    buildMaterial('kubejs','lumium').setTier(4).build()
+    .addStat(MaterialStatIds.HEAD,headStat(470,2.5,2.5,MiningTiers.DIAMOND))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.15,-0.15,-0.1,0.3))
+    .addStat(MaterialStatIds.LIMB,limbStat(470,0.3,-0.1,-0.05))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,-0.1,2.5))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(1.25,300,0,2))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(4.75,467,0,2))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(5.75,490,0,2))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(1.75,368,0,2))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(3.9,6.1))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("etstlib:glowing",1).addDefault("tconstruct:enhanced",1)
+    .build()
+    buildMaterial('kubejs','enderium').setTier(4).build()
+    .addStat(MaterialStatIds.HEAD,headStat(1170,5,5,MiningTiers.DIAMOND))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.25,0.25,0.25,0.25))
+    .addStat(MaterialStatIds.LIMB,limbStat(1170,0.25,0.25,-0.05))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.25,0.25,5))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,980,0.05,5))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5,1159,0.05,5))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(7,1270,0.05,5))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(3,925,0.05,5))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(5.5,5.5))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tconstruct:enderference",1)
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("tinkerscalibration:enderference_armor",1).build()
+    .build()
+
+    //高定向热解石墨
+    buildMaterial('kubejs','hop_graphite').setCraftable().setTier(5).build()
+    .addStat(MaterialStatIds.HEAD,headStat(590,5.25,2.5,MiningTiers.WOOD))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.25,0.15,-0.25,0.75))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(15.5,15.5))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
+    .addDefault("etstlib:short_circuit",1).addDefault("tconstruct:lightweight",2).addDefault("mushroom_concept:bloody_mary",1)
+    .build()
+
+    //辐光合金
+    buildMaterial('kubejs','alloy_radiance').setTier(4).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(995,6,7,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.3,0.5,0.3,0.3))
+    .addStat(MaterialStatIds.LIMB,limbStat(995,0.3,0.5,0.05))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.3,6))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(4,880,0.1,6))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(6,1059,0.1,6))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(8,1170,0.1,6))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(4,825,0.1,6))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("etstlib:radiation_inflict",1)
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("etstlib:radiation_shielding",2).build()
+    .build()
+
+    //热核合金
+    buildMaterial('kubejs','alloy_thermalnuclear').setCraftable().setTier(6).build()
+    .addStat(MaterialStatIds.HEAD,headStat(2049,7.25,16384,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(1,1,20.48,0))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(69.5,69.5))
+    .addStatlessStat(StatlessStatIds.BINDING).build()
+    .addDefault("tlt_tech:molten_core",1)
+    .build()
+
+    //工程塑胶板
+    buildMaterial('kubejs','duroplast').setCraftable().setTier(5).build()
+    .addStat(MaterialStatIds.HEAD,headStat(590,7.25,2.5,MiningTiers.WOOD))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.1,0.75,-0.1,0.75))
+    .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(99.5,25.5))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
+    .addDefault("tconstruct:lightweight",2).addDefault("tinkers_advanced:metamorphium",1).addDefault("tlt_tech:industrial_born",1)
+    .build()
 
 })

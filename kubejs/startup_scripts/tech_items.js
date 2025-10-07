@@ -8,4 +8,6 @@ StartupEvents.registry("item", event => {
     event.create("kubejs:compressed_chromatic_steel", "basic")
     event.create("kubejs:awaken_chromatic_steel", "basic").rarity("epic")
     event.create("kubejs:orechidysprosium", "basic")
+    event.create("kubejs:compressed_polonium", "basic")
+    event.create("kubejs:compressed_plutonium", "basic")
 })

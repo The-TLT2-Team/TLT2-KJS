@@ -1,69 +1,3 @@
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//部件类型ID，决定了这个材料会生成哪些类型的部件的贴图
-/**
-* @enum {String}
-*/
-const RangedStatIds = {
-    BOW_STRING:"tconstruct:bowstring",
-    LIMB:"tconstruct:limb",
-    GRIP:"tconstruct:grip",
-}
-/**
-* @enum {String}
-*/
-const MeleeStatIds = {
-    HEAD:"tconstruct:head",
-    HANDLE:"tconstruct:handle",
-    BINDING:"tconstruct:binding",
-}
-/**
-* @enum {String}
-*/
-const ArmorStatIds = {
-    PLATING_HELMET:"tconstruct:plating_helmet",
-    PLATING_CHESTPLATE:"tconstruct:plating_chestplate",
-    PLATING_LEGGINS:"tconstruct:plating_leggings",
-    PLATING_BOOTS:"tconstruct:plating_boots",
-    PLATING_SHIELD:"tconstruct:plating_shield",
-    SHIELD_CORE:"tconstruct:shield_core",
-    MAILLE:"tconstruct:maille",
-    ARMOR_MAILLE:"tconstruct:armor_maille"
-}
-/**
-* @enum {String}
-*/
-const MiscStatIds = {
-    CHARM_CORE:"sakuratinker:charm_core",
-    CHARM_CHAIN:"sakuratinker:charm_chain",
-    FLAG:"sakuratinker:flag",
-}
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//fallback类型，决定了材料的纹理方案
-
-/**
-* @enum {String}
-*/
-const FallBacks = {
-    METAL:"metal",
-    CRYSTAL:"crystal",
-    ROCK:"rock",
-    STICK:"stick",
-    BONE:"bone"
-}
-//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-//材料上色部分，addColor用于颜色上色，addPath用于底图上色（path填底图路径）
-function addColor(grey,color){
-    return {
-        "color": color,
-        "grey": grey
-    }
-}
-function addPath(grey,path) {
-    return {
-        "grey": grey,
-        "path": path
-    }
-}
 
 //代码部分
 ClientEvents.highPriorityAssets(event=>{
@@ -186,7 +120,7 @@ ClientEvents.highPriorityAssets(event=>{
     //实际的材料添加
 
     //神匠
-    buildMaterial('kubejs','hephaestus').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setColor("FF555555").buildTransformer()
+    buildMaterial('kubejs','hephaestus').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setLuminosity(15).setColor("FF555555").buildTransformer()
     .buildResprite()
     .addPalette(addColor(0,"FF000000"))
     .addPalette(addPath(63,"kubejs:materials/hephaestus_dark"))
@@ -213,6 +147,70 @@ ClientEvents.highPriorityAssets(event=>{
     buildMaterial('kubejs','reinforced_plate')
     .addStat(ArmorStatIds.ARMOR_MAILLE).addStat(ArmorStatIds.SHIELD_CORE).addStat(ArmorStatIds.MAILLE).addStat(ArmorStatIds.PLATING_SHIELD)
     .addFallBack(FallBacks.CRYSTAL).setColor("FF241E33")
+    .build()
+
+    //红石琥珀金
+    buildMaterial('kubejs','fluxed_electrum').addArmor().addMelee().addRanged().addFallBack(FallBacks.METAL).setLuminosity(7).setColor("FFF4DE6A").buildTransformer()
+    .buildResprite()
+    .addPalette(addColor(0,"FF000000"))
+    .addPalette(addColor(63,"FFBA0713"))
+    .addPalette(addColor(102,"FFE42319"))
+    .addPalette(addColor(140,"FFCD752A"))
+    .addPalette(addColor(178,"FFE9A93D"))
+    .addPalette(addColor(216,"FFF4DE6A"))
+    .addPalette(addColor(255,"FFFCF8D1"))
+    .build()
+
+    //精灵钢
+    buildMaterial('kubejs','alfsteel')
+    .addArmor().addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FFF79100").setLuminosity(7)
+    .build()
+
+    //热力三锭
+    buildMaterial('kubejs','signalum')
+    .addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFFF2011")
+    .build()
+
+    buildMaterial('kubejs','lumium')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFFCFA7F").setLuminosity(15)
+    .build()
+
+    buildMaterial('kubejs','enderium')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FF29FFC1")
+    .build()
+
+    //高定向热解石墨
+    buildMaterial('kubejs','hop_graphite')
+    .addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FF454545")
+    .build()
+
+    //辐光合金
+    buildMaterial('kubejs','alloy_radiance')
+    .addArmor().addMelee().addRanged()
+    .addFallBack(FallBacks.METAL).setColor("FFE2FB43").setLuminosity(15)
+    .build()
+
+    //热核合金
+    buildMaterial('kubejs','alloy_thermalnuclear')
+    .addMelee()
+    .addFallBack(FallBacks.METAL).setColor("FFEF4345").setLuminosity(15)
+    .build()
+
+    //工程塑胶
+    buildMaterial('kubejs','duroplast').addMelee().addStat(RangedStatIds.BOW_STRING).addFallBack(FallBacks.CRYSTAL).setLuminosity(4).setColor("CCBA8D5A").buildTransformer()
+    .buildResprite()
+    .addPalette(addColor(0,"00000000"))
+    .addPalette(addColor(63,"FF8C5020"))
+    .addPalette(addColor(102,"FF9C6030"))
+    .addPalette(addColor(140,"90B1855A"))
+    .addPalette(addColor(178,"B0B1855A"))
+    .addPalette(addColor(216,"D0B1855A"))
+    .addPalette(addColor(255,"D0CF9B69"))
     .build()
 
 })
