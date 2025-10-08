@@ -222,6 +222,9 @@
 	"modifier.tlt_tech.molten_core.description":"攻击时灼烧敌人，挖掘时获得极致的挖掘速度。",
 
 
+	"modifier.tltmod.caster_tool":"魔艺巧具",
+	"modifier.tltmod.caster_tool.flavor":" ",
+	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
 	"fluid.kubejs.molten_awaken_chromatic_steel": "熔融觉醒彩钢",
