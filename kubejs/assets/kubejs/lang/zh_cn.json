@@ -221,6 +221,14 @@
 	"modifier.tlt_tech.molten_core.flavor":"感觉空气暖暖的...",
 	"modifier.tlt_tech.molten_core.description":"攻击时灼烧敌人，挖掘时获得极致的挖掘速度。",
 
+	"modifier.tlt_tech.venom":"猛毒",
+	"modifier.tlt_tech.venom.flavor":"烈性毒药",
+	"modifier.tlt_tech.venom.description":"攻击施加特性等级的猛毒效果。",
+
+	"modifier.tlt_tech.toxic_outbreak":"毒性爆发",
+	"modifier.tlt_tech.toxic_outbreak.flavor":"小心你身边的队友！",
+	"modifier.tlt_tech.toxic_outbreak.description":"若击杀带有猛毒的目标，则会对周围5格内的目标施加特性等级加1的中毒。",
+
 
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",
