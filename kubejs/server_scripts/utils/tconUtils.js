@@ -169,12 +169,15 @@ const SlotTypes = {
     UPGRADES:"upgrades",
     ABILITIES:"abilities",
     DEFENSE:"defense",
-    SOUL:"soul"
+    SOUL:"soul",
+    MANA:"tltmod_mana"
 }
 
 //—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 //函数部分
+//创建词条配方的函数，返回一个配方构建器。
 function buildModifierRecipe(modifierId,event) {
+    //词条配方构建器
     const recipeBuilder={
         allowCrystal:false,
         checkTrait:false,
@@ -184,23 +187,28 @@ function buildModifierRecipe(modifierId,event) {
         level:{},
         inputs:[],
         tools:[],
+        //设置允许用强化水晶打上去
         setAllowCrystal(){
             this.allowCrystal = true;
             return this;
         },
+        //设置强化等级要求会检查材料特性等级
         setCheckTraitLevel(){
             this.checkTrait = true;
             return this;
         },
+        //添加消耗的槽位
         addSlot(slotType,count){
             this.slots[slotType] = count;
             return this;
         },
+        //设置固定等级
         setLevel(level){
             this.constantLevel = true;
             this.exactLevel = level;
             return this;
         },
+        //设置等级区间
         setLevelRange(min,max){
             this.constantLevel = false;
             if (min>0){
@@ -209,30 +217,41 @@ function buildModifierRecipe(modifierId,event) {
             this.level["max"] = max;
             return this;
         },
+        //添加工具tag
         addToolTag(tag){
             this.tools.push(
                 {"tag":tag}
             );
             return this;
         },
+        //添加工具物品
         addTool(item){
             this.tools.push(
                 {"item":item}
             );
             return this;
         },
-        addInputTag(tag){
+        //添加原料tag
+        addInputTag(tag,count){
             this.inputs.push(
-                {"tag":tag}
+                {
+                    "tag":tag,
+                    "amount_needed":count
+                }
             );
             return this;
         },
-        addInput(item){
+        //添加原料物品
+        addInput(item,count){
             this.inputs.push(
-                {"item":item}
+                {
+                    "item":item,
+                    "amount_needed":count
+                }
             );
             return this;
         },
+        //创建强化配方
         buildRecipe(){
             if (this.constantLevel){
                 event.custom(
@@ -246,7 +265,7 @@ function buildModifierRecipe(modifierId,event) {
                     "slots":this.slots,
                     "tools":this.tools
                 }
-            );
+                );
             } else {
                 event.custom(
                 {
@@ -264,6 +283,7 @@ function buildModifierRecipe(modifierId,event) {
             
             return this;
         },
+        //创建强化提取配方
         buildSalvage(){
             if (this.constantLevel){
                 event.custom(

@@ -167,19 +167,19 @@
 
 	"modifier.tltmod.terra_burst":"泰拉射线",
 	"modifier.tltmod.terra_burst.flavor":"一切一切的开始",
-	"modifier.tltmod.terra_burst.description":"挥舞武器，消耗魔力释放泰拉射线。\n+50射线携带魔力，+7射线伤害。",
+	"modifier.tltmod.terra_burst.description":"挥舞武器，消耗魔力释放泰拉射线。\n ·射线+50携带魔力；每级+7伤害。",
 
 	"modifier.tltmod.alf_burst":"精灵射线",
-	"modifier.tltmod.alf_burst.flavor":"强化剑气！",
-	"modifier.tltmod.alf_burst.description":"挥舞武器，消耗魔力释放精灵射线。\n+100射线携带魔力，+8射线伤害。",
+	"modifier.tltmod.alf_burst.flavor":"精灵能量共鸣！你的魔力射线现在具备强大的穿透性。",
+	"modifier.tltmod.alf_burst.description":"挥舞武器，消耗魔力释放精灵射线。\n ·射线-50射线魔力消耗；每级+50射线携带魔力，+8射线伤害。",
 
 	"modifier.tltmod.excalibur_burst":"王者圣剑",
 	"modifier.tltmod.excalibur_burst.flavor":"吾王剑锋所指，吾等心之所向。",
-	"modifier.tltmod.excalibur_burst.description":"令工具发射的魔力射线能追踪敌人。\n+50射线携带魔力，+50射线命中实体消耗，+9射线伤害。",
+	"modifier.tltmod.excalibur_burst.description":"令工具发射的魔力射线能追踪敌人。\n ·射线+100携带魔力，+50命中实体消耗，+16伤害。",
 
 	"modifier.tltmod.far_sights":"目光远大",
-	"modifier.tltmod.far_sights.flavor":"让我的意志随着这个魔力束而去！",
-	"modifier.tltmod.far_sights.description":"放弃你的全部触及半径，让魔力脉冲给予你答复。\n+100射线携带魔力，+50射线命中方块消耗；工具释放的魔力射线在攻击/挖掘时触发工具词条。",
+	"modifier.tltmod.far_sights.flavor":"放弃你的全部触及半径，让魔力脉冲给予你答复。",
+	"modifier.tltmod.far_sights.description":"手持时极大减少触及半径，但工具释放的魔力射线在攻击/挖掘时触发工具词条。\n ·射线+100携带魔力，+50命中方块消耗。",
 
 	"modifier.tltmod.heat_tendency":"热相容",
 	"modifier.tltmod.heat_tendency.flavor":"火焰只会让我更坚固",
@@ -221,10 +221,75 @@
 	"modifier.tlt_tech.molten_core.flavor":"感觉空气暖暖的...",
 	"modifier.tlt_tech.molten_core.description":"攻击时灼烧敌人，挖掘时获得极致的挖掘速度。",
 
-
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",
 	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
+
+	"modifier.tltmod.thunderstorm":"雷暴雨",
+	"modifier.tltmod.thunderstorm.flavor":"听，要下雨了",
+	"modifier.tltmod.thunderstorm.description":"射线命中目标后耗尽全部魔力使穿甲的雷暴射线从天而降，雷暴射线携带25%伤害且附带3种伤害类型。\n ·每个雷暴射线需要消耗等同于原射线实体魔力消耗的魔力，新射线的实体魔力消耗固定为50；\n ·射线+16基础伤害，+50实体魔力消耗，+200携带魔力。",
+
+	"modifier.tltmod.particle_accelerate":"质荷加速器",
+	"modifier.tltmod.particle_accelerate.flavor":"磁场能加速！",
+	"modifier.tltmod.particle_accelerate.description":"发射极性相反的红蓝射线，令目标带上极性，射线会追踪极性相反的生物。\n ·射线每次命中极性相反的实体时，伤害倍率+100%；\n ·射线+16基础伤害，+50命中实体消耗。",
+
+	"modifier.tltmod.light_engrave":"光刻",
+	"modifier.tltmod.light_engrave.flavor":"光之镌刻",
+	"modifier.tltmod.light_engrave.description":"获得一个魔力槽。",
+
+	"modifier.tltmod.dark_erosion":"暗蚀",
+	"modifier.tltmod.dark_erosion.flavor":"暗之侵蚀",
+	"modifier.tltmod.dark_erosion.description":"获得一个魔力槽。",
+
+	"modifier.tltmod.source_obfuscate":"源混淆",
+	"modifier.tltmod.source_obfuscate.flavor":"§k我不到啊",
+	"modifier.tltmod.source_obfuscate.description":"在魔力射线造成的伤害中插入一端乱码，让敌人无法记忆你造成的伤害。",
+
+	"modifier.tltmod.burst_pierce":"射线穿刺",
+	"modifier.tltmod.burst_pierce.flavor":"没有什么比我的魔力射线更锐利！",
+	"modifier.tltmod.burst_pierce.description":"将魔力射线的伤害转换为穿甲伤害。",
+
+	"modifier.tltmod.destruction_magic":"破坏魔法",
+	"modifier.tltmod.destruction_magic.flavor":"我是挖掘透镜，我要来破坏地形了",
+	"modifier.tltmod.destruction_magic.description":"令魔力射线能破坏方块。",
+
+	"modifier.tltmod.elastic_memory":"不稳定内存",
+	"modifier.tltmod.elastic_memory.flavor":"一键为内存断电",
+	"modifier.tltmod.elastic_memory.description":"魔力射线每§b5/4/3§rtick清除一次已命中实体列表，从而能多次命中同一个目标。",
+
+	"modifier.tltmod.extra_warhead":"额外战斗部",
+	"modifier.tltmod.extra_warhead.flavor":"全力歼灭",
+	"modifier.tltmod.extra_warhead.description":"魔力射线每级+0.25伤害倍率，+25实体魔力消耗。",
+
+	"modifier.tltmod.more_capacity":"射线扩容",
+	"modifier.tltmod.more_capacity.flavor":"聚焦一下魔力...",
+	"modifier.tltmod.more_capacity.description":"魔力射线每级+50携带魔力。",
+
+	"modifier.tltmod.over_capacity":"射线超容",
+	"modifier.tltmod.over_capacity.flavor":"要...塞不下了...",
+	"modifier.tltmod.over_capacity.description":"魔力射线每级+100携带魔力，+5每tick魔力损耗。",
+	
+	"modifier.tltmod.overclock":"超频",
+	"modifier.tltmod.overclock.flavor":"既增大功率，也增大损耗。",
+	"modifier.tltmod.overclock.description":"魔力射线每级+100携带魔力，+25实体魔力消耗和方块魔力消耗。",
+
+	"modifier.tltmod.pulse_engine":"脉冲驱动器",
+	"modifier.tltmod.pulse_engine.flavor":"4，3，2，1，脉冲驱动器启动！",
+	"modifier.tltmod.pulse_engine.description":"魔力射线射出后每tick速度*1.1。",
+
+	"modifier.tltmod.burst_accelerate":"射线加速",
+	"modifier.tltmod.burst_accelerate.flavor":"再快一点！",
+	"modifier.tltmod.burst_accelerate.description":"魔力射线每级+50%速度。",
+
+	"modifier.tltmod.burst_mass_effect":"动能原理",
+	"modifier.tltmod.burst_mass_effect.flavor":"Ek=0.5Mv^2",
+	"modifier.tltmod.burst_mass_effect.description":"魔力射线的基础伤害会乘以其速度。",
+
+	"modifier.tltmod.burst_bypass_cooldown":"射线破击",
+	"modifier.tltmod.burst_bypass_cooldown.flavor":"“绿”进红出",
+	"modifier.tltmod.burst_bypass_cooldown.description":"魔力射线会移除目标的受击无敌帧。",
+
+
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
 	"fluid.kubejs.molten_awaken_chromatic_steel": "熔融觉醒彩钢",
@@ -249,6 +314,16 @@
 	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
 	"tooltip.tltmod.cursed_ring_replacement2": "§5- 你合成出的匠魂工具将会附带 §6一个特殊词条",
 	"tooltip.kubejs.remove_cursed_ring":"使用以永久移除七咒之戒，不可逆！",
+	"tooltip.tltmod.error.specialized_burst_modifier":"每件工具只能强化一个专业化魔力射线升级！",
+	"tooltip.tltmod.burst_time_before_loss": "射线在 ",
+	"tooltip.tltmod.burst_mana_loss": "刻 后每刻流失 ",
+
+	
+	"info.tltmod.specialized_burst_modifier":"§b-专业化魔力射线升级-",
+
+	"stat.tconstruct.slot.prefix.tltmod_mana":"魔力槽：§b",
+	"stat.tconstruct.slot.display.tltmod_mana": "魔力",
+
 
 	"trait.l2hostility.defense": "格挡",
 	"trait.l2hostility.defense.desc": "免疫小于自身最大生命值3%乘%s的伤害",
