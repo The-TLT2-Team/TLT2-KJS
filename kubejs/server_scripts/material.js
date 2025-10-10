@@ -553,4 +553,19 @@ ServerEvents.highPriorityData(event=>{
     .addDefault("tconstruct:lightweight",2).addDefault("tinkers_advanced:metamorphium",1).addDefault("tlt_tech:industrial_born",1)
     .build()
 
+    //鮟鱇鱼獠牙
+    buildMaterial('kubejs','anglers_fang').setCraftable().setTier(4).build()
+        .addStat(MaterialStatIds.HEAD,headStat(420,4.25,2.5,MiningTiers.IRON))
+        .addStat(MaterialStatIds.HANDLE,handleStat(0.2,0.45,0.2,0.45))
+        .build()
+        .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:venom",1)
+        .build()
+
+    //剧毒獠牙,深入天境的深池毒素浇筑鮟鱇鱼獠牙
+    buildMaterial('kubejs','toxic_fang').setCraftable().setTier(5).build()
+        .addStat(MaterialStatIds.HEAD,headStat(520,6.25,3.5,MiningTiers.IRON))
+        .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.6,0.1,0.3))
+        .build()
+        .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:toxic_outbreak",1)
+        .build()
 })

@@ -221,6 +221,15 @@
 	"modifier.tlt_tech.molten_core.flavor":"感觉空气暖暖的...",
 	"modifier.tlt_tech.molten_core.description":"攻击时灼烧敌人，挖掘时获得极致的挖掘速度。",
 
+	"modifier.tlt_tech.venom":"猛毒",
+	"modifier.tlt_tech.venom.flavor":"烈性毒药",
+	"modifier.tlt_tech.venom.description":"攻击施加特性等级的猛毒效果。",
+
+	"modifier.tlt_tech.toxic_outbreak":"毒性爆发",
+	"modifier.tlt_tech.toxic_outbreak.flavor":"小心你身边的队友！",
+	"modifier.tlt_tech.toxic_outbreak.description":"若击杀带有猛毒的目标，则会对周围5格内的目标施加特性等级加1的中毒。",
+
+
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",
 	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
@@ -268,7 +277,7 @@
 	"modifier.tltmod.over_capacity":"射线超容",
 	"modifier.tltmod.over_capacity.flavor":"要...塞不下了...",
 	"modifier.tltmod.over_capacity.description":"魔力射线每级+100携带魔力，+5每tick魔力损耗。",
-	
+
 	"modifier.tltmod.overclock":"超频",
 	"modifier.tltmod.overclock.flavor":"既增大功率，也增大损耗。",
 	"modifier.tltmod.overclock.description":"魔力射线每级+100携带魔力，+25实体魔力消耗和方块魔力消耗。",
@@ -318,7 +327,7 @@
 	"tooltip.tltmod.burst_time_before_loss": "射线在 ",
 	"tooltip.tltmod.burst_mana_loss": "刻 后每刻流失 ",
 
-	
+
 	"info.tltmod.specialized_burst_modifier":"§b-专业化魔力射线升级-",
 
 	"stat.tconstruct.slot.prefix.tltmod_mana":"魔力槽：§b",
