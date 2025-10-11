@@ -70,6 +70,7 @@
     "burst_accelerate":"#70FFFC",
     "burst_mass_effect":"#5ACCFF",
     "burst_bypass_cooldown":"#5ACCFF",
+    "mana_transmitter":"#70FFFC",
     "particle_accelerate":"#E421FF"
   }
 }

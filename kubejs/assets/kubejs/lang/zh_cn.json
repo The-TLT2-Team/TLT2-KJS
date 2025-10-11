@@ -298,6 +298,10 @@
 	"modifier.tltmod.burst_bypass_cooldown.flavor":"“绿”进红出",
 	"modifier.tltmod.burst_bypass_cooldown.description":"魔力射线会移除目标的受击无敌帧。",
 
+	"modifier.tltmod.mana_transmitter":"魔能传输器",
+	"modifier.tltmod.mana_transmitter.flavor":"搬搬搬搬搬运工",
+	"modifier.tltmod.mana_transmitter.description":"魔力射线每级+ 100*10^词条等级 携带魔力、方块魔力消耗和实体魔力消耗。",
+
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",

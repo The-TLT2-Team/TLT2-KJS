@@ -281,6 +281,750 @@
     "type": "minecraft:sequence",
     "sequence": [
       {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:biome",
+      "biome_is": [
+        "alexscaves:primordial_caves"
+      ]
+    },
+    "then_run": {
+      "type": "minecraft:sequence",
+      "sequence": [
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:vertical_gradient",
+            "false_at_and_above": {
+              "above_bottom": 5
+            },
+            "random_name": "minecraft:bedrock",
+            "true_at_and_below": {
+              "above_bottom": 0
+            }
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "minecraft:bedrock"
+            }
+          }
+        },
+        {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:sequence",
+                "sequence": [
+                  {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                      "type": "minecraft:water",
+                      "add_stone_depth": false,
+                      "offset": 0,
+                      "surface_depth_multiplier": 0
+                    },
+                    "then_run": {
+                      "type": "minecraft:block",
+                      "result_state": {
+                        "Name": "minecraft:grass_block",
+                        "Properties": {
+                          "snowy": "false"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "type": "minecraft:sequence",
+                    "sequence": [
+                      {
+                        "type": "minecraft:condition",
+                        "if_true": {
+                          "type": "minecraft:noise_threshold",
+                          "max_threshold": 0.2,
+                          "min_threshold": -0.12,
+                          "noise": "minecraft:gravel"
+                        },
+                        "then_run": {
+                          "type": "minecraft:block",
+                          "result_state": {
+                            "Name": "minecraft:packed_mud"
+                          }
+                        }
+                      },
+                      {
+                        "type": "minecraft:block",
+                        "result_state": {
+                          "Name": "minecraft:dirt"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:sequence",
+                "sequence": [
+                  {
+                    "type": "minecraft:condition",
+                    "if_true": {
+                      "type": "minecraft:noise_threshold",
+                      "max_threshold": 0.2,
+                      "min_threshold": -0.12,
+                      "noise": "minecraft:gravel"
+                    },
+                    "then_run": {
+                      "type": "minecraft:block",
+                      "result_state": {
+                        "Name": "minecraft:packed_mud"
+                      }
+                    }
+                  },
+                  {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:dirt"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 42
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 43
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 22
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 23
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 2
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 4
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -18
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -17
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -38
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -37
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -58
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -56
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -78
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -77
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -98
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -97
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -118
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -116
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -138
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -137
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -158
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -157
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -178
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -176
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -198
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -197
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -218
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -217
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -238
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -236
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "minecraft:sandstone"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "alexscaves:limestone"
+          }
+        }
+      ]
+    }
+  },
+      {
         "type": "minecraft:condition",
         "if_true": {
           "type": "minecraft:vertical_gradient",

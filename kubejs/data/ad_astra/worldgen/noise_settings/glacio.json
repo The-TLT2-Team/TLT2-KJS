@@ -281,6 +281,962 @@
     "type": "minecraft:sequence",
     "sequence": [
       {
+    "type": "minecraft:condition",
+    "if_true": {
+      "type": "minecraft:biome",
+      "biome_is": [
+        "alexscaves:candy_cavity"
+      ]
+    },
+    "then_run": {
+      "type": "minecraft:sequence",
+      "sequence": [
+        {
+          "type": "minecraft:condition",
+          "if_true": {
+            "type": "minecraft:vertical_gradient",
+            "false_at_and_above": {
+              "above_bottom": 5
+            },
+            "random_name": "minecraft:bedrock",
+            "true_at_and_below": {
+              "above_bottom": 0
+            }
+          },
+          "then_run": {
+            "type": "minecraft:block",
+            "result_state": {
+              "Name": "minecraft:bedrock"
+            }
+          }
+        },
+        {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": false,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:water",
+                  "add_stone_depth": false,
+                  "offset": 0,
+                  "surface_depth_multiplier": 0
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "alexscaves:block_of_frosted_chocolate"
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:stone_depth",
+                "add_surface_depth": true,
+                "offset": 0,
+                "secondary_depth_range": 0,
+                "surface_type": "floor"
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "alexscaves:block_of_chocolate",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:sequence",
+          "sequence": [
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 52
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 54
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 42
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 44
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 32
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 35
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 22
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 24
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 12
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 14
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": 2
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": 5
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -8
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -6
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -18
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -16
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -28
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -25
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -38
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -36
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -48
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -46
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -58
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -55
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -68
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -66
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -78
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -76
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -88
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -85
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -98
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -96
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -108
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -106
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -118
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -115
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -128
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -126
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "add_stone_depth": false,
+                "anchor": {
+                  "absolute": -138
+                },
+                "surface_depth_multiplier": 0
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:not",
+                  "invert": {
+                    "type": "minecraft:y_above",
+                    "add_stone_depth": false,
+                    "anchor": {
+                      "absolute": -136
+                    },
+                    "surface_depth_multiplier": 0
+                  }
+                },
+                "then_run": {
+                  "type": "minecraft:condition",
+                  "if_true": {
+                    "type": "minecraft:noise_threshold",
+                    "max_threshold": 0.8,
+                    "min_threshold": -0.7,
+                    "noise": "minecraft:ice"
+                  },
+                  "then_run": {
+                    "type": "minecraft:block",
+                    "result_state": {
+                      "Name": "alexscaves:block_of_chocolate",
+                      "Properties": {
+                        "axis": "y"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "alexscaves:cake_layer",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        }
+      ]
+    }
+  },
+      {
         "type": "minecraft:condition",
         "if_true": {
           "type": "minecraft:vertical_gradient",
@@ -367,28 +1323,6 @@
                   }
                 }
               ]
-            }
-          }
-        }
-      },
-      {
-        "type": "minecraft:condition",
-        "if_true": {
-          "type": "minecraft:vertical_gradient",
-          "random_name": "minecraft:deepslate",
-          "true_at_and_below": {
-            "absolute": 0
-          },
-          "false_at_and_above": {
-            "absolute": 8
-          }
-        },
-        "then_run": {
-          "type": "minecraft:block",
-          "result_state": {
-            "Name": "minecraft:deepslate",
-            "Properties": {
-              "axis": "y"
             }
           }
         }

@@ -9,5 +9,5 @@ ServerEvents.tags("item", event => {
     event.removeAll('tconstruct:modifiable/ancient')
 })
 ServerEvents.tags("block",event=>{
-    event.add("alexscaves:galena_gen_replaceables",'#ad_astra:mercury_stone_replaceables')
+
 })
