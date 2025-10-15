@@ -27,6 +27,8 @@
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
+	"effect.tltmod.vibrio_vulnificus": "海洋创伤弧菌",
+
 	"item.tltmod.seven_curse_removal":"移除七咒之戒",
 
 	"entity.tltmod.wave_slash": "波动斩",
@@ -301,6 +303,9 @@
 	"modifier.tltmod.mana_transmitter.flavor":"搬搬搬搬搬运工",
 	"modifier.tltmod.mana_transmitter.description":"魔力射线每级+ 100*10^词条等级 携带魔力、方块魔力消耗和实体魔力消耗。",
 
+	"modifier.tltmod.vibrio_vulnificus":"海洋创伤弧菌",
+	"modifier.tltmod.vibrio_vulnificus.flavor":"终极破伤风附魔",
+	"modifier.tltmod.vibrio_vulnificus.description":"攻击会施加[海洋创伤弧菌]效果。\n[海洋创伤弧菌]：受到伤害增加25%，每秒会受到逐渐翻倍直到最大生命值10%的凋零伤害",
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
