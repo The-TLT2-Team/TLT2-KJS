@@ -38,3 +38,7 @@ xaero
 *.txt
 /*.log
 /enigmatic_persistence.dat
+/config/oculus.properties
+/config/packetfixer.properties
+/config/blockswap/known_states
+/config/tweakerge.json
