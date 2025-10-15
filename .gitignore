@@ -31,6 +31,10 @@
 /.vscode/
 /.probe/
 /.idea/
-/config/
+/config/ftbquests
+xaero
+/config/jei
+/config/xaero*
+*.txt
 /*.log
 /enigmatic_persistence.dat

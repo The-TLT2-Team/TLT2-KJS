@@ -1,0 +1,21 @@
+
+["大胃袋（吃不停）相关配置"]
+	#Whether to enable storing hunger
+	#是否启用存储饥饿
+	player_hunger = true
+	#Player's maximum hunger value, default is 20, range: (1-10000)
+	#玩家最大饥饿值, 默认为20,取值范围:(1-10000)
+	#Range: 1 ~ 10000
+	max_hunger = 20
+	#Enable modGUI rendering
+	#开启modGUI渲染
+	GUI = true
+	#Enable multi-gui rendering
+	#开启多排渲染
+	MULTI_GUI = true
+
+["精妙相关配置"]
+	#精妙背包喂食升级最低冷却
+	#Range: > 10
+	feedingCooldown = 60
+
