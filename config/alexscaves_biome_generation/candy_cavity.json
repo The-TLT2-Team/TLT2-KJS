@@ -1,0 +1,12 @@
+{
+  "disabled_completely": true,
+  "distance_from_spawn": 500,
+  "alexscaves_rarity_offset": 5,
+  "depth": [
+    0.3,
+    2.0
+  ],
+  "dimensions": [
+    "ad_astra:glacio"
+  ]
+}
