@@ -159,11 +159,11 @@
 
 	"modifier.tltmod.never_ends_startup":"永不结束之开端",
 	"modifier.tltmod.never_ends_startup.flavor":"终末之地远远不是终点。",
-	"modifier.tltmod.never_ends_startup.description":"施加于护甲时阻止你身边8半径内生物的传送。施加于工具时对末影人造成5倍伤害。\n-仅七咒模式下生效-",
+	"modifier.tltmod.never_ends_startup.description":"施加于护甲时阻止你身边8半径内生物的传送。施加于工具时对末影人造成5倍伤害。\n§5-仅七咒模式下生效-",
 
 	"modifier.tltmod.piglin_defense":"猪灵防御",
 	"modifier.tltmod.piglin_defense.flavor":"猪猪那么可爱，为什么要杀猪猪。",
-	"modifier.tltmod.piglin_defense.description":"装备时使猪灵、僵尸猪灵强制友好。\n-仅七咒模式下生效-",
+	"modifier.tltmod.piglin_defense.description":"装备时使猪灵、僵尸猪灵强制友好。\n§5-仅七咒模式下生效-",
 
 	"modifier.tltmod.terra_burst":"泰拉射线",
 	"modifier.tltmod.terra_burst.flavor":"一切一切的开始",
@@ -195,7 +195,7 @@
 
 	"modifier.tltmod.the_cursed_one":"被诅咒者",
 	"modifier.tltmod.the_cursed_one.flavor":"拥抱诅咒，接受祝福。",
-	"modifier.tltmod.the_cursed_one.description":"你的工具会随使用而不断变强。\n-仅七咒模式-",
+	"modifier.tltmod.the_cursed_one.description":"你的工具会随使用而不断变强。\n§5-仅七咒模式-",
 
 	"modifier.tlt_tech.flux_blocking":"通量格挡",
 	"modifier.tlt_tech.flux_blocking.flavor":"能量盾！",
@@ -229,7 +229,6 @@
 	"modifier.tlt_tech.toxic_outbreak.flavor":"小心你身边的队友！",
 	"modifier.tlt_tech.toxic_outbreak.description":"若击杀带有猛毒的目标，则会对周围5格内的目标施加特性等级加1的中毒。",
 
-
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",
 	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
@@ -252,7 +251,7 @@
 
 	"modifier.tltmod.source_obfuscate":"源混淆",
 	"modifier.tltmod.source_obfuscate.flavor":"§k我不到啊",
-	"modifier.tltmod.source_obfuscate.description":"在魔力射线造成的伤害中插入一端乱码，让敌人无法记忆你造成的伤害。",
+	"modifier.tltmod.source_obfuscate.description":"在魔力射线造成的伤害中插入一段乱码，让敌人无法记忆你造成的伤害。",
 
 	"modifier.tltmod.burst_pierce":"射线穿刺",
 	"modifier.tltmod.burst_pierce.flavor":"没有什么比我的魔力射线更锐利！",
@@ -326,6 +325,7 @@
 	"tooltip.tltmod.no_orbs_left": "你已不再能使用此物品",
 	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
 	"tooltip.tltmod.cursed_ring_replacement2": "§5- 你合成出的匠魂工具将会附带 §6一个特殊词条",
+	"tooltip.tltmod.cursed_ring_replacement3": "§5- 从食物中只能获取 §650%§5 的饱食度、饱和度和效果时长",
 	"tooltip.kubejs.remove_cursed_ring":"使用以永久移除七咒之戒，不可逆！",
 	"tooltip.tltmod.error.specialized_burst_modifier":"每件工具只能强化一个专业化魔力射线升级！",
 	"tooltip.tltmod.burst_time_before_loss": "射线在 ",
@@ -334,7 +334,7 @@
 
 	"info.tltmod.specialized_burst_modifier":"§b-专业化魔力射线升级-",
 
-	"stat.tconstruct.slot.prefix.tltmod_mana":"魔力槽：§b",
+	"stat.tconstruct.slot.prefix.tltmod_mana":"魔力槽：",
 	"stat.tconstruct.slot.display.tltmod_mana": "魔力",
 
 
