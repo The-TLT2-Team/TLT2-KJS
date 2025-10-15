@@ -37,6 +37,8 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:alloy_thermalnuclear","mekanism_extras:alloy_thermonuclear"])
     //辐光合金
     craftableMaterial(["kubejs:alloy_radiance","mekanism_extras:alloy_radiance"])
+    //海洋玻璃碎片
+    craftableMaterial(["tltmod:sea_glass_shards","alexscaves:sea_glass_shards"])
 })
 /**
  * 相关函数(ctrl点击以跳转)：
@@ -213,4 +215,14 @@ ServerEvents.highPriorityData(event=>{
         .build()
         .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:toxic_outbreak",1)
         .build()
+//    海洋玻璃碎片
+    buildMaterial('tltmod','sea_glass_shards').setTier(7).setCraftable().build()
+    .addStat(MaterialStatIds.HEAD,headStat(378,10,20,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.4,1.7,0.8,1.4))
+    .addStat(MaterialStatIds.GRIP,gripStat(-0.4,-0.1,30))
+    .addStat(MaterialStatIds.LIMB,limbStat(378,0.3,0.4,-0.1))
+    addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tltmod:vibrio_vulnificus",1).addDefault("cloudertinker:fragile",1)
+    .buildPerstat(MaterialTypes.ARMOR).addModifier("tltmod:vibrio_vulnificus",1).addModifier("cloudertinker:fragile",2).build()
+    .build()
 })
