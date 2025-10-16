@@ -27,6 +27,8 @@
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
+	"effect.tltmod.vibrio_vulnificus": "海洋创伤弧菌",
+
 	"item.tltmod.seven_curse_removal":"移除七咒之戒",
 
 	"entity.tltmod.wave_slash": "波动斩",
@@ -57,6 +59,9 @@
 
 	"material.kubejs.fluxed_electrum":"红石琥珀金",
 	"material.kubejs.fluxed_electrum.flavor":"红石能量！",
+
+	"material.tltmod.sea_glass_shards":"海洋玻璃碎片",
+	"material.tltmod.sea_glass_shards":"海的味道我知道",
 
 	"material.kubejs.alfsteel":"精灵钢",
 	"material.kubejs.signalum":"信素",
@@ -228,6 +233,11 @@
 	"modifier.tlt_tech.toxic_outbreak":"毒性爆发",
 	"modifier.tlt_tech.toxic_outbreak.flavor":"小心你身边的队友！",
 	"modifier.tlt_tech.toxic_outbreak.description":"若击杀带有猛毒的目标，则会对周围5格内的目标施加特性等级加1的中毒。",
+
+	"modifier.tltmod.vibrio_vulnificus":"海洋创伤弧菌",
+	"modifier.tltmod.vibrio_vulnificus.flavor":"全菌出击！",
+	"modifier.tltmod.vibrio_vulnificus.description":"攻击和受击每级会施加10秒[海洋创伤弧菌]效果。\n[海洋创伤弧菌]：受到伤害增加25%，每秒会受到逐渐翻倍直到最大生命值10%的凋零伤害",
+
 
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",

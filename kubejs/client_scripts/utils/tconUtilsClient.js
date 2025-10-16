@@ -64,3 +64,124 @@ function addPath(grey,path) {
         "path": path
     }
 }
+
+//————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+//材料部件贴图部分
+let assetsEvent;
+function setAssetsEvent(event){
+    assetsEvent = event
+}
+//创建材料的函数，namespace为modid，id为材料名。会返回一个renderInfoBuilder便于进行链式调用。
+    function buildMaterial(nameSpace,id){
+        const renderInfoBuilder = {
+            color:"000000",
+            fallbacks:[],
+            luminosity:0,
+            supportedStats:[],
+
+            // 设置材料的光度，最大15
+            // 高光度材料在暗处看起来会更明亮
+            setLuminosity:(luminosity)=>{
+                renderInfoBuilder.luminosity = luminosity;
+                return renderInfoBuilder
+            },
+
+            // 设置颜色
+            // 没生成材料贴图时的默认颜色，会按匠魂默认的梯度渲染材料
+            setColor:(color)=>{
+                renderInfoBuilder.color = color;
+                return renderInfoBuilder
+            },
+
+            // 添加部件类型ID
+            addStat:(stat) =>{
+                renderInfoBuilder.supportedStats.push(stat);
+                return renderInfoBuilder;
+            },
+            // 添加全部近战部件类型
+            addMelee:()=>{
+                renderInfoBuilder.supportedStats.push(
+                    MeleeStatIds.BINDING,
+                    MeleeStatIds.HANDLE,
+                    MeleeStatIds.HEAD
+                )
+                return renderInfoBuilder;
+            },
+            // 添加全部远程类型
+            addRanged:()=>{
+                renderInfoBuilder.supportedStats.push(
+                    RangedStatIds.BOW_STRING,
+                    RangedStatIds.GRIP,
+                    RangedStatIds.LIMB
+                )
+                return renderInfoBuilder;
+            },
+            //添加全部护甲类型
+            addArmor:()=>{
+                renderInfoBuilder.supportedStats.push(
+                    ArmorStatIds.ARMOR_MAILLE,
+                    ArmorStatIds.MAILLE,
+                    ArmorStatIds.PLATING_BOOTS,
+                    ArmorStatIds.PLATING_CHESTPLATE,
+                    ArmorStatIds.PLATING_HELMET,
+                    ArmorStatIds.PLATING_LEGGINS,
+                    ArmorStatIds.SHIELD_CORE,
+                    ArmorStatIds.PLATING_SHIELD
+                )
+                return renderInfoBuilder;
+            },
+            //添加fallback类型
+            addFallBack:(fallback)=>{
+                renderInfoBuilder.fallbacks.push(fallback);
+                return renderInfoBuilder;
+            },
+
+            //开始构建部件贴图生成器
+            //需要梯度上色的材料才使用此函数，返回一个transformerBuilder
+            buildTransformer(){
+                return transformerBuilder;
+            },
+            //直接构建渲染信息
+            //对于不需要梯度上色的材料，用这个函数就行了
+            build:()=>{
+                assetsEvent.add(nameSpace+':tinkering/materials/'+id,{
+                    "color":renderInfoBuilder.color,
+                    "fallbacks":renderInfoBuilder.fallbacks,
+                    "luminosity":renderInfoBuilder.luminosity,
+                })
+            }
+        }
+        // 材料贴图生成器部分
+        const transformerBuilder = {
+                    palette:[],
+                    transformer:{},
+                    // 创建一个灰度上色生成器
+                    buildResprite:()=>{
+                        const respriteBuilder = {
+                            //添加上色灰度，用addColor（颜色）或addPath（贴图）方法填充参数（参考神匠/凝矿兰）
+                            addPalette:(palette)=> {
+                                transformerBuilder.palette.push(palette)
+                                return respriteBuilder;
+                            },
+                            //彻底完成材料贴图生成器
+                            build:()=>{
+                                transformerBuilder.transformer = {
+                                    "type": "tconstruct:grey_to_sprite",
+                                    "palette": transformerBuilder.palette
+                                }
+                                assetsEvent.add(nameSpace+':tinkering/materials/'+id,{
+                                    "color":renderInfoBuilder.color,
+                                    "fallbacks":renderInfoBuilder.fallbacks,
+                                    "luminosity":renderInfoBuilder.luminosity,
+                                    "generator": {
+                                        "supported_stats":renderInfoBuilder.supportedStats,
+                                        "transformer":transformerBuilder.transformer
+                                    }
+                                })
+                            }
+                        }
+                        return respriteBuilder;
+                    }
+                }
+        return renderInfoBuilder;
+    }

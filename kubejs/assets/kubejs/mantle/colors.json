@@ -5,6 +5,9 @@
     "awaken_chromatic_steel":"#6967C9",
     "compressed_chromatic_steel":"#302F5C"
   },
+  "material.tltmod": {
+   "sea_glass_shards":"#CEE7E6"
+  },
 
   "material.kubejs": {
     "reinforced_plate":"#241E33",
@@ -71,6 +74,7 @@
     "burst_mass_effect":"#5ACCFF",
     "burst_bypass_cooldown":"#5ACCFF",
     "mana_transmitter":"#70FFFC",
-    "particle_accelerate":"#E421FF"
+    "particle_accelerate":"#E421FF",
+    "vibrio_vulnificus": "#CEE7E6"
   }
 }

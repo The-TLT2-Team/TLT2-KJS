@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Ethanethiol",
+      "uniqueId": "f0692b01-fa6d-44c5-9aa9-93dd2d233c96"
+    },
+    "time": 1760173588312,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Uk5cba6G2f"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ethanethiol",
+      "uniqueId": "f0692b01-fa6d-44c5-9aa9-93dd2d233c96"
+    },
+    "time": 1760173438560,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/mVD3Jcyowr"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Ethanethiol",
+      "uniqueId": "f0692b01-fa6d-44c5-9aa9-93dd2d233c96"
+    },
+    "time": 1760173248188,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/nO4vcQiwSS"
+    }
+  }
+]
