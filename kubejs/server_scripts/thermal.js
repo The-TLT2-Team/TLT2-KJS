@@ -1,6 +1,4 @@
 ServerEvents.recipes(event=>{
-    event.recipes.thermal.smelter('2x tlt_tech:fu_dust',['2x mekanism:yellow_cake_uranium','mekanism:dust_fluorite'])
-    event.recipes.thermal.smelter('16x tlt_tech:ck_indused_fu_dust',['8x tlt_tech:fu_dust','immersiveengineering:dust_hop_graphite','3x thermal:niter_dust'])
 event.custom({
   "type": "pneumaticcraft:pressure_chamber",
   "inputs": [
@@ -162,4 +160,6 @@ event.shaped('8x tlt_tech:range_upgrade_2',[
   event.recipes.thermal.smelter_catalyst('tinkers_advanced:blaze_netherite').useChance(0.1).minChance(0).energyMod(0.75).primaryMod(5).secondaryMod(5)
   event.recipes.thermal.pulverizer_catalyst('tinkers_advanced:basalz_signalum').useChance(0.1).minChance(0).energyMod(0.75).primaryMod(5).secondaryMod(5)
   event.recipes.thermal.smelter(Item.of('tinkers_advanced:blaze_netherite',2),['2x netherite_ingot','blaze_powder'])
+  event.recipes.thermal.smelter(['kubejs:radon_indused_fuel','15x glass_bottle'],['tlt_tech:ck_indused_fu_dust','16x alexscaves:radon_bottle'])
+  event.recipes.thermal.centrifuge([Item.of('tlt_tech:high_performance_reactor_fuel').withChance(0.25),'glass_bottle'],['kubejs:radon_indused_fuel'])
 })

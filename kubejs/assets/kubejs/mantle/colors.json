@@ -75,6 +75,12 @@
     "burst_bypass_cooldown":"#5ACCFF",
     "mana_transmitter":"#70FFFC",
     "particle_accelerate":"#E421FF",
+    "warp_attack":"#FF4040",
+    "magnetic_focus":"#FF4040",
+    "magnetic_scatter":"#4040FF",
+    "gravity_interrupt":"#4F3041",
+    "days_and_nights":"#FFD57C",
+    "gravity_manipulate":"#4F3041",
     "vibrio_vulnificus": "#CEE7E6"
   }
 }

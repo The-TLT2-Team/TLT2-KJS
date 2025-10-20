@@ -9,7 +9,7 @@ to make editing this file much easier.
 */
 {
 	// Generates all block states for all blocks in the registry.
-	"generate_all_known_states": true,
+	"generate_all_known_states": false,
 	// Whether blocks are replaced in existing chunks.
 	"retro_gen": false,
 	/* A map of states that specifies what the "old" block state is and what its "new" block state is.
@@ -84,5 +84,27 @@ to make editing this file much easier.
 	   		"minecraft:diamond_block": "minecraft:emerald_block"
 	   	}
 	*/
-	"swapper": { }
+	"swapper": { 
+		"mekanism:tin_ore":"thermal:tin_ore",
+		"mekanism:deepslate_tin_ore":"thermal:deepslate_tin_ore",
+
+		"mekanism:lead_ore":"thermal:lead_ore",
+		"immersiveengineering:ore_lead":"thermal:lead_ore",
+		"mekanism:deepslate_lead_ore":"thermal:deepslate_lead_ore",
+		"immersiveengineering:deepslate_ore_lead":"thermal:deepslate_lead_ore",
+		 
+		"immersiveengineering:ore_silver":"thermal:silver_ore",
+		"immersiveengineering:deepslate_ore_silver":"thermal:deepslate_silver_ore",
+
+		"iceandfire:silver_ore":"thermal:silver_ore",
+		"iceandfire:deepslate_silver_ore":"thermal:deepslate_silver_ore",
+
+		"occultism:silver_ore":"thermal:silver_ore",
+
+		"immersiveengineering:ore_nickel":"thermal:nickel_ore",
+		"immersiveengineering:deepslate_ore_nickel":"thermal:deepslate_nickel_ore",
+
+		"immersiveengineering:ore_uranium":"mekanism:uranium_ore",
+        "immersiveengineering:deepslate_ore_uranium":"mekanism:deepslate_uranium_ore",
+	}
 }

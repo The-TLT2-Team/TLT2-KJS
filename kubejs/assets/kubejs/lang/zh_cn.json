@@ -24,12 +24,15 @@
 	"item.kubejs.orechidysprosium":"凝矿镧",
 	"item.kubejs.compressed_polonium":"压缩钋粉",
 	"item.kubejs.compressed_plutonium":"压缩钚粉",
+	"item.kubejs.radon_indused_fuel":"氡活化核能燃料瓶",
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
 	"effect.tltmod.vibrio_vulnificus": "海洋创伤弧菌",
 
 	"item.tltmod.seven_curse_removal":"移除七咒之戒",
+
+	"item.tlt_tech.high_performance_reactor_fuel":"高性能干态裂变燃料",
 
 	"entity.tltmod.wave_slash": "波动斩",
 	"entity.tltmod.laser_a": "聚能激光",
@@ -61,7 +64,7 @@
 	"material.kubejs.fluxed_electrum.flavor":"红石能量！",
 
 	"material.tltmod.sea_glass_shards":"海洋玻璃碎片",
-	"material.tltmod.sea_glass_shards":"海的味道我知道",
+	"material.tltmod.sea_glass_shards.flavor":"海的味道我知道",
 
 	"material.kubejs.alfsteel":"精灵钢",
 	"material.kubejs.signalum":"信素",
@@ -238,7 +241,6 @@
 	"modifier.tltmod.vibrio_vulnificus.flavor":"全菌出击！",
 	"modifier.tltmod.vibrio_vulnificus.description":"攻击和受击每级会施加10秒[海洋创伤弧菌]效果。\n[海洋创伤弧菌]：受到伤害增加25%，每秒会受到逐渐翻倍直到最大生命值10%的凋零伤害",
 
-
 	"modifier.tltmod.caster_tool":"魔艺巧具",
 	"modifier.tltmod.caster_tool.flavor":" ",
 	"modifier.tltmod.caster_tool.description":"你的工具会消耗魔艺魔力进行自我修复。",
@@ -310,6 +312,30 @@
 	"modifier.tltmod.mana_transmitter":"魔能传输器",
 	"modifier.tltmod.mana_transmitter.flavor":"搬搬搬搬搬运工",
 	"modifier.tltmod.mana_transmitter.description":"魔力射线每级+ 100*10^词条等级 携带魔力、方块魔力消耗和实体魔力消耗。",
+
+	"modifier.tltmod.warp_attack":"折跃打击",
+	"modifier.tltmod.warp_attack.flavor":"扭曲空间！",
+	"modifier.tltmod.warp_attack.description":"未命中时你的攻击会折跃到你面向的最近敌人上，等级越高范围越大。\n词条等级>=2时必定暴击。",
+
+	"modifier.tltmod.magnetic_focus":"磁聚焦",
+	"modifier.tltmod.magnetic_focus.flavor":"洛伦兹力！",
+	"modifier.tltmod.magnetic_focus.description":"对攻击距离内的生物每级增加50伤害。",
+
+	"modifier.tltmod.magnetic_scatter":"磁扩散",
+	"modifier.tltmod.magnetic_scatter.flavor":"洛伦兹力！",
+	"modifier.tltmod.magnetic_scatter.description":"基于全身词条等级，每级减少10%（最大70%）伤害并将其扩散到周围生物，你会排斥来犯弹射物。",
+
+	"modifier.tltmod.gravity_interrupt":"重力干扰",
+	"modifier.tltmod.gravity_interrupt.flavor":"飞起来！",
+	"modifier.tltmod.gravity_interrupt.description":"令目标每级失重2.5秒，10秒冷却。",
+
+	"modifier.tltmod.days_and_nights":"昼夜更替",
+	"modifier.tltmod.days_and_nights.flavor":"恒星日？太阳日？",
+	"modifier.tltmod.days_and_nights.description":"攻击时附加每级33%的爆炸伤害并交替附加每级33%的火焰伤害和冰冻伤害。",
+
+	"modifier.tltmod.gravity_manipulate":"引力操作",
+	"modifier.tltmod.gravity_manipulate.flavor":"站不住脚（物理）",
+	"modifier.tltmod.gravity_manipulate.description":"飞行时移除挖掘速度惩罚，获得20%伤害减免和攻击增伤，对空中目标额外造成20%伤害，仅生效一次。",
 
 
 

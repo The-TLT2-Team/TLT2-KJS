@@ -10,4 +10,5 @@ StartupEvents.registry("item", event => {
     event.create("kubejs:orechidysprosium", "basic")
     event.create("kubejs:compressed_polonium", "basic")
     event.create("kubejs:compressed_plutonium", "basic")
+    event.create("kubejs:radon_indused_fuel", "basic")
 })
