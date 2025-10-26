@@ -359,6 +359,10 @@
 	"modifier.tltmod.heat_bulge.flavor":"你说热胀冷缩不改变物体总质量？这可是在MC",
 	"modifier.tltmod.heat_bulge.description":"位于炎热群系时高速自我修复。",
 
+	"modifier.tltmod.vthunder_fire":"雷热涡炉",
+	"modifier.tltmod.thunder_fire.flavor":"“兄弟拿兄弟 不用叫 就能跳~”",
+	"modifier.tltmod.thunder_fire.description":"每四次满蓄攻击会造成不伤害玩家的爆炸并让目标下次攻击时也会产生相同的爆炸。\n每消耗250FE或50mb压缩空气会使触发需求减半。",
+
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
