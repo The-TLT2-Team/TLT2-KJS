@@ -89,8 +89,8 @@ ClientEvents.highPriorityAssets(event=>{
     .build()
 
     //工程塑胶
-    buildMaterial('kubejs','duroplast').addMelee().addStat(RangedStatIds.BOW_STRING).addFallBack(FallBacks.CRYSTAL).setLuminosity(4).setColor("CCBA8D5A").buildTransformer()
-    .buildResprite()
+    buildMaterial('kubejs','duroplast').addMelee().addStat(RangedStatIds.BOW_STRING).addFallBack(FallBacks.CRYSTAL).setLuminosity(4).setColor("CCBA8D5A")
+    .buildTransformer().buildResprite()
     .addPalette(addColor(0,"00000000"))
     .addPalette(addColor(63,"FF8C5020"))
     .addPalette(addColor(102,"FF9C6030"))
@@ -98,6 +98,29 @@ ClientEvents.highPriorityAssets(event=>{
     .addPalette(addColor(178,"B0B1855A"))
     .addPalette(addColor(216,"D0B1855A"))
     .addPalette(addColor(255,"D0CF9B69"))
+    .build()
+
+    //钕合金
+    buildMaterial('kubejs','scarlet_neodymium').addMelee().addFallBack(FallBacks.METAL).setLuminosity(10).setColor("FFED103D")
+    .buildTransformer().buildResprite()
+    .addPalette(addColor(0,"FF000000"))
+    .addPalette(addColor(63,"FF6E0002"))
+    .addPalette(addColor(102,"FF850002"))
+    .addPalette(addColor(140,"FF9C1215"))
+    .addPalette(addColor(178,"FFC7171A"))
+    .addPalette(addColor(216,"FFF20004"))
+    .addPalette(addColor(255,"FFFF4D50"))
+    .build()
+
+    buildMaterial('kubejs','azure_neodymium').addArmor().addFallBack(FallBacks.METAL).setLuminosity(10).setColor("FF3D10ED")
+    .buildTransformer().buildResprite()
+    .addPalette(addColor(0,"FF000000"))
+    .addPalette(addColor(63,"FF02006E"))
+    .addPalette(addColor(102,"FF020085"))
+    .addPalette(addColor(140,"FF15129C"))
+    .addPalette(addColor(178,"FF1A17C7"))
+    .addPalette(addColor(216,"FF0400F2"))
+    .addPalette(addColor(255,"FF504DFF"))
     .build()
 
 })

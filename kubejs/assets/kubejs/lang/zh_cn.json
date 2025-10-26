@@ -74,6 +74,8 @@
 	"material.kubejs.alloy_radiance":"辐光合金",
 	"material.kubejs.alloy_thermalnuclear":"热核合金",
 	"material.kubejs.duroplast":"工程塑胶",
+	"material.kubejs.scarlet_neodymium":"赤钕合金",
+	"material.kubejs.azure_neodymium":"青钕合金",
 
 
 
@@ -323,7 +325,7 @@
 
 	"modifier.tltmod.magnetic_scatter":"磁扩散",
 	"modifier.tltmod.magnetic_scatter.flavor":"洛伦兹力！",
-	"modifier.tltmod.magnetic_scatter.description":"基于全身词条等级，每级减少10%（最大70%）伤害并将其扩散到周围生物，你会排斥来犯弹射物。",
+	"modifier.tltmod.magnetic_scatter.description":"基于全身词条等级，每级减少10%（最大70%）伤害并将其扩散到周围生物，你会排斥来犯弹射物。\n免疫吸引、排斥、反击词条。",
 
 	"modifier.tltmod.gravity_interrupt":"重力干扰",
 	"modifier.tltmod.gravity_interrupt.flavor":"飞起来！",
@@ -335,7 +337,23 @@
 
 	"modifier.tltmod.gravity_manipulate":"引力操作",
 	"modifier.tltmod.gravity_manipulate.flavor":"站不住脚（物理）",
-	"modifier.tltmod.gravity_manipulate.description":"飞行时移除挖掘速度惩罚，获得20%伤害减免和攻击增伤，对空中目标额外造成20%伤害，仅生效一次。",
+	"modifier.tltmod.gravity_manipulate.description":"飞行时移除挖掘速度惩罚，获得20%伤害减免和攻击增伤，对空中目标额外造成20%伤害，仅生效一次。\n免疫重力、月步、震击词条。",
+
+	"modifier.tltmod.environmental_protection":"环境抗性",
+	"modifier.tltmod.environmental_protection.flavor":"抗逆性！",
+	"modifier.tltmod.environmental_protection.description":"免疫摔落、窒息、火、闪电、爆炸、霜冻和下落方块伤害，对无源伤害提供相互独立的30%伤害减免。",
+
+	"modifier.tltmod.ionized_arrow":"离子闪电发射器",
+	"modifier.tltmod.ionized_arrow.flavor":"急速连发等离子，将你的敌人轰杀至渣！",
+	"modifier.tltmod.ionized_arrow.description":"使你的弓能急速发射等离子束，但是会在10次发射后进入受拉弓速度影响的冷却。\n等离子束会以固定的直线路径飞行，命中时爆炸并附加额外的龙息伤害。",
+
+	"modifier.tltmod.dash_rebalance":"疾行",
+	"modifier.tltmod.dash_rebalance.flavor":"再快一点！",
+	"modifier.tltmod.dash_rebalance.description":"根据玩家的运动速度增加伤害。",
+
+	"modifier.tltmod.valkyrie_bless":"武神之馈",
+	"modifier.tltmod.valkyrie_bless.flavor":"风暴之祝福！",
+	"modifier.tltmod.valkyrie_bless.description":"每级+1攻击距离和延展等级，令不会劈中自己和掉落物的闪电惩戒你的目标。",
 
 
 
@@ -362,6 +380,7 @@
 	"tooltip.tltmod.cursed_ring_replacement1": "§5- 你在一局游戏中只能使用 §62§5 次恶意吸收宝珠",
 	"tooltip.tltmod.cursed_ring_replacement2": "§5- 你合成出的匠魂工具将会附带 §6一个特殊词条",
 	"tooltip.tltmod.cursed_ring_replacement3": "§5- 从食物中只能获取 §650%§5 的饱食度、饱和度和效果时长",
+	"tooltip.tltmod.cursed_ring_replacement4": "§5- 获得§6嫉妒诅咒§5的效果（不增加玩家难度）",
 	"tooltip.kubejs.remove_cursed_ring":"使用以永久移除七咒之戒，不可逆！",
 	"tooltip.tltmod.error.specialized_burst_modifier":"每件工具只能强化一个专业化魔力射线升级！",
 	"tooltip.tltmod.burst_time_before_loss": "射线在 ",

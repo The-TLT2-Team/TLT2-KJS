@@ -21,6 +21,8 @@
     "alloy_radiance":"#E2FB43",
     "alloy_thermalnuclear":"#EF4345",
     "duroplast":"#8C5020",
+    "scarlet_neodymium":"#ED103D",
+    "azure_neodymium":"#3D10ED",
     "fluxed_electrum":"#F4DE6A"
   },
 
@@ -81,6 +83,8 @@
     "gravity_interrupt":"#4F3041",
     "days_and_nights":"#FFD57C",
     "gravity_manipulate":"#4F3041",
+    "ionized_arrow":"#5F47FF",
+    "valkyrie_bless":"#FEFFB1",
     "vibrio_vulnificus": "#CEE7E6"
   }
 }

@@ -789,7 +789,7 @@
     D:CursedRingEndermenRandomportRange=32.0
 
     # How much experience will drop from mobs to bearers of the ring, measured in percents. [range: 0 ~ 32768, default: 400, synchronized: yes]
-    I:CursedRingExperienceBonus=400
+    I:CursedRingExperienceBonus=100
 
     # How many bonus Fortune levels ring provides [range: 0 ~ 32768, default: 1, synchronized: yes]
     I:CursedRingFortuneBonus=1

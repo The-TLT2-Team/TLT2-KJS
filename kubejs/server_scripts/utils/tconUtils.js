@@ -630,6 +630,40 @@ function setDataEvent(event){
                 this.stats[statId] = statlessStat();
                 return this;
             },
+            //移除现有的一个属性（在同路径覆盖材料时使用）
+            removeStat(statId){
+                this.stats[statId] = null;
+                return this;
+            },
+            //移除护甲属性
+            removeArmorStat(){
+                this.removeStat(MaterialStatIds.PLATING_BOOTS)
+                .removeStat(MaterialStatIds.PLATING_CHESTPLATE)
+                .removeStat(MaterialStatIds.PLATING_HELMET)
+                .removeStat(MaterialStatIds.PLATING_LEGGINS)
+                .removeStat(StatlessStatIds.SHIELD_CORE)
+                .removeStat(StatlessStatIds.MAILLE)
+                return this;
+            },
+            //移除盾属性
+            removeShieldStat(){
+                this.removeStat(MaterialStatIds.PLATING_SHIELD)
+                return this;
+            },
+            //移除远程属性
+            removeRangedStat(){
+                this.removeStat(MaterialStatIds.LIMB)
+                .removeStat(MaterialStatIds.GRIP)
+                .removeStat(StatlessStatIds.BOW_STRING)
+                return this;
+            },
+            //移除近战属性
+            removeMeleeStat(){
+                this.removeStat(MaterialStatIds.HEAD)
+                .removeStat(MaterialStatIds.HANDLE)
+                .removeStat(StatlessStatIds.BINDING)
+                return this;
+            },
             //完成属性构建
             //返回一个词条构建器进行下一步操作
             build(){
