@@ -85,6 +85,9 @@
     "gravity_manipulate":"#4F3041",
     "ionized_arrow":"#5F47FF",
     "valkyrie_bless":"#FEFFB1",
+    "heat_bulge": "#FC2818",
+    "vthunder_fire": "#FC2818",
+    "environmental_protection": "#FC2818",
     "vibrio_vulnificus": "#CEE7E6"
   }
 }
