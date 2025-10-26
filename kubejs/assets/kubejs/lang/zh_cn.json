@@ -355,6 +355,10 @@
 	"modifier.tltmod.valkyrie_bless.flavor":"风暴之祝福！",
 	"modifier.tltmod.valkyrie_bless.description":"每级+1攻击距离和延展等级，令不会劈中自己和掉落物的闪电惩戒你的目标。",
 
+	"modifier.tltmod.heat_bulge":"热力膨胀",
+	"modifier.tltmod.heat_bulge.flavor":"你说热胀冷缩不改变物体总质量？这可是在MC",
+	"modifier.tltmod.heat_bulge.description":"位于炎热群系时高速自我修复。",
+
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",
