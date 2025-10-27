@@ -360,8 +360,8 @@
 	"modifier.tltmod.heat_bulge.description":"位于炎热群系时高速自我修复。",
 
 	"modifier.tltmod.vthunder_fire":"雷热涡炉",
-	"modifier.tltmod.thunder_fire.flavor":"“兄弟拿兄弟 不用叫 就能跳~”",
-	"modifier.tltmod.thunder_fire.description":"每四次满蓄攻击会造成不伤害玩家的爆炸并让目标下次攻击时也会产生相同的爆炸。\n每消耗250FE或50mb压缩空气会使触发需求减半。",
+	"modifier.tltmod.thunder_fire.flavor":"“兄弟拿兄弟，不用叫就能跳~”",
+	"modifier.tltmod.thunder_fire.description":"每四次满蓄攻击会以50%伤害造成不伤害玩家的爆炸并让目标下次攻击时也会产生相同的爆炸。\n每消耗250FE或50mb压缩空气会使触发需求减半。",
 
 
 
