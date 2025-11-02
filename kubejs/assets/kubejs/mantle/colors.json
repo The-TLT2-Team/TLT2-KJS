@@ -87,6 +87,9 @@
     "valkyrie_bless":"#FEFFB1",
     "burning_sky":"#FF7F27",
     "devourer_of_dragons":"#B2FFB2",
+    "heat_bulge": "#FC2818",
+    "vthunder_fire": "#FC2818",
+    "environmental_protection": "#FC2818",
     "vibrio_vulnificus": "#CEE7E6"
   }
 }
