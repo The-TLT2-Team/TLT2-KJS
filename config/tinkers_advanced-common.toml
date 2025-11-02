@@ -203,7 +203,7 @@
 	#通量斩击的剑气继承自工具伤害的伤害比例，默认0x
 	#Damage bonus from tool's attack damage, 0x by default.
 	#Range: 0.0 ~ 3.4028234663852886E38
-	flux_slash_damage_from_attack_damage = 0.0
+	flux_slash_damage_from_attack_damage = 0.25
 	#通量斩击的挖掘加速（注能模式下为此值2倍），默认100%
 	#Mining boost for Flux Slash, 100% by default.
 	#Range: 0.0 ~ 3.4028234663852886E38
@@ -217,11 +217,11 @@
 	#通量箭矢的爆炸伤害，默认5
 	#Arrow explosion damage for Flux Arrow, 5 by default.
 	#Range: 0.0 ~ 3.4028234663852886E38
-	flux_arrow_explosion_damage = 5.0
+	flux_arrow_explosion_damage = 7.0
 	#通量箭矢爆炸受到箭矢伤害的增幅，默认0x
 	#Additional damage for the arrow explosion boosted by arrow damage from Flux Arrow, 0x by default.
 	#Range: 0.0 ~ 3.4028234663852886E38
-	flux_arrow_explosion_damage_from_arrow_damage = 0.0
+	flux_arrow_explosion_damage_from_arrow_damage = 0.2
 	#Flux Armor
 	#通量赋能-护甲
 	#通量护甲的基础消耗（减伤消耗采用此值，闪避消耗为此值的10倍），默认2000FE

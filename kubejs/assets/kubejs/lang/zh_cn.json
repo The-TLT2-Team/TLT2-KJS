@@ -355,6 +355,14 @@
 	"modifier.tltmod.valkyrie_bless.flavor":"风暴之祝福！",
 	"modifier.tltmod.valkyrie_bless.description":"每级+1攻击距离和延展等级，令不会劈中自己和掉落物的闪电惩戒你的目标。",
 
+	"modifier.tltmod.burning_sky":"焚灭天惩",
+	"modifier.tltmod.burning_sky.flavor":"模组里有款造成近战伤害的法杖",
+	"modifier.tltmod.burning_sky.description":"令火球从你的目标头顶倾泻而下",
+
+	"modifier.tltmod.devourer_of_dragons":"龙魂吞噬者",
+	"modifier.tltmod.devourer_of_dragons.flavor":"虽然____,但是___________！",
+	"modifier.tltmod.devourer_of_dragons.description":"你的工具会从你所杀死的冰火电龙中获取力量，在击杀404只龙后达到巅峰。\n ·于武器：每杀一只龙，伤害+1。\n ·于护甲：每杀一只龙，最大生命+1，防御力+0.25，韧性+0.1",
+
 
 
 	"item.kubejs.molten_awaken_chromatic_steel_bucket":"熔融觉醒彩钢桶",

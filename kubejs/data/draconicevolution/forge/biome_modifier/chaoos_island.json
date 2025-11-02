@@ -1,0 +1,6 @@
+{
+  "type" : "forge:add_features",
+  "features": "draconicevolution:chaos_island",
+  "biomes": "kubejs:chaotic",
+  "step": "raw_generation"
+}

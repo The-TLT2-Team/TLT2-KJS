@@ -39,6 +39,9 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:alloy_radiance","mekanism_extras:alloy_radiance"])
     //海洋玻璃碎片
     craftableMaterial(["tltmod:sea_glass_shards","alexscaves:sea_glass_shards"])
+    //钕合金
+    craftableMaterial(["kubejs:scarlet_neodymium","alexscaves:scarlet_neodymium_ingot"])
+    craftableMaterial(["kubejs:azure_neodymium","alexscaves:azure_neodymium_ingot"])
 })
 /**
  * 相关函数(ctrl点击以跳转)：
@@ -64,10 +67,10 @@ ServerEvents.highPriorityData(event=>{
 
     //凝矿镧
     buildMaterial('kubejs','orechidysprosium').setTier(5).setCraftable().build()
-    .addStat(MaterialStatIds.HEAD,headStat(790,6,12,MiningTiers.NETHERITE))
-    .addStat(MaterialStatIds.HANDLE,handleStat(0.9,0.25,0.5,0.3))
-    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.9,6))
-    .addStat(MaterialStatIds.LIMB,limbStat(690,0.3,0.3,0.05))
+    .addStat(MaterialStatIds.HEAD,headStat(790,12,12,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.9,0.25,0.5,0.4))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.05,0.9,12))
+    .addStat(MaterialStatIds.LIMB,limbStat(690,0.3,0.4,0.05))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,675,0,2))
     .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(6,795,0,2))
     .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(8,875,0,2))
@@ -85,7 +88,7 @@ ServerEvents.highPriorityData(event=>{
 
     //红石琥珀金
     buildMaterial('kubejs','fluxed_electrum').setTier(5).setCraftable().build()
-    .addStat(MaterialStatIds.HEAD,headStat(1020,5.75,7.5,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HEAD,headStat(1020,7.75,7.5,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.2,0.25,0.2,0.25))
     .addStat(MaterialStatIds.GRIP,gripStat(0.0,0.2,5.75))
     .addStat(MaterialStatIds.LIMB,limbStat(1020,0.25,0.25,0.0))
@@ -102,14 +105,14 @@ ServerEvents.highPriorityData(event=>{
 
     //活化彩钢调整
     buildMaterial('tinkers_advanced','activated_chromatic_steel').setTier(5).build()
-    .addStat(MaterialStatIds.HEAD,headStat(1920,6.25,9,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HEAD,headStat(1920,8.25,9,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.3,0.5,0.3,0.25))
     .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(22.4,23.9))
     .addStat(MaterialStatIds.LIMB,limbStat(1920,0.25,0.5,0.1)).build()
 
     //精灵钢
     buildMaterial('kubejs','alfsteel').setTier(5).setCraftable().build()
-    .addStat(MaterialStatIds.HEAD,headStat(670,5.75,6,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HEAD,headStat(670,9.75,6,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.2,0.45,0.1,0.2))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(3,644,0,3))
     .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(5.5,768,0,3))
@@ -131,8 +134,8 @@ ServerEvents.highPriorityData(event=>{
     .addDefault("etstlib:short_circuit",1)
     .build()
     buildMaterial('kubejs','lumium').setTier(4).build()
-    .addStat(MaterialStatIds.HEAD,headStat(470,4.5,2.5,MiningTiers.DIAMOND))
-    .addStat(MaterialStatIds.HANDLE,handleStat(-0.15,-0.15,-0.1,0.3))
+    .addStat(MaterialStatIds.HEAD,headStat(470,5.5,2.5,MiningTiers.DIAMOND))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.15,-0.15,-0.1,0.6))
     .addStat(MaterialStatIds.LIMB,limbStat(470,0.3,-0.1,-0.05))
     .addStat(MaterialStatIds.GRIP,gripStat(0.05,-0.1,2.5))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(1.75,300,0,2))
@@ -160,7 +163,7 @@ ServerEvents.highPriorityData(event=>{
 
     //高定向热解石墨
     buildMaterial('kubejs','hop_graphite').setCraftable().setTier(5).build()
-    .addStat(MaterialStatIds.HEAD,headStat(590,7.25,2.5,MiningTiers.WOOD))
+    .addStat(MaterialStatIds.HEAD,headStat(590,9.25,2.5,MiningTiers.WOOD))
     .addStat(MaterialStatIds.HANDLE,handleStat(-0.25,0.15,-0.25,0.75))
     .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(15.5,15.5))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
@@ -184,8 +187,8 @@ ServerEvents.highPriorityData(event=>{
 
     //热核合金
     buildMaterial('kubejs','alloy_thermalnuclear').setCraftable().setTier(6).build()
-    .addStat(MaterialStatIds.HEAD,headStat(2049,9.25,16384,MiningTiers.NETHERITE))
-    .addStat(MaterialStatIds.HANDLE,handleStat(1,1,20.48,0))
+    .addStat(MaterialStatIds.HEAD,headStat(2049,12.5,16384,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(1,1.2,20.48,-0.2))
     .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(69.5,69.5))
     .addStatlessStat(StatlessStatIds.BINDING).build()
     .addDefault("tlt_tech:molten_core",1)
@@ -193,7 +196,7 @@ ServerEvents.highPriorityData(event=>{
 
     //工程塑胶板
     buildMaterial('kubejs','duroplast').setCraftable().setTier(5).build()
-    .addStat(MaterialStatIds.HEAD,headStat(590,9.25,2.5,MiningTiers.WOOD))
+    .addStat(MaterialStatIds.HEAD,headStat(590,10.25,2.5,MiningTiers.WOOD))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.1,0.75,-0.1,0.75))
     .addStat(MaterialStatIds.FLUXCORE,fluxCoreStat(99.5,25.5))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.BOW_STRING).build()
@@ -210,14 +213,14 @@ ServerEvents.highPriorityData(event=>{
 
     //剧毒獠牙,深入天境的深池毒素浇筑鮟鱇鱼獠牙
     buildMaterial('kubejs','toxic_fang').setCraftable().setTier(5).build()
-        .addStat(MaterialStatIds.HEAD,headStat(520,8.25,3.5,MiningTiers.IRON))
+        .addStat(MaterialStatIds.HEAD,headStat(520,9.25,3.5,MiningTiers.IRON))
         .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.6,0.1,0.3))
         .build()
         .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:toxic_outbreak",1)
         .build()
 //    海洋玻璃碎片
     buildMaterial('tltmod','sea_glass_shards').setTier(7).setCraftable().build()
-    .addStat(MaterialStatIds.HEAD,headStat(378,17,20,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HEAD,headStat(378,45,20,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(-0.4,1.7,0.8,1.4))
     .addStat(MaterialStatIds.GRIP,gripStat(-0.4,-0.1,30))
     .addStat(MaterialStatIds.LIMB,limbStat(378,0.3,0.4,-0.1))
@@ -227,7 +230,7 @@ ServerEvents.highPriorityData(event=>{
     .build()
     //钕合金
     buildMaterial('kubejs','scarlet_neodymium').setCraftable().setTier(6).build()
-    .addStat(MaterialStatIds.HEAD,headStat(3840,10,9,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HEAD,headStat(3840,16,9,MiningTiers.NETHERITE))
     .addStat(MaterialStatIds.HANDLE,handleStat(0.5,1,1,0.5))
     .addStatlessStat(StatlessStatIds.BINDING).build()
     .addDefault("tltmod:warp_attack",1).addDefault("tltmod:magnetic_focus")
@@ -241,18 +244,18 @@ ServerEvents.highPriorityData(event=>{
     .addDefault("tltmod:magnetic_scatter",1)
     .build()
     //外星三傻
-    buildMaterial('tcintegrations','desh').setTier(6).build()
+    buildMaterial('tcintegrations','desh').setTier(5).build()
     .removeArmorStat()
-    .addStat(MaterialStatIds.HEAD,headStat(995,8.5,12,MiningTiers.NETHERITE))
-    .addStat(MaterialStatIds.HANDLE,handleStat(-0.1,0.3,0.25,0.25))
+    .addStat(MaterialStatIds.HEAD,headStat(995,10.5,12,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(-0.1,0.3,0.25,0.55))
     .addStat(MaterialStatIds.GRIP,gripStat(-0.05,-0.1,8.5))
     .addStat(MaterialStatIds.LIMB,limbStat(995,0.3,0.7,-0.05))
     .addStatlessStat(StatlessStatIds.BINDING).build()
     .addDefault("tltmod:days_and_nights",1)
     .build()
-    buildMaterial('tcintegrations','ostrum').setTier(6).build()
-    .addStat(MaterialStatIds.HEAD,headStat(2995,12,5,MiningTiers.NETHERITE))
-    .addStat(MaterialStatIds.HANDLE,handleStat(0.25,1,-0.15,-0.15))
+    buildMaterial('tcintegrations','ostrum').setTier(5).build()
+    .addStat(MaterialStatIds.HEAD,headStat(2995,13,5,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.25,1.5,-0.15,-0.15))
     .addStat(MaterialStatIds.GRIP,gripStat(0.1,0.25,10.5))
     .addStat(MaterialStatIds.LIMB,limbStat(2995,-0.25,1.5,0.05))
     .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(6.75,2880,1,9))
