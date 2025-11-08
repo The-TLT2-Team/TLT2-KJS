@@ -274,7 +274,7 @@ ServerEvents.highPriorityData(event=>{
         .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(10.75,3259,1,9))
         .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(14,3370,1,9))
         .addStat(MaterialStatIds.PLATING_HELMET,platingStat(8,2925,1,9))
-         addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).addStatlessStat(StatlessStatIds.BINDING).build()
+        .addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).addStatlessStat(StatlessStatIds.BINDING).build()
         .addDefault("tltmod:heat_bulge",1).addDefault("tltmod:thunder_fire")
         .buildPerstat(MaterialTypes.ARMOR).addModifier("tltmod:heat_bulge",1).addModifier("tltmod:environmental_protection",1).build()
         .build()

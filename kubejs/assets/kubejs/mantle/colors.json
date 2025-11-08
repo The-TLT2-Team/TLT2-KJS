@@ -90,6 +90,11 @@
     "heat_bulge": "#FC2818",
     "vthunder_fire": "#FC2818",
     "environmental_protection": "#FC2818",
+    "neutron_arrow": "#C8FFA6",
+    "gamma_ray": "#C8FFA6",
+    "chainsaw": "#FF4B05",
+    "redstone_beam": "#FF4B05",
+    "redstone_force": "#FF4B05",
     "vibrio_vulnificus": "#CEE7E6"
   }
 }
