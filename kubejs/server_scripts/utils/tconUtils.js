@@ -317,6 +317,89 @@ let recipeEvent;
 function setRecipeEvent(event){
     recipeEvent = event;
 }
+     /*
+        宝石材料配方
+        materialId - 材料ID
+        fluid - 流体ID
+        gem - 材料物品ID
+        temp - 熔化温度
+    */
+    function gemMaterial([materialId,fluid,gem,temp]){
+        recipeEvent.custom(
+            {
+                "type":"tconstruct:melting",
+                "ingredient":{
+                    "item":gem
+                },
+                "temperature": temp,
+                "time": 20,
+                "result":{
+                    "fluid": fluid,
+                    "amount": 100
+                }
+            }
+        )
+        recipeEvent.custom(
+            {
+                "type":"tconstruct:casting_table",
+                "cast": { "tag": "tconstruct:casts/multi_use/gem" },
+                "cast_consumed": false,
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 100
+                },
+                "result": gem,
+                "cooling_time": 20
+            }
+        )
+        recipeEvent.custom(
+            {
+                "type":"tconstruct:casting_table",
+                "cast": { "tag": "tconstruct:casts/single_use/gem" },
+                "cast_consumed": true,
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 100
+                },
+                "result": gem,
+                "cooling_time": 20
+            }
+        )
+        recipeEvent.custom(
+            {
+                "type": "tconstruct:material_fluid",
+                "fluid": {
+                    "fluid": fluid,
+                    "amount": 100
+                },
+                "temperature": temp,
+                "output": materialId
+            }
+        )
+        recipeEvent.custom(
+            {
+                "type": "tconstruct:material_melting",
+                "temperature": temp,
+                "input": materialId,
+                "result": {
+                    "fluid": fluid,
+                    "amount": 100
+                }
+            }
+        )
+        recipeEvent.custom(
+            {
+                "type": "tconstruct:material",
+                "ingredient": {
+                    "item": gem
+                },
+                "value": 1,
+                "needed": 1,
+                "material": materialId
+            }
+        )
+    }
+    
     /*
         金属材料配方
         materialId - 材料ID
