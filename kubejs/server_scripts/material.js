@@ -4,6 +4,7 @@
  * @see craftableMaterial
  * @see metalMaterialExistingMolten
  * @see customMaterial
+ * @see gemMaterial
  */
 ServerEvents.recipes(event=>{
     setRecipeEvent(event)
@@ -42,6 +43,8 @@ ServerEvents.recipes(event=>{
     //钕合金
     craftableMaterial(["kubejs:scarlet_neodymium","alexscaves:scarlet_neodymium_ingot"])
     craftableMaterial(["kubejs:azure_neodymium","alexscaves:azure_neodymium_ingot"])
+    //呼啸水晶
+    crystalMaterial(["kubejs:roaring_crystal",'kubejs:molten_roaring_crystal',"kubejs:roaring_crystal",8000])
 })
 /**
  * 相关函数(ctrl点击以跳转)：
@@ -62,7 +65,22 @@ ServerEvents.highPriorityData(event=>{
     .addStat(MaterialStatIds.PLATING_HELMET,platingStat(12,12000,1,16))
     .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
     .addDefault("tltmod:ever_flaming_core",1)
-    .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:ever_flaming_core",1).addModifier("tltmod:stop",1).build()
+    .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:ever_flaming_core",1).build()
+    .build()
+
+    //呼啸水晶
+    buildMaterial('kubejs','roaring_crystal').setTier(6).build()
+    .addStat(MaterialStatIds.HEAD,headStat(1225,8,7,MiningTiers.NETHERITE))
+    .addStat(MaterialStatIds.HANDLE,handleStat(0.15,0.4,0.5,0.10))
+    .addStat(MaterialStatIds.GRIP,gripStat(0.15,0.3,4))
+    .addStat(MaterialStatIds.LIMB,limbStat(1225,0.4,0.4,0.3))
+    .addStat(MaterialStatIds.PLATING_BOOTS,platingStat(5,500,0.1,4))
+    .addStat(MaterialStatIds.PLATING_LEGGINS,platingStat(9,550,0.1,4))
+    .addStat(MaterialStatIds.PLATING_CHESTPLATE,platingStat(8,600,0.1,4))
+    .addStat(MaterialStatIds.PLATING_HELMET,platingStat(6,400,0.1,4))
+    .addStatlessStat(StatlessStatIds.BINDING).addStatlessStat(StatlessStatIds.MAILLE).addStatlessStat(StatlessStatIds.SHIELD_CORE).build()
+    .addDefault("tltmod:stop",1)
+    .buildPerstat(MaterialTypes.MELEE).addModifier("tltmod:stop",1).build()
     .build()
 
     //凝矿镧
