@@ -26,10 +26,6 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:fluxed_electrum","redstone_arsenal:flux_plating"])
     //精灵钢
     craftableMaterial(["kubejs:alfsteel","mythicbotany:alfsteel_ingot"])
-    //热力三锭
-    metalMaterialExistingMolten(["kubejs:signalum","tconstruct:molten_signalum","thermal:signalum_ingot",999])
-    metalMaterialExistingMolten(["kubejs:lumium","tconstruct:molten_lumium","thermal:lumium_ingot",1050])
-    metalMaterialExistingMolten(["kubejs:enderium","tconstruct:molten_enderium","thermal:enderium_ingot",1350])
     //HOP石墨
     craftableMaterial(["kubejs:hop_graphite","immersiveengineering:ingot_hop_graphite"])
     //工程塑胶板
