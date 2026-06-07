@@ -44,7 +44,7 @@ ServerEvents.recipes(event=>{
     craftableMaterial(["kubejs:scarlet_neodymium","alexscaves:scarlet_neodymium_ingot"])
     craftableMaterial(["kubejs:azure_neodymium","alexscaves:azure_neodymium_ingot"])
     //呼啸水晶
-    crystalMaterial(["kubejs:roaring_crystal",'kubejs:molten_roaring_crystal',"kubejs:roaring_crystal",8000])
+    gemMaterial(["kubejs:roaring_crystal",'kubejs:molten_roaring_crystal',"kubejs:roaring_crystal",8000])
 })
 /**
  * 相关函数(ctrl点击以跳转)：
