@@ -66,9 +66,6 @@
 	"material.tltmod.sea_glass_shards":"海洋玻璃碎片",
 	"material.tltmod.sea_glass_shards.flavor":"海的味道我知道",
 
-	"material.kubejs.roaring_crystal":"呼啸水晶",
-	"material.kubejs.roaring_crystal.flavor":"Don't forget……i'm with you in the DARK.",
-
 	"material.kubejs.alfsteel":"精灵钢",
 	"material.kubejs.signalum":"信素",
 	"material.kubejs.lumium":"流明",
@@ -401,9 +398,6 @@
 
 	"item.kubejs.molten_restructure_chromatic_steel_bucket":"熔融重组彩钢桶",
 	"fluid.kubejs.molten_restructure_chromatic_steel": "熔融重组彩钢",
-
-	"item.kubejs.molten_roaring_crystal_bucket":"熔融呼啸水晶桶",
-	"fluid.kubejs.molten_roaring_crystal": "熔融呼啸水晶",
 
 	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
 	"tooltip.kubejs.found_in_nether":"发现于下界",

@@ -54,22 +54,6 @@ ClientEvents.highPriorityAssets(event=>{
     .addFallBack(FallBacks.METAL).setColor("FFF79100").setLuminosity(7)
     .build()
 
-    //热力三锭
-    buildMaterial('kubejs','signalum')
-    .addMelee().addRanged()
-    .addFallBack(FallBacks.METAL).setColor("FFFF2011")
-    .build()
-
-    buildMaterial('kubejs','lumium')
-    .addArmor().addMelee().addRanged()
-    .addFallBack(FallBacks.METAL).setColor("FFFCFA7F").setLuminosity(15)
-    .build()
-
-    buildMaterial('kubejs','enderium')
-    .addArmor().addMelee().addRanged()
-    .addFallBack(FallBacks.METAL).setColor("FF29FFC1")
-    .build()
-
     //高定向热解石墨
     buildMaterial('kubejs','hop_graphite')
     .addMelee()
