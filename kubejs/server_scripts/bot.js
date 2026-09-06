@@ -8,4 +8,6 @@ ServerEvents.recipes(event=>{
     event.recipes.botania.orechid('create:zinc_ore','stone',10000)
     event.recipes.botania.orechid('mekanism:osmium_ore','stone',10000)
     event.recipes.botania.orechid('thermal:deepslate_silver_ore','deepslate',75)
+    event.recipes.botania.orechid_ignem('tconstruct:cobalt_ore','netherrack',980)
+    event.recipes.botania.orechid_ignem('tinkers_thinking:ardite_ore','netherrack',980)
 })
