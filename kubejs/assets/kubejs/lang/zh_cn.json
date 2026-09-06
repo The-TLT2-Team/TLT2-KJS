@@ -25,6 +25,7 @@
 	"item.kubejs.compressed_polonium":"压缩钋粉",
 	"item.kubejs.compressed_plutonium":"压缩钚粉",
 	"item.kubejs.radon_indused_fuel":"氡活化核能燃料瓶",
+	"item.kubejs.titanium_ingot":"钛金锭",
 
 	"block.mekanism.indium_casing":"铟质机壳",
 
@@ -398,6 +399,9 @@
 
 	"item.kubejs.molten_restructure_chromatic_steel_bucket":"熔融重组彩钢桶",
 	"fluid.kubejs.molten_restructure_chromatic_steel": "熔融重组彩钢",
+
+	"item.kubejs.molten_titanium":"熔融钛金桶",
+	"fluid.kubejs.molten_titanium": "熔融钛金",
 
 	"tooltip.kubejs.found_in_overword_deep":"发现于主世界深层",
 	"tooltip.kubejs.found_in_nether":"发现于下界",

@@ -107,4 +107,10 @@ ClientEvents.highPriorityAssets(event=>{
     .addPalette(addColor(255,"FF504DFF"))
     .build()
 
+    //钛
+    buildMaterial('kubejs','titanium')
+    .addArmor().addMelee()
+    .addFallBack(FallBacks.CRYSTAL).setColor("FFEFE1FF")
+    .build()
+
 })

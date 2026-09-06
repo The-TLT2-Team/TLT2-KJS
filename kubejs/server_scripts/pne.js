@@ -81,7 +81,7 @@ e.custom({
   "input1": {
     "type": "pneumaticcraft:fluid",
     "amount": 180,
-    "fluid": "tinkerscalibration:moltentitanium"
+    "fluid": "kubejs:molten_titanium"
   },
   "input2": {
     "type": "pneumaticcraft:fluid",

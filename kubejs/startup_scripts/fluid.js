@@ -25,4 +25,5 @@ StartupEvents.registry("fluid",event=>{
     createFluid(['kubejs:molten_restructure_chromatic_steel',5000])
     createFluid(['kubejs:molten_hephaestus',8000])
     createFluid(['kubejs:molten_roaring_crystal',8000])
+    createThickFluid(['kubejs:molten_titanium',0xCCCCCC,1500])
 })

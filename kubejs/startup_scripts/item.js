@@ -12,6 +12,6 @@ StartupEvents.registry("item", event => {
     event.create("kubejs:pi_nugget", "basic")
     event.create("kubejs:pluto", "basic")
     event.create("kubejs:unformed_hephaestus_ingot", "basic")
-    
+    event.create("kubejs:titanium_ingot", "basic").tag("forge:ingots/titanium")
 }
 )
